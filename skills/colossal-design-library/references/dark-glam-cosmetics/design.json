@@ -1,0 +1,365 @@
+{
+  "meta": {
+    "name": "Glam Cosmetics",
+    "description": "A high-contrast, edgy beauty and cosmetics e-commerce store. It blends dark, dramatic themes with vibrant, high-saturation product imagery. The aesthetic is bold, slightly brutalist in its typographic choices, and heavily relies on striking, editorial-style photography.",
+    "industry": "beauty",
+    "aesthetic": "bold-maximalist",
+    "mood": "energetic and bold",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "hero",
+      "category-circles",
+      "promotional-product-grid",
+      "new-collection-grid",
+      "restocked-grid",
+      "latest-release-grid",
+      "editorial-triad",
+      "bundle-offers-grid",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#FFFFFF",
+      "foreground": "#000000",
+      "card": "#FFFFFF",
+      "cardForeground": "#000000",
+      "popover": "#FFFFFF",
+      "popoverForeground": "#000000",
+      "primary": "#000000",
+      "primaryForeground": "#FFFFFF",
+      "secondary": "#F3F4F6",
+      "secondaryForeground": "#000000",
+      "muted": "#F3F4F6",
+      "mutedForeground": "#6B7280",
+      "accent": "#E91E63",
+      "accentForeground": "#FFFFFF",
+      "destructive": "#EF4444",
+      "border": "#E5E7EB",
+      "input": "#E5E7EB",
+      "ring": "#000000"
+    },
+    "customColors": {
+      "accent-pink": "#DE3163",
+      "discount-purple": "#8A2BE2",
+      "header-dark": "#111111",
+      "announcement-bg": "#F8F8F8"
+    },
+    "radius": "0rem",
+    "radiusButton": "0rem",
+    "fonts": {
+      "sans": "Helvetica, Arial, sans-serif",
+      "display": "'Times New Roman', Times, serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+      "serif": "'Times New Roman', Times, serif"
+    },
+    "fontPackages": [
+      "@fontsource/inter",
+      "@fontsource/playfair-display"
+    ]
+  },
+  "header": {
+    "buttonStyle": "default",
+    "size": "default",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "transparent",
+      "text": "#FFFFFF",
+      "mutedText": "#E5E5E5",
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Header overlays the hero image. It has a transparent background gradient fading to dark at the top. Logo on the far left, main nav centered, account/cart/search links on the right as text. An announcement bar sits above the main header."
+  },
+  "footer": {
+    "colorScheme": "inverted",
+    "colors": {
+      "bg": "#111111",
+      "text": "#FFFFFF",
+      "mutedText": "#A3A3A3",
+      "border": "#333333"
+    },
+    "description": "Newsletter signup section prominently displayed on the left side of the footer with a stark pink CTA button.",
+    "notes": "Dark footer with a large newsletter signup area on the left and 4 columns of links on the right. Bottom bar contains copyright and legal links with the logo."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Product cards have a very clean, clinical look with stark white backgrounds, fine grey borders, and crisp, high-saturation product cutouts. Typography is small, uppercase, and sans-serif for titles. Pricing is displayed below the title, often showing strikethrough for sales. Some cards feature tiny vertical text indicating shade options. Purple starburst badges are used for bundle discounts."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "4",
+      "xl": "5"
+    },
+    "gap": "0",
+    "notes": "The grids act as carousels with left/right arrows outside the grid container. Cards butt up against each other with only a 1px grey border separating them, creating a unified, seamless grid block."
+  },
+  "featuredProducts": {
+    "label": "Collection Label",
+    "heading": "Section Heading",
+    "notes": "Headings are prominent, using a mix of a lighter serif font and a bold sans-serif or varying weights of serif. E.g., '30% OFF VELOUR ICONS'. A 'SHOP NOW' or 'SHOP COLLECTION' link is aligned right opposite the heading."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full width, centered text, close button on left, arrow on right.",
+      "design": {
+        "background": "Light grey (#F8F8F8)",
+        "text": "Small black sans-serif, uppercase.",
+        "styling": "Thin bar at the very top of the page."
+      },
+      "content": {
+        "headline": "Promotional flash deal announcement with percentage discount and link.",
+        "body": null,
+        "cta": "Inline text link.",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Promotional text with a specific discount."
+      },
+      "notes": ""
+    },
+    {
+      "name": "header",
+      "type": "header",
+      "layout": "Flexbox row, logo far left, main nav center, secondary links far right.",
+      "design": {
+        "background": "Transparent, sits over the hero image gradient.",
+        "text": "White uppercase text.",
+        "styling": "No border, generous padding."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Star-shaped brand logo",
+          "position": "left"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "Full-bleed background image, text aligned to the right.",
+      "design": {
+        "background": "Full-bleed high-quality product lifestyle image (skincare splash).",
+        "text": "White text, combining sans-serif for subheadings and large serif for the main headline.",
+        "styling": "Dark gradient overlay at top for header legibility."
+      },
+      "content": {
+        "headline": "Large aspirational product collection announcement.",
+        "body": null,
+        "cta": "Single white square button with black text.",
+        "media": {
+          "type": "image",
+          "description": "Dynamic splash photography of skincare products in icy blue water.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "category-circles",
+      "type": "categories",
+      "layout": "Horizontal scrolling row of circular items.",
+      "design": {
+        "background": "Dark background (#111111).",
+        "text": "Small white uppercase text below each circle.",
+        "styling": "Circles are tightly packed with minimal gaps."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "icon-grid",
+          "description": "Circular cutouts of various product collections or editorial shots.",
+          "position": "inline carousel"
+        },
+        "items": "[{image: 'circular collection image', title: 'collection name'}]",
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "promotional-product-grid",
+      "type": "product-showcase",
+      "layout": "Container with heading left, link right, followed by a 4-5 column carousel grid.",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground. Heading mixes serif and sans-serif.",
+        "styling": "Grid items have 1px grey borders."
+      },
+      "content": {
+        "headline": "Promotional category heading indicating a discount.",
+        "body": null,
+        "cta": "Text link top right.",
+        "media": {
+          "type": "product-images",
+          "description": "Brightly colored makeup products on stark white backgrounds.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "new-collection-grid",
+      "type": "product-showcase",
+      "layout": "Container with heading left, link right, followed by a 4-5 column carousel grid.",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground.",
+        "styling": "Grid items have 1px grey borders."
+      },
+      "content": {
+        "headline": "New arrival collection heading.",
+        "body": null,
+        "cta": "Text link top right.",
+        "media": {
+          "type": "product-images",
+          "description": "New makeup palettes and accessories on white backgrounds.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": "A floating 'CLAIM DISCOUNT' button appears overlaid on the left side of this section."
+      },
+      "notes": ""
+    },
+    {
+      "name": "restocked-grid",
+      "type": "product-showcase",
+      "layout": "Container with heading left, link right, followed by a 4-5 column carousel grid.",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground.",
+        "styling": "Grid items have 1px grey borders."
+      },
+      "content": {
+        "headline": "Recently restocked items heading.",
+        "body": null,
+        "cta": "Text link top right.",
+        "media": {
+          "type": "product-images",
+          "description": "Various restocked beauty products.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "latest-release-grid",
+      "type": "product-showcase",
+      "layout": "Container with heading left, link right, followed by a 4-5 column carousel grid.",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground.",
+        "styling": "Grid items have 1px grey borders."
+      },
+      "content": {
+        "headline": "Latest release part 2 heading.",
+        "body": null,
+        "cta": "Text link top right.",
+        "media": {
+          "type": "product-images",
+          "description": "Icy blue and pink skincare products.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "editorial-triad",
+      "type": "gallery",
+      "layout": "3-column grid of equal-width images.",
+      "design": {
+        "background": "Dark",
+        "text": "White serif overlay text.",
+        "styling": "No gaps between the three large images."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Three dramatic, high-fashion editorial portraits showing different makeup looks.",
+          "position": "grid of 3"
+        },
+        "items": null,
+        "specialElements": "Text overlays in the top-left corner of each image acting as titles for the looks/collections."
+      },
+      "notes": ""
+    },
+    {
+      "name": "bundle-offers-grid",
+      "type": "product-showcase",
+      "layout": "Container with heading left, link right, followed by a 4-5 column carousel grid.",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground.",
+        "styling": "Grid items have 1px grey borders."
+      },
+      "content": {
+        "headline": "Bundle and save promotional heading.",
+        "body": null,
+        "cta": "Text link top right.",
+        "media": {
+          "type": "product-images",
+          "description": "Groups of products sold as sets.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": "Purple starburst badges indicating savings percentage overlaid on product images."
+      },
+      "notes": ""
+    },
+    {
+      "name": "footer",
+      "type": "footer",
+      "layout": "Split layout: Newsletter left, 4 column links right.",
+      "design": {
+        "background": "Dark (#111111)",
+        "text": "White headings, light grey text.",
+        "styling": "Generous padding, simple dark inputs."
+      },
+      "content": {
+        "headline": "Newsletter signup heading.",
+        "body": "Short prompt to receive latest news.",
+        "cta": "Single bright pink square button for newsletter submission.",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    }
+  ]
+}

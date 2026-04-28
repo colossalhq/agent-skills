@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "name": "Rugged Grooming",
+    "description": "A brutalist and highly structured e-commerce aesthetic for men's grooming products. It relies heavily on strict grid layouts, sharp borders, bold monochromatic typography, and stark contrasts to convey a masculine, premium, and functional brand identity.",
+    "industry": "beauty",
+    "aesthetic": "brutalist",
+    "mood": "energetic and bold",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "hero-statement",
+      "product-grid-section",
+      "fragrances-carousel",
+      "values-imagery",
+      "blog-newsletter",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#F4F4F4",
+      "foreground": "#000000",
+      "card": "#F4F4F4",
+      "cardForeground": "#000000",
+      "popover": "#F4F4F4",
+      "popoverForeground": "#000000",
+      "primary": "#000000",
+      "primaryForeground": "#FFFFFF",
+      "secondary": "#EAEAEA",
+      "secondaryForeground": "#000000",
+      "muted": "#EAEAEA",
+      "mutedForeground": "#555555",
+      "accent": "#000000",
+      "accentForeground": "#FFFFFF",
+      "destructive": "#FF0000",
+      "border": "#000000",
+      "input": "#FFFFFF",
+      "ring": "#000000"
+    },
+    "customColors": {
+      "announcement-bg": "#222222",
+      "announcement-text": "#FFFFFF",
+      "hero-bg": "#F4F4F4",
+      "product-bg": "#C4CBC7",
+      "footer-bg": "#F4F4F4"
+    },
+    "radius": "0rem",
+    "radiusButton": "0rem",
+    "fonts": {
+      "sans": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "display": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+      "serif": "Georgia, Cambria, 'Times New Roman', Times, serif"
+    },
+    "fontPackages": []
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "standard",
+    "floating": "false",
+    "colors": {
+      "bg": "#F4F4F4",
+      "text": "#000000",
+      "mutedText": "#000000",
+      "border": "#000000",
+      "badgeBg": "null",
+      "badgeText": "null"
+    },
+    "notes": "Strict top border separating it from the announcement bar and a bottom border separating it from content. Logo on left, nav links center, icons right."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": "#F4F4F4",
+      "text": "#000000",
+      "mutedText": "#000000",
+      "border": "#000000"
+    },
+    "description": "Information about accessibility and contact details.",
+    "notes": "Three-column layout separated by strict vertical borders. Contains accessibility info, brand links, and community links. Bottom section has social icons, a country selector, and copyright info."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Products are displayed in a strict grid with no spacing between the cells. The cells have a distinct greenish-grey background color. No visible text or buttons over the product images themselves in the grid view shown."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "3",
+      "xl": "3"
+    },
+    "gap": "0",
+    "notes": "A strict 3x3 grid with borders between every item and a greenish-grey background for the images."
+  },
+  "featuredProducts": {
+    "label": null,
+    "heading": "FRAGRANCES",
+    "notes": "Section features a large lifestyle/texture image on top, followed by specific fragrance details with horizontal and vertical border divisions."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full width, centered text",
+      "design": {
+        "background": "Dark grey/black",
+        "text": "White",
+        "styling": "No borders, minimal padding"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": null,
+        "specialElements": "Promotional text banner"
+      },
+      "notes": "Sticky or fixed at the very top of the page."
+    },
+    {
+      "name": "hero-statement",
+      "type": "text-block",
+      "layout": "Full width, centered content",
+      "design": {
+        "background": "Light grey",
+        "text": "Black and white",
+        "styling": "Top and bottom borders. The statement has a black background with white italicized serif text, highlighting the words."
+      },
+      "content": {
+        "headline": "Bold brand statement",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": null,
+        "specialElements": "Text has a highlight effect (white text on black blocks)."
+      },
+      "notes": "Very stark and impactful typographical section."
+    },
+    {
+      "name": "product-grid-section",
+      "type": "product-showcase",
+      "layout": "Full width, 3-column grid",
+      "design": {
+        "background": "Light grey/greenish for product backgrounds",
+        "text": "Black",
+        "styling": "Strict grid with 1px black borders separating every cell. Top header bar spanning the grid."
+      },
+      "content": {
+        "headline": "Section title in wide, bold sans-serif",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "product-images",
+          "description": "3x3 grid of distinct product bottles and tins against a greenish-grey background.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "The grid is a dominant visual element, creating a catalog-like feel."
+    },
+    {
+      "name": "fragrances-carousel",
+      "type": "split-content",
+      "layout": "Full width with internal divisions. Top image, below split into text and lists.",
+      "design": {
+        "background": "Light grey",
+        "text": "Black",
+        "styling": "Heavy use of horizontal and vertical borders to segment information."
+      },
+      "content": {
+        "headline": "Large category title",
+        "body": "Descriptive paragraph about the specific fragrance.",
+        "cta": "Underlined text link",
+        "media": {
+          "type": "image",
+          "description": "Dark, moody texture image (looks like waves or clouds) spanning horizontally.",
+          "position": "top"
+        },
+        "items": null,
+        "specialElements": "Divided grid below the main description detailing 'Primary Notes', 'Fragrance Family', and 'Fragrance Type'."
+      },
+      "notes": "Looks like a horizontal scroll or carousel given the partial view of the next item on the right."
+    },
+    {
+      "name": "values-imagery",
+      "type": "gallery",
+      "layout": "Full width header, 3-column image grid below",
+      "design": {
+        "background": "Light grey",
+        "text": "Black",
+        "styling": "Massive header text, images separated by borders."
+      },
+      "content": {
+        "headline": "Massive, cropped statement text",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Three portraits of men showcasing grooming styles.",
+          "position": "3 column grid"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "The headline is so large it's intentionally cropped/cut off on the edges."
+    },
+    {
+      "name": "blog-newsletter",
+      "type": "newsletter",
+      "layout": "Full width header, centered input below",
+      "design": {
+        "background": "Light grey",
+        "text": "Black",
+        "styling": "Top and bottom borders."
+      },
+      "content": {
+        "headline": "Large, wide sans-serif call to action text",
+        "body": null,
+        "cta": "Input field with a black square button containing a white arrow. 0rem border radius.",
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": null,
+        "specialElements": "Input and button are styled together with sharp corners."
+      },
+      "notes": "Simple, high contrast newsletter signup."
+    }
+  ]
+}

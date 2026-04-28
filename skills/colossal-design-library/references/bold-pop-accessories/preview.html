@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bold Pop Accessories — Design Preview</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --bg:#ffffff;--fg:#000000;--primary:#000000;--primary-fg:#ffffff;
+  --accent:#e63946;--accent-fg:#ffffff;
+  --muted:#666666;--border:#e5e5e5;
+  --promo-red:#e03a3e;--top-bar-blue:#84a2ca;
+}
+
+html,body{
+  height:100%;overflow:hidden;
+  background:var(--bg);
+  color:var(--fg);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+
+.display{font-family:Impact,sans-serif}
+.serif{font-family:Georgia,Cambria,'Times New Roman',Times,serif}
+
+.cc-grid{
+  display:grid;
+  grid-template-columns:160px minmax(0,1fr);
+  height:100vh;width:100vw;
+}
+
+.cc-palette{
+  display:flex;flex-direction:column;
+  border-right:1px solid var(--border);
+}
+
+.cc-colors{display:flex;flex-direction:column;flex:1}
+.cc-cw{
+  flex:1;display:flex;align-items:end;justify-content:space-between;
+  padding:0.45rem 0.75rem;
+  font-size:0.48rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;
+  transition:flex 0.3s cubic-bezier(0.22,1,0.36,1);
+}
+.cc-cw:hover{flex:1.6}
+.cc-cw .hex{font-family:'Courier New',monospace;font-weight:400;opacity:0.45;font-size:0.42rem}
+
+.cc-right{
+  display:flex;flex-direction:column;
+  padding:0 1.25rem 0 0;
+}
+
+.cc-row{
+  flex:1;
+  display:flex;align-items:center;gap:1rem;
+  padding:0 1.25rem;
+  border-bottom:1px solid var(--border);
+  transition:background 0.2s ease;
+  overflow:hidden;
+}
+.cc-row:hover{background:rgba(0,0,0,0.012)}
+
+.cc-row-label{
+  width:85px;flex-shrink:0;
+  font-size:0.44rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--primary);
+}
+.cc-row-sub{
+  display:block;
+  font-size:0.36rem;font-weight:500;letter-spacing:0.08em;
+  color:var(--muted);margin-top:0.04rem;
+}
+
+.cc-row-sample{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+.cc-s-hero{font-size:2rem;line-height:0.92;letter-spacing:-0.03em;text-transform:uppercase}
+.cc-s-section{font-size:1.1rem;line-height:1.1;color:#333}
+.cc-s-price{font-size:1.5rem;line-height:1;font-weight:500}
+.cc-s-price .c{font-size:0.8rem;vertical-align:super;margin-left:1px}
+.cc-s-body{font-size:0.75rem;line-height:1.55;color:var(--muted)}
+.cc-s-promo{font-size:0.55rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase}
+
+.cc-btn-row-wrap{
+  flex:1;
+  padding:0 1.25rem;
+  display:flex;align-items:center;gap:1rem;
+}
+.cc-btn-label{
+  width:85px;flex-shrink:0;
+  font-size:0.44rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--primary);
+}
+.cc-btn-items{display:flex;gap:0.4rem;flex-wrap:wrap;align-items:center}
+
+.b3{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:0.45rem 1rem;font-size:0.64rem;font-weight:600;font-family:inherit;
+  border:none;cursor:pointer;border-radius:9999px;transition:all 0.2s ease;
+}
+.b3:hover{transform:translateY(-1px)}
+.b3-dark{background:var(--primary);color:var(--primary-fg)}
+.b3-accent{background:var(--accent);color:var(--accent-fg)}
+.b3-blue{background:var(--top-bar-blue);color:#fff}
+.b3-wire{background:transparent;color:var(--fg);border:1.5px solid var(--fg)}
+.b3-ghost{background:transparent;color:var(--muted);text-decoration:underline;text-underline-offset:3px;padding:0.45rem 0.55rem}
+</style>
+</head>
+<body>
+
+<div class="cc-grid">
+  <div class="cc-palette">
+    <div class="cc-colors">
+      <div class="cc-cw" style="background:var(--bg);color:var(--fg);border-bottom:1px solid var(--border)">White<span class="hex">#FFFFFF</span></div>
+      <div class="cc-cw" style="background:var(--primary);color:var(--primary-fg)">Primary<span class="hex">#000000</span></div>
+      <div class="cc-cw" style="background:var(--accent);color:var(--accent-fg)">Accent<span class="hex">#E63946</span></div>
+      <div class="cc-cw" style="background:var(--promo-red);color:#fff">Promo Red<span class="hex">#E03A3E</span></div>
+      <div class="cc-cw" style="background:var(--top-bar-blue);color:#fff">Top Bar<span class="hex">#84A2CA</span></div>
+      <div class="cc-cw" style="background:var(--muted);color:#fff">Muted<span class="hex">#666666</span></div>
+    </div>
+  </div>
+
+  <div class="cc-right">
+    <div class="cc-row">
+      <div class="cc-row-label">Hero Heading<span class="cc-row-sub">Impact</span></div>
+      <div class="cc-row-sample cc-s-hero display">New Accessories Drop.</div>
+    </div>
+    <div class="cc-row">
+      <div class="cc-row-label">Section Title<span class="cc-row-sub">Georgia Serif</span></div>
+      <div class="cc-row-sample cc-s-section serif">Trending This Week</div>
+    </div>
+    <div class="cc-row">
+      <div class="cc-row-label">Product Price<span class="cc-row-sub">System Sans</span></div>
+      <div class="cc-row-sample cc-s-price">$24<span class="c">.99</span></div>
+    </div>
+    <div class="cc-row">
+      <div class="cc-row-label">Body Copy<span class="cc-row-sub">System Sans</span></div>
+      <div class="cc-row-sample cc-s-body">Bold statement pieces designed to elevate any outfit.</div>
+    </div>
+    <div class="cc-row">
+      <div class="cc-row-label">Promo Banner<span class="cc-row-sub">Sans · Caps</span></div>
+      <div class="cc-row-sample cc-s-promo">Buy 2 Get 1 Free · Limited Time Only</div>
+    </div>
+    <div class="cc-btn-row-wrap">
+      <div class="cc-btn-label">Primary</div>
+      <div class="cc-btn-items">
+        <button class="b3 b3-dark">Shop All</button>
+        <button class="b3 b3-dark" style="font-size:0.55rem;padding:0.38rem 0.85rem">Small</button>
+      </div>
+    </div>
+    <div class="cc-btn-row-wrap" style="border-top:1px solid var(--border)">
+      <div class="cc-btn-label">Accent</div>
+      <div class="cc-btn-items">
+        <button class="b3 b3-accent">Sale</button>
+        <button class="b3 b3-blue">New In</button>
+      </div>
+    </div>
+    <div class="cc-btn-row-wrap" style="border-top:1px solid var(--border)">
+      <div class="cc-btn-label">Secondary</div>
+      <div class="cc-btn-items">
+        <button class="b3 b3-wire">View Collection</button>
+        <button class="b3 b3-ghost">Learn More</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

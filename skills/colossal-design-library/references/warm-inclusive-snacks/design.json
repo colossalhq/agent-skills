@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "name": "Inclusive Snacks",
+    "description": "A vibrant, energetic food and snack brand e-commerce site. The design uses bold, playful typography, bright pastel and saturated colors, and dynamic layouts to create a fun, approachable, and family-friendly aesthetic.",
+    "industry": "food",
+    "aesthetic": "bold-maximalist",
+    "mood": "energetic and bold",
+    "sectionNames": [
+      "hero",
+      "marquee",
+      "product-carousel",
+      "retailers",
+      "features",
+      "brand-story",
+      "testimonials",
+      "social-gallery"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#FDF6E8",
+      "foreground": "#2059A3",
+      "card": "#FFFFFF",
+      "cardForeground": "#2059A3",
+      "popover": "#FDF6E8",
+      "popoverForeground": "#2059A3",
+      "primary": "#AC268F",
+      "primaryForeground": "#FFFFFF",
+      "secondary": "#579CD4",
+      "secondaryForeground": "#FFFFFF",
+      "muted": "#F3E3B6",
+      "mutedForeground": "#A05A32",
+      "accent": "#F5A623",
+      "accentForeground": "#FFFFFF",
+      "destructive": "#E53E3E",
+      "border": "#2059A3",
+      "input": "#FFFFFF",
+      "ring": "#579CD4"
+    },
+    "customColors": {
+      "accent-pink": "#E1A1CB",
+      "accent-teal": "#8BC9CD",
+      "accent-yellow": "#FDE096",
+      "dark-blue": "#2059A3"
+    },
+    "radius": "0.5rem",
+    "radiusButton": "0.25rem",
+    "fonts": {
+      "sans": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+      "display": "'Archivo Black', sans-serif, system-ui",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+      "serif": "Georgia, Cambria, 'Times New Roman', Times, serif"
+    },
+    "fontPackages": [
+      "@fontsource/archivo-black"
+    ]
+  },
+  "header": {
+    "buttonStyle": "default",
+    "size": "default",
+    "layout": "standard",
+    "floating": true,
+    "colors": {
+      "bg": "transparent",
+      "text": "#FFFFFF",
+      "mutedText": null,
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Header contains logo on left, hamburger menu, 'Find in Store' CTA button, and a search icon button. Buttons appear slightly rounded with white borders and distinct background colors."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": null,
+      "text": null,
+      "mutedText": null,
+      "border": null
+    },
+    "description": null,
+    "notes": "Footer is not explicitly visible in the provided screenshot, but based on the last section ('Daily Dimple-Popping Joy'), it leads into an Instagram/social gallery."
+  },
+  "productCard": {
+    "hoverEffect": "lift",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Product cards in the carousel feature pastel colored backgrounds matching the packaging, bold product names at the bottom, and no visible 'add to cart' button directly on the card in this view. They appear to be stylized links to product pages."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "4",
+      "xl": "4"
+    },
+    "gap": "6",
+    "notes": "Displayed as a horizontal carousel rather than a strict grid in the 'All the Tasties' section, with navigation arrows."
+  },
+  "featuredProducts": {
+    "label": "All the Tasties,",
+    "heading": "None of the FOMO",
+    "notes": "A horizontal scrolling carousel of product cards with distinct pastel backgrounds."
+  },
+  "sections": [
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "Full-width background image with floating graphic elements and text overlaid on the left.",
+      "design": {
+        "background": "Full-bleed photograph of cookies and ingredients on a white surface, bright lighting.",
+        "text": "Large, very bold, multi-line headline in dark blue. Smaller text blocks styled like stickers.",
+        "styling": "Dynamic layout with 'sticker' elements angled and scattered around the composition."
+      },
+      "content": {
+        "headline": "Bold, multi-line statement about daily sweetness",
+        "body": null,
+        "cta": "Single button, slightly rounded corners (~4px), solid pink background (#AC268F), white text, uppercase, prominent placement below headline.",
+        "media": {
+          "type": "image",
+          "description": "Scattered cookies, chocolate chunks, and sprinkles surrounding a bowl of cookies and a product box in the background.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": "Sticker-like text bubbles angled and placed around the scene."
+      },
+      "notes": "The hero section is highly visual, utilizing real photography mixed with playful, bold typography and colorful 'sticker' accents."
+    },
+    {
+      "name": "marquee",
+      "type": "banner",
+      "layout": "Full-width horizontal strip.",
+      "design": {
+        "background": "Solid bright yellow-orange (#F3E3B6).",
+        "text": "Bold, uppercase, repeating text separated by dots in orange (#F5A623).",
+        "styling": "Continuous scrolling ticker tape effect."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Scrolling marquee text highlighting brand values."
+      },
+      "notes": "Acts as a colorful divider between the hero and product section."
+    },
+    {
+      "name": "product-carousel",
+      "type": "product-showcase",
+      "layout": "Centered headline above a horizontal row of product cards. Navigation arrows on sides.",
+      "design": {
+        "background": "Solid light cream/beige (#FDF6E8).",
+        "text": "Large, centered, dark blue headline.",
+        "styling": "Cards have distinct, pastel-colored backgrounds. Centered CTA below carousel."
+      },
+      "content": {
+        "headline": "Catchy two-part headline emphasizing taste and inclusivity.",
+        "body": null,
+        "cta": "Single button below carousel, dark blue (#2059A3) background, white text, slightly rounded corners (~4px).",
+        "media": {
+          "type": "product-images",
+          "description": "Front-facing product packaging boxes on varying pastel colored backgrounds.",
+          "position": "grid of 4 visible"
+        },
+        "items": null,
+        "specialElements": "Left/Right navigation arrows for scrolling through products."
+      },
+      "notes": ""
+    },
+    {
+      "name": "retailers",
+      "type": "logo-strip",
+      "layout": "Full-width contained block with centered text, a row of logos, and a button below.",
+      "design": {
+        "background": "Solid bright blue (#579CD4) rounded rectangle container with drop shadow.",
+        "text": "White, bold, centered text.",
+        "styling": "Container has rounded corners (large radius, ~16px) and sits within the page layout. Logos are white silhouettes."
+      },
+      "content": {
+        "headline": "Statement about number of retail partners.",
+        "body": null,
+        "cta": "Single button, pink (#AC268F) background, white text, slightly rounded, bottom edge of container.",
+        "media": {
+          "type": "icon-grid",
+          "description": "Logos of major grocery retailers.",
+          "position": "inline row"
+        },
+        "items": null,
+        "specialElements": "Overlapping cookie images sticking out of the top and bottom of the blue container."
+      },
+      "notes": ""
+    },
+    {
+      "name": "features",
+      "type": "features",
+      "layout": "Centered headline above a loose 2x2 grid of 'sticker' icons.",
+      "design": {
+        "background": "Solid light cream/beige (#FDF6E8).",
+        "text": "Yellow-orange bold heading, smaller uppercase subheadline.",
+        "styling": "Icons are designed like angled, overlapping rectangular stickers in various pastel colors."
+      },
+      "content": {
+        "headline": "Playful headline about taste buds.",
+        "body": "Short supporting statement below headline.",
+        "cta": null,
+        "media": {
+          "type": "illustration",
+          "description": "Text-based stickers indicating dietary features (e.g., allergen-free, wholesome).",
+          "position": "grid"
+        },
+        "items": [
+          {
+            "title": "Dietary feature label styled as a blue sticker"
+          },
+          {
+            "title": "Dietary feature label styled as a pink sticker"
+          },
+          {
+            "title": "Dietary feature label styled as a yellow sticker"
+          },
+          {
+            "title": "Dietary feature label styled as a teal sticker"
+          }
+        ],
+        "specialElements": "Large, realistic cookie image placed behind the heading."
+      },
+      "notes": "Bottom of section transitions into a photograph of a tiled floor."
+    },
+    {
+      "name": "brand-story",
+      "type": "split-content",
+      "layout": "2-column layout. Large image on left, text block on right.",
+      "design": {
+        "background": "Solid dark pink/magenta (#AC268F).",
+        "text": "White text. Large bold headline, smaller paragraph text.",
+        "styling": "Rounded corners on the section container. Image features 'name tag' stickers."
+      },
+      "content": {
+        "headline": "Headline emphasizing inclusivity.",
+        "body": "Paragraph explaining the founding story and mission of the brand.",
+        "cta": "Single button, yellow-orange (#F5A623) background, red text, slightly rounded corners.",
+        "media": {
+          "type": "image",
+          "description": "Studio portrait of a mother and daughter smiling, wearing casual clothing.",
+          "position": "left column"
+        },
+        "items": null,
+        "specialElements": "Yellow name tag graphics placed over the photo subjects with their roles."
+      },
+      "notes": ""
+    },
+    {
+      "name": "testimonials",
+      "type": "testimonials",
+      "layout": "Centered content over a full-bleed background image. Carousel style.",
+      "design": {
+        "background": "Full-bleed macro photograph of a chocolate chip cookie surface.",
+        "text": "White heading, white testimonial text, yellow stars.",
+        "styling": "Testimonial text sits inside a dark blue (#2059A3) rounded rectangle container with a subtle offset shadow."
+      },
+      "content": {
+        "headline": "Headline indicating certified taste.",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Close-up texture of a chocolate chip cookie.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": "Five-star rating graphic. Left/right navigation arrows. Angled sticker graphics at the bottom."
+      },
+      "notes": ""
+    },
+    {
+      "name": "social-gallery",
+      "type": "gallery",
+      "layout": "Centered heading above a grid of lifestyle/product images.",
+      "design": {
+        "background": "Solid light cream/beige (#FDF6E8).",
+        "text": "Dark pink/magenta (#AC268F) headline, dark purple subheadline.",
+        "styling": "Images are tightly packed, likely part of an Instagram feed integration."
+      },
+      "content": {
+        "headline": "Headline encouraging joy and social sharing.",
+        "body": "Call to action text indicating a social media handle.",
+        "cta": null,
+        "media": {
+          "type": "product-images",
+          "description": "Various lifestyle and stylized product photos in square formats.",
+          "position": "grid of 4 visible"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    }
+  ]
+}

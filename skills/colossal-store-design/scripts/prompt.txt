@@ -1,0 +1,126 @@
+Analyze this store/e-commerce website screenshot. Return a single JSON object with the structure defined below. Be extremely precise about colors (use hex), spacing, typography, and layout details. Do NOT include the actual store name anywhere — use generic placeholders. Do NOT include any exact promotional text, discount percentages, or specific offers — describe them generically (e.g. "promotional banner with discount offer" not "Get 20% Off").
+
+CRITICAL: Pay very close attention to button styles — especially CTA buttons. Extract the EXACT border radius (square corners = 0rem, slightly rounded = 0.25-0.5rem, fully rounded/pill = 9999px). Look at the actual buttons in the screenshot, not just the overall design feel. Also extract exact button colors (background, text, border if any). The radiusButton value must match what you actually see on buttons in the screenshot.
+Make sure header props match header from the screenshot as close as possible. Expecially if it is floating, if logo is on the left or centered, and search and cart button types (regular button or just icon).
+
+Return ONLY valid JSON, no markdown fences, no commentary.
+
+{
+  "meta": {
+    "name": "<string: 1-2 word short display name for this design reference, e.g. 'Comfort Basics', 'Luxe Beauty', 'Dark Coffee', 'Pop Accessories'. Should be memorable and instantly convey the design vibe. No store branding.>",
+    "description": "<string: 2-3 sentence description of the store visual identity, target market, and overall aesthetic. No real store name. E.g. A dark luxury fashion store with editorial layout, high-contrast typography, and full-bleed hero imagery targeting high-end consumers.>",
+    "industry": "<string: e.g. fashion, coffee, electronics, beauty, home-decor, food, books, jewelry, sports, lifestyle>",
+    "aesthetic": "<string: dominant aesthetic e.g. minimal-luxury, brutalist, organic-warm, bold-maximalist, editorial, soft-pastel, industrial, retro, modern-clean>",
+    "mood": "<string: e.g. calm and refined, energetic and bold, warm and inviting, cold and premium>",
+    "sectionNames": ["<array of section name strings in page order, e.g. hero, featured-products, brand-story, testimonials, product-grid, newsletter>"]
+  },
+
+  "theme": {
+    "colors": {
+      "background": "<hex>",
+      "foreground": "<hex>",
+      "card": "<hex>",
+      "cardForeground": "<hex>",
+      "popover": "<hex>",
+      "popoverForeground": "<hex>",
+      "primary": "<hex>",
+      "primaryForeground": "<hex>",
+      "secondary": "<hex>",
+      "secondaryForeground": "<hex>",
+      "muted": "<hex>",
+      "mutedForeground": "<hex>",
+      "accent": "<hex>",
+      "accentForeground": "<hex>",
+      "destructive": "<hex>",
+      "border": "<hex>",
+      "input": "<hex>",
+      "ring": "<hex>"
+    },
+    "customColors": {
+      "<any additional named color tokens seen in the design, e.g. accent-gold, teal-highlight, top-bar-bg>": "<hex>"
+    },
+    "radius": "<string: CSS value for general UI elements e.g. 0rem, 0.25rem, 0.5rem, 0.75rem, 1rem — look at cards, inputs, image containers>",
+    "radiusButton": "<string: CSS value specifically for buttons — look at actual CTA buttons in the screenshot. 0rem = square, 0.25rem = slightly rounded, 0.5rem = rounded, 9999px = fully pill-shaped. MUST match what you see on buttons, not the general radius>",
+    "fonts": {
+      "sans": "<string: font family stack for body text>",
+      "display": "<string: font family stack for headings — may differ from sans>",
+      "mono": "<string: monospace font stack>",
+      "serif": "<string: serif font stack if visible>"
+    },
+    "fontPackages": ["<npm package names to install, e.g. @fontsource-variable/playfair-display, @fontsource/inter>"]
+  },
+
+  "header": {
+    "buttonStyle": "<MUST be one of: 'default' | 'icon'>. 'default' = buttons have visible text labels like 'Search' and 'Cart' with outlined borders. 'icon' = buttons are icon-only (magnifying glass for search, shopping bag for cart) with no visible text labels, minimal/ghost style. Look at the top-right action buttons in the header to determine which.",
+    "size": "<MUST be one of: 'default' | 'large'>. 'default' = compact header bar ~56px tall. 'large' = spacious header bar ~64px tall with more breathing room around elements.",
+    "layout": "<MUST be one of: 'standard' | 'centered'>. IMPORTANT — look carefully at where the LOGO/STORE NAME sits: 'standard' = logo/store name is on the LEFT side, navigation links are in the CENTER, action buttons (search/cart) are on the RIGHT. The logo is NOT centered. 'centered' = logo/store name is ABSOLUTELY CENTERED in the header (dead center of the bar), navigation links are on the LEFT side, action buttons are on the RIGHT. The key difference is the logo position: LEFT = standard, CENTER = centered.",
+    "floating": "<boolean>. false = header is a full-width edge-to-edge bar that sticks to the top, with a bottom border separating it from content. true = header is a contained floating bar with side margins, rounded corners, and a slight offset from the very top of the page (like a floating island). Most headers are false.",
+    "colors": {
+      "bg": "<hex color of the header background, or null to use theme default. Look at the actual header bar background color.>",
+      "text": "<hex color of the logo/store name text and icon buttons, or null for theme default.>",
+      "mutedText": "<hex color of navigation link text (usually slightly lighter than the logo text), or null for theme default.>",
+      "border": "<hex color of the bottom border line, or false if there is NO visible border/line at the bottom of the header, or null to use theme default border color.>",
+      "badgeBg": "<hex background color of the cart item count badge (small circle/pill showing number of items), or null for theme default.>",
+      "badgeText": "<hex text color inside the cart badge, or null for theme default.>"
+    },
+    "notes": "<string: additional observations — transparency/blur effects, scroll behavior changes, announcement bar above, logo font style, any special hover effects on links.>"
+  },
+
+  "footer": {
+    "colorScheme": "<MUST be one of: 'default' | 'inverted' | 'custom'>. 'default' = footer has the same background as the page (light bg, dark text). 'inverted' = footer background is the foreground/dark color with light/white text (common dark footer). 'custom' = footer uses completely different colors from both the page and inverted — use the colors object below to specify.",
+    "colors": {
+      "bg": "<hex footer background color, or null if using default/inverted scheme>",
+      "text": "<hex primary text color (headings, store name), or null>",
+      "mutedText": "<hex secondary text color (links, descriptions, copyright), or null>",
+      "border": "<hex border/divider color, or false if no borders visible, or null for theme default>"
+    },
+    "description": "<string: text shown near the store name in the footer (e.g. a tagline, guarantee statement, or brand description), or null if none visible>",
+    "notes": "<string: layout observations — how many columns, special elements like social media icons, payment method badges, certification logos, newsletter signup if in footer, decorative elements.>"
+  },
+
+  "productCard": {
+    "hoverEffect": "<MUST be one of: 'lift' | 'shadow'>. 'lift' = the entire card physically rises up (translates upward) with a deep shadow underneath on hover, creating a floating/elevated effect. 'shadow' = the card stays in place but gains a subtle border highlight and soft shadow, and the product image scales up slightly (zoom effect) on hover. If cards appear minimal with no dramatic hover, use 'shadow'.",
+    "cartButton": "<MUST be one of: 'outline' | 'ghost' | 'icon-only' | 'overlay'>. 'outline' = a bordered button with a shopping bag icon AND text label like 'Add to Bag', visible below the price. 'ghost' = a minimal text-only button with icon, no border, subtle appearance. 'icon-only' = just an icon button (bag or plus) with no text. 'overlay' = NO visible button in the content area; instead, a full-width colored bar slides up from the bottom of the product image on hover showing 'Add to Bag'. If no add-to-cart button is visible at all on the card, use 'ghost' as default.",
+    "cartButtonIcon": "<MUST be one of: 'bag' | 'plus'>. 'bag' = shopping bag icon. 'plus' = plus/add icon. Look at what icon appears on the cart/add button.",
+    "carousel": "<MUST be one of: 'none' | 'hover'>. 'none' = only one product image is shown, no navigation arrows or dots. 'hover' = multiple images with prev/next arrows and dot indicators that appear on hover.",
+    "notes": "<string: describe the card's visual details — image aspect ratio (square, 4:5, 3:4), border style (none, subtle, solid), content area padding, typography weight for title/price, any badge overlays like 'Sale' or 'New', background color of image area.>"
+  },
+
+  "productGrid": {
+    "columns": {"sm": "<number: columns on small screens ~640px, usually 2>", "md": "<number: columns on medium screens ~768px>", "lg": "<number: columns on large screens ~1024px>", "xl": "<number: columns on extra large screens ~1280px, usually 4>"},
+    "gap": "<string: space between cards as a tailwind value — '4' = 16px tight, '6' = 24px standard, '8' = 32px spacious>",
+    "notes": "<string: any special grid behavior — are all cards the same size? Is the first card larger? Is it a masonry layout? Horizontal scroll vs. wrapped grid?>"
+  },
+
+  "featuredProducts": {
+    "label": "<string: small text above heading>",
+    "heading": "<string: section heading>",
+    "notes": "<string: layout style>"
+  },
+
+  "sections": [
+    {
+      "name": "<string: section identifier matching meta.sectionNames>",
+      "type": "<string: semantic type — hero, product-showcase, brand-story, testimonials, features, newsletter, banner, gallery, stats, faq, categories, split-content, full-width-media, text-block, cta-banner, logo-strip, comparison, new-arrivals>",
+      "layout": "<string: describe the spatial arrangement — e.g. 'Flexbox row, logo left, nav center, actions right', '2-column grid, 60/40 split, image left text right', 'Full-width single column, centered content, max-width ~800px', 'CSS grid 4 equal columns with gap'>",
+      "design": {
+        "background": "<string: describe the background treatment — e.g. 'Solid dark navy (#2A3D54)', 'Full-bleed lifestyle photograph with dark overlay', 'Warm cream gradient from left to right', 'Transparent / inherits page background'>",
+        "text": "<string: describe text styling — e.g. 'White headings in bold condensed sans-serif, light grey body text', 'Dark foreground, uppercase small tracking for labels, large display font for headline'>",
+        "styling": "<string: describe visual treatment — borders, shadows, spacing, decorative elements, e.g. 'No borders, generous padding (py-24), subtle divider line above', 'Cards with soft shadow, rounded corners, hover lift effect'>"
+      },
+      "content": {
+        "headline": "<string or null: describe the headline purpose and tone without exact text — e.g. 'Bold aspirational statement about product quality, ~5 words', 'Category name as section title'>",
+        "body": "<string or null: describe body text if present — e.g. 'Short supporting paragraph about brand mission, 2 sentences', 'No body text'>",
+        "cta": "<string or null: describe CTA buttons precisely — count, style, shape, colors. e.g. 'Single dark button with white text, slightly rounded corners (~4px), uppercase small text', '2 buttons: primary filled dark + secondary outline, both pill-shaped'. Be VERY specific about button radius and colors.>",
+        "media": {
+          "type": "<image | video | illustration | icon-grid | product-images | none>",
+          "description": "<string: describe what the media depicts for AI image generation hints — mood, subject, lighting, composition. e.g. 'Close-up of person wearing white crew socks on hardwood floor, warm natural light, casual lifestyle feel', 'Grid of 4 product category images showing different sock styles on neutral backgrounds'>",
+          "position": "<string: where the media sits — e.g. 'background', 'left column', 'right column', 'below text', 'grid of 4', 'inline carousel'>"
+        },
+        "items": "<array or null: for repeating content (testimonials, features, stats, category cards), describe the item structure generically — e.g. [{icon: 'descriptive icon type', title: 'category label', image: 'lifestyle product shot'}]>",
+        "specialElements": "<string or null: unique visual elements described generically — e.g. 'Floating promotional banner bar at top', 'Animated counter showing impact number', 'Diagonal section divider SVG'. Never include exact promo text, percentages, or specific offers.>"
+      },
+      "notes": "<string: any additional details — responsive behavior, interactive elements, scroll effects, unique patterns>"
+    }
+  ]
+}

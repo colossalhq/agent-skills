@@ -1,0 +1,388 @@
+{
+  "meta": {
+    "name": "Pink Bodycare",
+    "description": "A playful, vibrant body care and skincare brand with a distinctive, cheeky tone of voice. The aesthetic is modern and slightly retro, characterized by bold pastel colors, primarily pink, high-contrast black monospace typography, and candid, lifestyle-focused product photography. It targets a younger, energetic demographic interested in clean, fun beauty products.",
+    "industry": "beauty",
+    "aesthetic": "playful-retro",
+    "mood": "energetic, bold, and cheeky",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "hero",
+      "quote",
+      "shop-by-concern",
+      "banner-scrub",
+      "whats-hot-products",
+      "featured-product-split",
+      "shop-by-collection",
+      "rewards-program",
+      "social-feed",
+      "value-props",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#FDFBF7",
+      "foreground": "#111111",
+      "card": "#FDFBF7",
+      "cardForeground": "#111111",
+      "popover": "#FDFBF7",
+      "popoverForeground": "#111111",
+      "primary": "#F2B8BA",
+      "primaryForeground": "#111111",
+      "secondary": "#EAE4F2",
+      "secondaryForeground": "#111111",
+      "muted": "#F3F4F6",
+      "mutedForeground": "#6B7280",
+      "accent": "#F2B8BA",
+      "accentForeground": "#111111",
+      "destructive": "#EF4444",
+      "border": "#111111",
+      "input": "#E5E7EB",
+      "ring": "#111111"
+    },
+    "customColors": {
+      "brand-pink": "#F2B8BA",
+      "brand-red": "#D72A3D",
+      "brand-purple": "#EAE4F2"
+    },
+    "radius": "0rem",
+    "radiusButton": "0rem",
+    "fonts": {
+      "sans": "Inter, sans-serif",
+      "display": "'Courier New', Courier, monospace",
+      "mono": "'Courier New', Courier, monospace",
+      "serif": "serif"
+    },
+    "fontPackages": [
+      "@fontsource/inter"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#FDFBF7",
+      "text": "#111111",
+      "mutedText": "#111111",
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Header is placed below the first two sections (hero and shop by concern) in an unusual layout, though it functions as a standard sticky header in typical implementations. It features a boxed logo with a black border on the left, centered nav links in monospace uppercase, and icons on the right including currency selector, search, account, and cart."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": "#FDFBF7",
+      "text": "#111111",
+      "mutedText": "#4B5563",
+      "border": "#E5E7EB"
+    },
+    "description": null,
+    "notes": "Features a large boxed logo on the left. Four columns layout. Bottom area includes currency selector, social media icons on the left, and a large array of payment method badges on the right. Typography is monospace for headings."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Minimal product cards with a light grey background for the image area. Centered monospace text for title and price below. Some cards feature 5-star rating stars."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "2",
+      "lg": "4",
+      "xl": "4"
+    },
+    "gap": "6",
+    "notes": "Standard grid layout. 'Shop by collection' features a 6-column layout with isolated product images on a colored background."
+  },
+  "featuredProducts": {
+    "label": "WHAT'S HOT",
+    "heading": "",
+    "notes": "Clean 4-column grid of best-selling products. Grey background for product images, white background for text area."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full-width single column, centered text",
+      "design": {
+        "background": "Solid pale pink (#F2B8BA)",
+        "text": "Dark foreground, uppercase small sans-serif",
+        "styling": "No borders, minimal padding (py-2)"
+      },
+      "content": {
+        "headline": null,
+        "body": "Promotional offer and sign up prompt",
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Clickable promotional banner at the very top"
+      },
+      "notes": ""
+    },
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "Full-width image background, content aligned to left",
+      "design": {
+        "background": "Full-bleed lifestyle photograph",
+        "text": "White monospace display font for headline, white sans-serif for subtext",
+        "styling": "Content padded from bottom left, prominent square CTA button"
+      },
+      "content": {
+        "headline": "Bold, cheeky product benefit statement",
+        "body": "Short supporting sentence about results",
+        "cta": "Single white rectangular button with black monospace text, zero border radius",
+        "media": {
+          "type": "image",
+          "description": "Lifestyle shot of a person's shoulder and back holding a pink tub of body scrub, warm lighting",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Features a large, impactful background image with clear typography overlay."
+    },
+    {
+      "name": "quote",
+      "type": "text-block",
+      "layout": "Full-width, centered content",
+      "design": {
+        "background": "Solid white",
+        "text": "Dark foreground, large monospace font",
+        "styling": "Generous vertical padding (py-12 to py-16)"
+      },
+      "content": {
+        "headline": "Aspirational, confident brand statement or quote",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Acts as a visual break and reinforces brand positioning."
+    },
+    {
+      "name": "shop-by-concern",
+      "type": "categories",
+      "layout": "CSS grid 4 equal columns",
+      "design": {
+        "background": "Solid pale pink (#F2B8BA)",
+        "text": "Dark foreground, monospace typography",
+        "styling": "Cards feature a square image top, text and CTA below, uniform spacing"
+      },
+      "content": {
+        "headline": "Section title indicating shopping by skin concern",
+        "body": null,
+        "cta": "Square white buttons with black text under each category description",
+        "media": {
+          "type": "image",
+          "description": "Grid of 4 close-up lifestyle images showing product application on different body parts",
+          "position": "grid of 4"
+        },
+        "items": [
+          {
+            "title": "Category Name",
+            "description": "Short description of the concern"
+          }
+        ],
+        "specialElements": "Carousel dot indicators below the grid, suggesting swipeability on smaller screens"
+      },
+      "notes": "Highly visual category navigation using lifestyle imagery rather than standard product shots."
+    },
+    {
+      "name": "banner-scrub",
+      "type": "cta-banner",
+      "layout": "Full-width image background, centered content",
+      "design": {
+        "background": "Full-bleed lifestyle photograph with slight dark vignette",
+        "text": "White monospace display font, very large, overflowing off-screen",
+        "styling": "Centered CTA button over the image"
+      },
+      "content": {
+        "headline": "Large, cut-off cheeky action phrase",
+        "body": null,
+        "cta": "Single white rectangular button, black text, zero border radius",
+        "media": {
+          "type": "image",
+          "description": "Lifestyle shot of legs applying body scrub, dynamic composition",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": "Floating promotional tab on the left edge"
+      },
+      "notes": "Designed for visual impact, using typography as a graphic element."
+    },
+    {
+      "name": "whats-hot-products",
+      "type": "product-showcase",
+      "layout": "Centered heading, 4-column product grid below",
+      "design": {
+        "background": "Solid white",
+        "text": "Dark foreground, monospace heading, small sans-serif for product details",
+        "styling": "Product images on light grey square backgrounds"
+      },
+      "content": {
+        "headline": "Section title indicating trending or popular items",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "product-images",
+          "description": "Clean product shots on light backgrounds",
+          "position": "grid of 4"
+        },
+        "items": [
+          {
+            "image": "Product image",
+            "title": "Product title",
+            "price": "Price",
+            "rating": "Star rating"
+          }
+        ],
+        "specialElements": "Floating accessibility/contrast toggle widget on the left"
+      },
+      "notes": "Standard e-commerce product grid."
+    },
+    {
+      "name": "featured-product-split",
+      "type": "split-content",
+      "layout": "2-column grid, 50/50 split. Left: product on solid color, Right: lifestyle image background with text overlay",
+      "design": {
+        "background": "Split background: left solid pale purple (#EAE4F2), right full-bleed image",
+        "text": "Dark text on left, white text on right. Monospace typography mixed with sans-serif",
+        "styling": "No gap between columns, full width"
+      },
+      "content": {
+        "headline": "Product focus headline",
+        "body": "Descriptive text about the product ingredients and benefits",
+        "cta": null,
+        "media": {
+          "type": "mixed",
+          "description": "Left: Isolated product bag on purple background. Right: Smiling person holding product bag against face, lifestyle shot",
+          "position": "split columns"
+        },
+        "items": null,
+        "specialElements": "Carousel dots on the left column suggesting multiple product views"
+      },
+      "notes": "Effective way to show product packaging alongside lifestyle usage."
+    },
+    {
+      "name": "shop-by-collection",
+      "type": "categories",
+      "layout": "Centered heading, 6-column grid of items",
+      "design": {
+        "background": "Solid pale pink (#F2B8BA)",
+        "text": "Dark foreground, monospace typography",
+        "styling": "No cards, just isolated images with text below"
+      },
+      "content": {
+        "headline": "Section title for browsing by product type",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Isolated cut-out product shots, some grouped as kits",
+          "position": "grid of 6"
+        },
+        "items": [
+          {
+            "image": "Isolated product shot",
+            "title": "Category name"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Clean visual categorization using cut-out product photography."
+    },
+    {
+      "name": "rewards-program",
+      "type": "split-content",
+      "layout": "2-column grid, ~40/60 split. Left: graphic logo over image, Right: text content",
+      "design": {
+        "background": "Solid bright pink/red (#D72A3D) left, solid lighter pink (#F2B8BA) right",
+        "text": "Dark monospace text on right, white bold graphic typography on left",
+        "styling": "Distinct color blocking, text aligned left within its container"
+      },
+      "content": {
+        "headline": "Rewards program name and headline",
+        "body": "Explanation of loyalty program benefits and perks",
+        "cta": "Single text link with underline, uppercase monospace",
+        "media": {
+          "type": "mixed",
+          "description": "Left: Graphic text overlaying a partial image of legs in a white robe",
+          "position": "left column"
+        },
+        "items": null,
+        "specialElements": "Large graphic text logo for the rewards program on the left"
+      },
+      "notes": "Strong promotional block for customer retention program."
+    },
+    {
+      "name": "social-feed",
+      "type": "gallery",
+      "layout": "Left-aligned headings, followed by a 4-column grid of mixed media",
+      "design": {
+        "background": "Solid white",
+        "text": "Dark foreground, monospace typography",
+        "styling": "Images touch each other or have minimal gap, vertical orientation"
+      },
+      "content": {
+        "headline": "Social media call to action and hashtag",
+        "body": "Text link to social profile",
+        "cta": null,
+        "media": {
+          "type": "video",
+          "description": "Grid of TikTok/Reels style vertical videos and lifestyle images showing product use",
+          "position": "grid of 4"
+        },
+        "items": null,
+        "specialElements": "Play button overlays indicating video content. Arrow navigation below indicating a carousel."
+      },
+      "notes": "User-generated content style gallery, heavily focused on short-form video formats."
+    },
+    {
+      "name": "value-props",
+      "type": "features",
+      "layout": "4-column grid",
+      "design": {
+        "background": "Solid off-white/cream (#FDFBF7)",
+        "text": "Dark foreground, monospace headings, sans-serif small body text",
+        "styling": "Centered content within each column, simple line-art icons"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "icon-grid",
+          "description": "Simple black line-art illustrations (truck, beaker, map outline, gift box)",
+          "position": "above text in grid"
+        },
+        "items": [
+          {
+            "icon": "Line art illustration",
+            "title": "Value proposition heading",
+            "description": "Short explanation"
+          }
+        ],
+        "specialElements": "Top border separating it from the section above."
+      },
+      "notes": "Classic e-commerce trust signals."
+    }
+  ]
+}

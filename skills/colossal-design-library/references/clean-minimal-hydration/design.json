@@ -1,0 +1,408 @@
+{
+  "meta": {
+    "name": "Minimal Hydration",
+    "description": "A modern, clean, and vibrant e-commerce store selling hydration and electrolyte products. The aesthetic is bright and accessible, utilizing a white background with energetic pops of color from product imagery and a striking green accent color. Target market appears to be health-conscious consumers looking for functional beverages.",
+    "industry": "food-and-beverage",
+    "aesthetic": "modern-clean",
+    "mood": "energetic and accessible",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "hero",
+      "ticker",
+      "product-tabs-bestsellers",
+      "testimonials",
+      "partners",
+      "how-it-works",
+      "scrolling-text",
+      "product-tabs-categories",
+      "subscribe-banner",
+      "quote",
+      "retailers",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "card": "#f7f7f7",
+      "cardForeground": "#000000",
+      "popover": "#ffffff",
+      "popoverForeground": "#000000",
+      "primary": "#000000",
+      "primaryForeground": "#ffffff",
+      "secondary": "#f4f4f4",
+      "secondaryForeground": "#000000",
+      "muted": "#f4f4f4",
+      "mutedForeground": "#666666",
+      "accent": "#90f590",
+      "accentForeground": "#000000",
+      "destructive": "#ff0000",
+      "border": "#e5e5e5",
+      "input": "#ffffff",
+      "ring": "#000000"
+    },
+    "customColors": {
+      "accentGreen": "#90f590",
+      "lightGreyBg": "#f7f7f7",
+      "saleRed": "#e35b5b",
+      "starYellow": "#ffb800"
+    },
+    "radius": "0.5rem",
+    "radiusButton": "9999px",
+    "fonts": {
+      "sans": "Inter, system-ui, sans-serif",
+      "display": "Inter, system-ui, sans-serif",
+      "mono": "monospace",
+      "serif": "serif"
+    },
+    "fontPackages": [
+      "@fontsource/inter"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#000000",
+      "mutedText": "#000000",
+      "border": "#e5e5e5",
+      "badgeBg": "#000000",
+      "badgeText": "#ffffff"
+    },
+    "notes": "Clean white header with black text and icons. Logo on the left, navigation links in the middle, search/account/cart icons on the right."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#000000",
+      "mutedText": "#000000",
+      "border": false
+    },
+    "description": null,
+    "notes": "Large centered logo at top of footer, followed by social icons. Three columns of links (About, Information, Help) on the left, and a newsletter signup form enclosed in a border on the right. Bottom bar contains region selector and payment icons."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Square light grey image background. Product title, price, and color/flavor swatches below. Some cards have a 'Bestseller' label or rating stars. No visible add-to-cart button before hover."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": 2,
+      "md": 3,
+      "lg": 4,
+      "xl": 4
+    },
+    "gap": "6",
+    "notes": "Standard grid layout. Cards have uniform square image areas."
+  },
+  "featuredProducts": {
+    "label": "Bestsellers",
+    "heading": "Bestsellers",
+    "notes": "Tabbed interface for different product categories. 'View All' link below the grid with navigation arrows."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full width, centered text",
+      "design": {
+        "background": "Solid light green (#90f590)",
+        "text": "Black small text",
+        "styling": "Thin bar at the very top"
+      },
+      "content": {
+        "headline": "Free shipping threshold announcement",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Navigation arrows on left/right"
+      },
+      "notes": "Sticky top bar"
+    },
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "Full width, edge-to-edge",
+      "design": {
+        "background": "Full width image",
+        "text": "White bold text, bottom left aligned",
+        "styling": "Gradient overlay at bottom for text legibility"
+      },
+      "content": {
+        "headline": "New product announcement",
+        "body": "Short supporting sentence encouraging upgrade.",
+        "cta": "Single white pill-shaped button on bottom right with black text.",
+        "media": {
+          "type": "image",
+          "description": "Vibrant product packaging floating in water with splashes.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": "Carousel navigation dots/arrows overlaid"
+      },
+      "notes": ""
+    },
+    {
+      "name": "ticker",
+      "type": "logo-strip",
+      "layout": "Full width horizontal scroll",
+      "design": {
+        "background": "Solid light green (#90f590)",
+        "text": "Black text with checkmark icons",
+        "styling": "Thin horizontal bar below hero"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": [
+          {
+            "icon": "checkmark",
+            "text": "Benefit statement"
+          }
+        ],
+        "specialElements": "Continuously scrolling text"
+      },
+      "notes": ""
+    },
+    {
+      "name": "product-tabs-bestsellers",
+      "type": "product-showcase",
+      "layout": "Container max-width, tabbed navigation top left",
+      "design": {
+        "background": "White",
+        "text": "Black bold headings",
+        "styling": "Top padding, grid layout for products"
+      },
+      "content": {
+        "headline": "Category names as tabs",
+        "body": null,
+        "cta": "Navigation arrows and 'View All' link below grid.",
+        "media": {
+          "type": "product-images",
+          "description": "Product grid",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Tabbed interface to switch between product collections."
+    },
+    {
+      "name": "testimonials",
+      "type": "testimonials",
+      "layout": "Container max-width, heading top left",
+      "design": {
+        "background": "White",
+        "text": "Black text",
+        "styling": "Horizontal scrolling row of testimonial cards, followed by a row of square images."
+      },
+      "content": {
+        "headline": "Customer count and satisfaction statement",
+        "body": null,
+        "cta": "Navigation arrows top right.",
+        "media": {
+          "type": "image",
+          "description": "Row of user-generated content square photos at the bottom.",
+          "position": "bottom row"
+        },
+        "items": [
+          {
+            "image": "Product shot left",
+            "title": "Product Name",
+            "text": "Customer review text",
+            "author": "Customer Name"
+          }
+        ],
+        "specialElements": "Average review rating badge below heading."
+      },
+      "notes": "Testimonial cards have a light grey border."
+    },
+    {
+      "name": "partners",
+      "type": "logo-strip",
+      "layout": "Container max-width, centered text",
+      "design": {
+        "background": "White",
+        "text": "Black text",
+        "styling": "Centered layout, horizontal line below."
+      },
+      "content": {
+        "headline": "Partner section heading",
+        "body": "Short supporting statement.",
+        "cta": "'Learn More' link aligned right on the bottom border.",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Carousel arrows left/right for logos (logos not visible in screenshot)."
+      },
+      "notes": ""
+    },
+    {
+      "name": "how-it-works",
+      "type": "features",
+      "layout": "Container max-width, 3-column grid",
+      "design": {
+        "background": "White",
+        "text": "Black text, small size",
+        "styling": "Centered icons and text"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "icon-grid",
+          "description": "Three simple line-art icons depicting usage steps.",
+          "position": "top of text"
+        },
+        "items": [
+          {
+            "icon": "line-art",
+            "title": "Step name",
+            "description": "Short instruction"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "scrolling-text",
+      "type": "text-block",
+      "layout": "Full width",
+      "design": {
+        "background": "White",
+        "text": "Black very large display text",
+        "styling": "No margins, text spans edge-to-edge"
+      },
+      "content": {
+        "headline": "Repeating brand mantra",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Marquee/scrolling effect likely."
+      },
+      "notes": ""
+    },
+    {
+      "name": "product-tabs-categories",
+      "type": "product-showcase",
+      "layout": "Container max-width, tabbed navigation top left",
+      "design": {
+        "background": "White",
+        "text": "Black bold headings",
+        "styling": "Grid layout. First item is a large feature block, followed by standard product cards."
+      },
+      "content": {
+        "headline": "Category names as tabs",
+        "body": null,
+        "cta": "'Discover' link below grid aligned right.",
+        "media": {
+          "type": "image",
+          "description": "Large feature block acts as first item in grid, showing a lifestyle/abstract image.",
+          "position": "first grid item"
+        },
+        "items": null,
+        "specialElements": "Feature block has green pill-shaped tags."
+      },
+      "notes": "Similar to first product tab section but includes a large promotional block as the first item."
+    },
+    {
+      "name": "subscribe-banner",
+      "type": "cta-banner",
+      "layout": "Container max-width, 50/50 split",
+      "design": {
+        "background": "Very light warm grey/beige (#f4eee7)",
+        "text": "Black text",
+        "styling": "Rounded corners on container. Text on left, image on right."
+      },
+      "content": {
+        "headline": "Subscription offer heading",
+        "body": "Explanation of subscription benefits.",
+        "cta": "Single black pill-shaped button with white text.",
+        "media": {
+          "type": "image",
+          "description": "Top-down view of a shopping basket full of product boxes.",
+          "position": "right half"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "quote",
+      "type": "text-block",
+      "layout": "Container max-width, centered",
+      "design": {
+        "background": "White",
+        "text": "Black large display text",
+        "styling": "Generous vertical padding."
+      },
+      "content": {
+        "headline": "Brand mission statement/quote",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "retailers",
+      "type": "text-block",
+      "layout": "Container max-width, left aligned",
+      "design": {
+        "background": "White",
+        "text": "Black text",
+        "styling": "Horizontal line below."
+      },
+      "content": {
+        "headline": "Section heading",
+        "body": "Short supporting question.",
+        "cta": "Link aligned right on bottom border.",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    }
+  ]
+}

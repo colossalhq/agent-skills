@@ -1,0 +1,493 @@
+{
+  "meta": {
+    "name": "Hair Glam",
+    "description": "An elegant, premium e-commerce site for hair extensions. The design features soft, muted tones, elegant typography with serif italic accents, and high-quality editorial photography focused on natural beauty and lifestyle.",
+    "industry": "beauty",
+    "aesthetic": "soft-pastel",
+    "mood": "calm and refined",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "hero",
+      "marquee",
+      "brand-statement",
+      "featured-categories",
+      "quiz-banner",
+      "shop-by-shade",
+      "value-props",
+      "stylist-promo",
+      "recommendations",
+      "social-proof-carousel",
+      "curated-collections",
+      "press-logos",
+      "testimonial",
+      "as-seen-on",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#333333",
+      "card": "#ffffff",
+      "cardForeground": "#333333",
+      "popover": "#ffffff",
+      "popoverForeground": "#333333",
+      "primary": "#3d516b",
+      "primaryForeground": "#ffffff",
+      "secondary": "#f4f4f4",
+      "secondaryForeground": "#333333",
+      "muted": "#f8f8f8",
+      "mutedForeground": "#666666",
+      "accent": "#bfccdb",
+      "accentForeground": "#333333",
+      "destructive": "#ff0000",
+      "border": "#e5e5e5",
+      "input": "#ffffff",
+      "ring": "#3d516b"
+    },
+    "customColors": {
+      "header-bg": "#f9f9f9",
+      "announcement-bg": "#bfccdb",
+      "marquee-bg": "#dbe3eb",
+      "footer-bg": "#bfccdb",
+      "footer-text": "#333333",
+      "dark-blue": "#3d516b"
+    },
+    "radius": "0rem",
+    "radiusButton": "0rem",
+    "fonts": {
+      "sans": "'Helvetica Neue', Arial, sans-serif",
+      "display": "'Playfair Display', serif",
+      "mono": "monospace",
+      "serif": "'Playfair Display', serif"
+    },
+    "fontPackages": [
+      "@fontsource/playfair-display",
+      "@fontsource/helvetica-neue"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#f9f9f9",
+      "text": "#333333",
+      "mutedText": "#666666",
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Minimal standard header with logo left, nav center, icons right. An announcement bar sits above."
+  },
+  "footer": {
+    "colorScheme": "custom",
+    "colors": {
+      "bg": "#bfccdb",
+      "text": "#333333",
+      "mutedText": "#444444",
+      "border": false
+    },
+    "description": "Newsletter signup integrated into the left side of a multi-column footer.",
+    "notes": "4 columns. Leftmost is newsletter signup (email, phone, subscribe). The other 3 are link lists. Social icons below signup. Region selector at the bottom left."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Clean minimal cards. Portrait format images. Very prominent solid dark blue CTA buttons under the text in category view, but standard product grids are minimal without visible add-to-cart."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "4",
+      "xl": "4"
+    },
+    "gap": "6",
+    "notes": "Standard grid for individual products, no borders."
+  },
+  "featuredProducts": {
+    "label": "",
+    "heading": "Recommendations For You",
+    "notes": "Standard 5-column carousel or scrollable row for products."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full width, centered text",
+      "design": {
+        "background": "Solid light blue (#bfccdb)",
+        "text": "Dark foreground, tiny sans-serif",
+        "styling": "Very narrow, sitting at the very top."
+      },
+      "content": {
+        "headline": "Promotional shipping offer",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Arrows on left/right suggest a carousel of messages."
+    },
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "Full-width single column, split content over image",
+      "design": {
+        "background": "Full-bleed lifestyle photograph of product on light blue background",
+        "text": "White text on right side, mix of bold sans and italic serif display font",
+        "styling": "A large promotional sticker graphic on the left."
+      },
+      "content": {
+        "headline": "Aspirational statement about confidence and tools",
+        "body": "Promotional offer details with legal text below",
+        "cta": "Single solid white button, dark text, sharp corners (0rem)",
+        "media": {
+          "type": "image",
+          "description": "Lifestyle shot of hair tools and hair scattered on a soft blue background.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": "Starburst-shaped promotional graphic sticker on top left."
+      },
+      "notes": "Carousel dots suggest multiple slides."
+    },
+    {
+      "name": "marquee",
+      "type": "logo-strip",
+      "layout": "Full width continuous scrolling text",
+      "design": {
+        "background": "Solid pale grayish-blue (#dbe3eb)",
+        "text": "Dark foreground, serif typography with bullet separators",
+        "styling": "Narrow band below hero."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Scrolling marquee of brand values."
+      },
+      "notes": "Continuous scroll."
+    },
+    {
+      "name": "brand-statement",
+      "type": "text-block",
+      "layout": "Full-width single column, centered content, max-width ~800px",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground, elegant serif typography with italicized accents",
+        "styling": "Generous vertical padding."
+      },
+      "content": {
+        "headline": "Brand philosophy statement about beauty at every life stage",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Focuses heavily on typography."
+    },
+    {
+      "name": "featured-categories",
+      "type": "categories",
+      "layout": "CSS grid 4 equal columns",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground, clean sans-serif for descriptions, bold titles",
+        "styling": "Cards with no shadow, sharp corners."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Dark blue solid buttons, sharp corners (0rem), full width of content area under text.",
+        "media": {
+          "type": "product-images",
+          "description": "Lifestyle photography of diverse models showing off hair.",
+          "position": "top"
+        },
+        "items": [
+          {
+            "title": "Category Name",
+            "description": "Short use-case description"
+          }
+        ],
+        "specialElements": "A floating dark promotional tab stuck to the left edge."
+      },
+      "notes": "A sticky tab on the left viewport edge says 'Get Offer'."
+    },
+    {
+      "name": "quiz-banner",
+      "type": "cta-banner",
+      "layout": "Full-width, text overlay centered left",
+      "design": {
+        "background": "Full-bleed lifestyle image showing diverse models",
+        "text": "White text, serif heading, sans-serif body",
+        "styling": "No borders."
+      },
+      "content": {
+        "headline": "Invitation to find perfect product",
+        "body": "Brief explanation of quiz purpose.",
+        "cta": "Single white button, dark text, sharp corners (0rem)",
+        "media": {
+          "type": "image",
+          "description": "Group shot of three women smiling, showing off healthy hair.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "shop-by-shade",
+      "type": "categories",
+      "layout": "Centered headline, flex row of circular swatches, actions below",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground",
+        "styling": "Vertical padding."
+      },
+      "content": {
+        "headline": "Category identifier for shopping by color",
+        "body": null,
+        "cta": "Single dark blue solid button, sharp corners (0rem). Secondary text link below.",
+        "media": {
+          "type": "icon-grid",
+          "description": "Circular swatches showing hair colors.",
+          "position": "center"
+        },
+        "items": [
+          {
+            "title": "Color Tone Label"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "value-props",
+      "type": "features",
+      "layout": "3 equal columns spanning full width",
+      "design": {
+        "background": "Full-width split image/color background (warm beige/khaki tones)",
+        "text": "White elegant serif text, centered in columns",
+        "styling": "Vertical separator lines between the text statements."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Abstract/close-up shot of blonde hair texture used as background.",
+          "position": "background"
+        },
+        "items": [
+          {
+            "title": "Value proposition statement"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "stylist-promo",
+      "type": "split-content",
+      "layout": "2-column split, text left, image right",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground",
+        "styling": "Image is irregular shape/cutout on the right."
+      },
+      "content": {
+        "headline": "Headline mixing sans and italic serif for styling",
+        "body": "Short subtitle offering personalized recommendations.",
+        "cta": "Single black solid button, white text, sharp corners (0rem)",
+        "media": {
+          "type": "image",
+          "description": "Cutout image of two smiling models hugging on white background.",
+          "position": "right column"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "recommendations",
+      "type": "product-showcase",
+      "layout": "Centered heading, 5-column grid/carousel",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground, small sans-serif for product titles and prices",
+        "styling": "Clean grid, no borders."
+      },
+      "content": {
+        "headline": "Section title",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "product-images",
+          "description": "Mix of hair texture swatches and product packaging shots.",
+          "position": "grid"
+        },
+        "items": [
+          {
+            "title": "Product Name",
+            "price": "Price"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "social-proof-carousel",
+      "type": "gallery",
+      "layout": "Horizontal scrolling carousel of cards",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground, very small text in small overlapping cards",
+        "styling": "Images have play buttons indicating video. Overlapping small product info cards at the bottom of each."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "video",
+          "description": "User-generated content style videos of people using products.",
+          "position": "carousel"
+        },
+        "items": null,
+        "specialElements": "Play icon overlays on images."
+      },
+      "notes": "UGC/Reels style vertical videos."
+    },
+    {
+      "name": "curated-collections",
+      "type": "categories",
+      "layout": "3 equal columns",
+      "design": {
+        "background": "White",
+        "text": "White text overlaid on dark images",
+        "styling": "Gap between columns, dark gradient overlay on bottom of images."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Single white solid button per card, sharp corners (0rem)",
+        "media": {
+          "type": "image",
+          "description": "Lifestyle portraits of models.",
+          "position": "background of cards"
+        },
+        "items": [
+          {
+            "title": "Collection Title",
+            "description": "Subtitle"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "press-logos",
+      "type": "logo-strip",
+      "layout": "Centered flex row of logos",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground",
+        "styling": "Monochrome logos, generous spacing."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "icon-grid",
+          "description": "Logos of prominent fashion/lifestyle magazines.",
+          "position": "center"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "testimonial",
+      "type": "testimonials",
+      "layout": "Centered single quote",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground, large serif typography",
+        "styling": "No borders, clean."
+      },
+      "content": {
+        "headline": "Aspirational quote about the product category",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "as-seen-on",
+      "type": "gallery",
+      "layout": "Centered headline, 4 equal columns",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground, small sans-serif labels",
+        "styling": "Clean grid, underline links."
+      },
+      "content": {
+        "headline": "Section title",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Portraits of celebrities.",
+          "position": "grid"
+        },
+        "items": [
+          {
+            "title": "Celebrity Name",
+            "description": "Product used"
+          }
+        ],
+        "specialElements": "Underlined 'Shop Now' text links."
+      },
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "name": "Athletic Mint",
+    "description": "A high-energy activewear e-commerce store with a bold, modern, and performance-driven aesthetic. The layout features prominent promotional banners, full-bleed hero imagery, and a clean product grid targeting fitness enthusiasts.",
+    "industry": "fashion, sports, lifestyle",
+    "aesthetic": "bold-maximalist, modern-clean, performance",
+    "mood": "energetic and bold",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "sale-banner",
+      "featured-collection",
+      "product-grid",
+      "hero-collection"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "card": "#f0f0f0",
+      "cardForeground": "#000000",
+      "popover": "#ffffff",
+      "popoverForeground": "#000000",
+      "primary": "#000000",
+      "primaryForeground": "#ffffff",
+      "secondary": "#f4f4f5",
+      "secondaryForeground": "#000000",
+      "muted": "#e4e4e7",
+      "mutedForeground": "#71717a",
+      "accent": "#f4f4f5",
+      "accentForeground": "#000000",
+      "destructive": "#ef4444",
+      "border": "#e4e4e7",
+      "input": "#e4e4e7",
+      "ring": "#000000"
+    },
+    "customColors": {
+      "promo-banner-bg": "#8ef3b4",
+      "search-bar-bg": "#f4f4f5",
+      "gradient-overlay-start": "rgba(0,0,0,0)",
+      "gradient-overlay-end": "rgba(0,0,0,0.7)"
+    },
+    "radius": "0.25rem",
+    "radiusButton": "9999px",
+    "fonts": {
+      "sans": "Inter, sans-serif",
+      "display": "Oswald, Impact, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, monospace"
+    },
+    "fontPackages": [
+      "@fontsource/inter",
+      "@fontsource/oswald"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "centered",
+    "floating": false,
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#000000",
+      "mutedText": "#3f3f46",
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Features a full-width search input field with rounded pill shape on the right side next to icon buttons. Logo is strictly centered. Includes an announcement bar above the main header."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": null,
+      "text": null,
+      "mutedText": null,
+      "border": null
+    },
+    "description": null,
+    "notes": "Footer is not visible in the provided screenshot."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "icon-only",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Clean product cards with grey background (#e5e5e0). Heart icon (wishlist) floats top right. Small rectangular badge bottom left over image. Title, variant info, and price are left-aligned below the image. Price is bold."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "4",
+      "xl": "4"
+    },
+    "gap": "1",
+    "notes": "Very tight gap between product cards. Features a small label above a bold section heading, and an underlined 'View All' link next to the heading. Carousel navigation arrows top right."
+  },
+  "featuredProducts": {
+    "label": "WOMENS",
+    "heading": "THE WHITNEY LEGGING IS BACK",
+    "notes": "Section header sits above the grid, left-aligned, with prominent bold typography."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full-width, single row, text centered, small play/pause icon right",
+      "design": {
+        "background": "Solid light grey",
+        "text": "Small black uppercase text",
+        "styling": "Very narrow height, minimal padding"
+      },
+      "content": {
+        "headline": "Promotional offer announcement",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Tiny play/pause icon indicates a carousel or ticker"
+      },
+      "notes": "Sits at the very top of the page above the main navigation."
+    },
+    {
+      "name": "sale-banner",
+      "type": "cta-banner",
+      "layout": "Full-width single column, text centered, generous padding",
+      "design": {
+        "background": "Bright pastel green-blue gradient",
+        "text": "Black text, bold display font for headline, normal sans for body",
+        "styling": "No border, bold high-contrast section"
+      },
+      "content": {
+        "headline": "Major upcoming sale announcement",
+        "body": "Details about sale start time and conditions",
+        "cta": "Underlined text link acting as a button",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Countdown timer displayed prominently in center"
+      },
+      "notes": "Acts as a secondary, highly visible announcement area directly below header."
+    },
+    {
+      "name": "featured-collection",
+      "type": "full-width-media",
+      "layout": "Three equal-width columns forming one continuous panoramic image area",
+      "design": {
+        "background": "Seamless lifestyle product photography with models against neutral backdrop",
+        "text": "White text overlaid on bottom left over a dark gradient",
+        "styling": "Full bleed edge-to-edge, dark bottom gradient overlay to ensure text readability"
+      },
+      "content": {
+        "headline": "Collection specific title, bold sans-serif",
+        "body": "Short descriptive text highlighting product features",
+        "cta": "Underlined white text link acting as button",
+        "media": {
+          "type": "image",
+          "description": "Three models wearing different colors of the same activewear set (green, blue, pink) against a beige studio background",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": "Dark gradient overlay at the bottom covering roughly bottom 25% of the image"
+      },
+      "notes": "Creates a strong visual impact showcasing product color variations simultaneously."
+    },
+    {
+      "name": "product-grid",
+      "type": "product-showcase",
+      "layout": "Heading with navigation arrows above a 4-column tight grid",
+      "design": {
+        "background": "White page background, light grey image backgrounds",
+        "text": "Dark grey/black text for product info, bold prices",
+        "styling": "Very tight grid gaps (~4px), minimalistic card design"
+      },
+      "content": {
+        "headline": "Bold collection/product name return announcement",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "product-images",
+          "description": "Studio shots of models wearing activewear leggings, cropped from waist to feet, neutral background",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": "Wishlist heart icons top right of images, small descriptive pills bottom left of images"
+      },
+      "notes": "Includes circular carousel prev/next buttons top right of the section."
+    },
+    {
+      "name": "hero-collection",
+      "type": "full-width-media",
+      "layout": "Full bleed single image, text overlay bottom left",
+      "design": {
+        "background": "High energy action photography",
+        "text": "White text, bold headline",
+        "styling": "Dark gradient overlay at bottom for text contrast"
+      },
+      "content": {
+        "headline": "New arrivals bold title",
+        "body": "Short promotional sentence targeting a specific customer persona",
+        "cta": "Two underlined white text links side-by-side acting as buttons",
+        "media": {
+          "type": "image",
+          "description": "Dynamic, slightly motion-blurred shot of muscular men working out in a gym setting, dramatic lighting",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Contrasts the clean studio shots above with gritty, high-energy environment photography."
+    }
+  ]
+}

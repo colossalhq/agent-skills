@@ -1,0 +1,400 @@
+{
+  "meta": {
+    "name": "Comfort Basics",
+    "description": "A bold, friendly, and impact-driven apparel store with a distinctive, slightly retro aesthetic. It uses a prominent display typeface, bold background colors (cream, yellow, green, navy), and large, expressive lifestyle photography. The brand emphasizes comfort, mission-driven shopping ('one purchased = one donated'), and clear category navigation.",
+    "industry": "apparel",
+    "aesthetic": "bold-friendly",
+    "mood": "welcoming and impactful",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "category-quick-links",
+      "hero",
+      "shop-by-style-grid",
+      "mission-statement",
+      "womens-new-arrivals",
+      "mens-new-arrivals",
+      "sock-height-guide",
+      "impact-stats-banner",
+      "comfort-beyond-socks-categories",
+      "newsletter",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#F5F3ED",
+      "foreground": "#000000",
+      "card": "#FFFFFF",
+      "cardForeground": "#000000",
+      "popover": "#FFFFFF",
+      "popoverForeground": "#000000",
+      "primary": "#2D2D2D",
+      "primaryForeground": "#FFFFFF",
+      "secondary": "#E5E5E5",
+      "secondaryForeground": "#000000",
+      "muted": "#F0F0F0",
+      "mutedForeground": "#666666",
+      "accent": "#F2B84D",
+      "accentForeground": "#000000",
+      "destructive": "#FF0000",
+      "border": "#E5E5E5",
+      "input": "#FFFFFF",
+      "ring": "#2D2D2D"
+    },
+    "customColors": {
+      "accent-yellow": "#DFB342",
+      "accent-green": "#AAC196",
+      "accent-navy": "#294060",
+      "promo-bar-blue": "#283C55",
+      "off-white-bg": "#F5F3ED"
+    },
+    "radius": "0.5rem",
+    "radiusButton": "0.25rem",
+    "fonts": {
+      "sans": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "display": "'Archivo Black', impact, sans-serif",
+      "mono": "monospace",
+      "serif": "'Georgia', serif"
+    },
+    "fontPackages": [
+      "@fontsource/archivo-black",
+      "@fontsource/inter"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "centered",
+    "floating": false,
+    "colors": {
+      "bg": "#FFFFFF",
+      "text": "#000000",
+      "mutedText": null,
+      "border": null,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Includes a top announcement bar in navy blue. The main navigation features a chunky, bold sans-serif font for the logo and standard sans-serif for nav links. Right side includes 'Log In', search, and cart icons."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": "#F5F3ED",
+      "text": "#000000",
+      "mutedText": "#666666",
+      "border": "#D1D1D1"
+    },
+    "description": "Left side contains a '100% Happiness Guaranteed' message with a prominent logo and support text, plus a 'Get Help' button. Contains B-Corp certification logo in bottom right. Bottom includes typical legal links and fine print.",
+    "notes": "Spacious layout with a vertical dividing line between the brand promise section on the left and the link columns on the right."
+  },
+  "productCard": {
+    "hoverEffect": "none",
+    "cartButton": "none",
+    "cartButtonIcon": "none",
+    "carousel": "none",
+    "notes": "Minimal product cards in the 'New Arrivals' sections. Light grey placeholder image backgrounds. Product title, price, and colorway info below image. No visible 'add to cart' button on the card itself in this view."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "4",
+      "xl": "4"
+    },
+    "gap": "1rem",
+    "notes": "Clean horizontal scrolling or standard grid depending on viewport. The screenshot shows 4 columns for product grids."
+  },
+  "featuredProducts": {
+    "label": "New Arrivals",
+    "heading": "Women's",
+    "notes": "Features a heading block on the left with 'Shop All' and 'Shop Best Sellers' buttons stacked vertically. Product cards flow to the right of the heading block."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full width, centered text, action items right.",
+      "design": {
+        "background": "Solid dark navy (#283C55)",
+        "text": "White, small sans-serif",
+        "styling": "Thin bar at very top of page."
+      },
+      "content": {
+        "headline": "Promotional shipping offer",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Region selector icon/text on far right."
+      },
+      "notes": "Standard top promotional bar."
+    },
+    {
+      "name": "category-quick-links",
+      "type": "categories",
+      "layout": "Flexbox row, horizontally scrolling or evenly spaced banners.",
+      "design": {
+        "background": "Inherits off-white page bg",
+        "text": "White centered text over images",
+        "styling": "Slightly rounded rectangle images with dark overlays and centered text."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Close up horizontal slices of various product categories (underwear, socks, slippers, t-shirts).",
+          "position": "grid of 4 horizontal banners"
+        },
+        "items": [
+          {
+            "title": "Category Name",
+            "image": "Lifestyle detail shot"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Serves as visual quick navigation below the main header."
+    },
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "Split layout, image left (spanning full height), text right (centered vertically).",
+      "design": {
+        "background": "Off-white (#F5F3ED)",
+        "text": "Extremely large, bold, black display typeface for headline. Regular sans-serif for subheadline.",
+        "styling": "No borders. A small wavy graphic element sits above the headline."
+      },
+      "content": {
+        "headline": "Bold statement about white classics",
+        "body": "Short sentence encouraging refreshing essentials.",
+        "cta": "2 buttons: Solid dark grey/black with white text, slightly rounded corners (~0.25rem).",
+        "media": {
+          "type": "image",
+          "description": "Two people sitting on modern stairs wearing white socks, bright lighting, clean aesthetic.",
+          "position": "Left half of section"
+        },
+        "items": null,
+        "specialElements": "Wavy icon above headline."
+      },
+      "notes": "The large, heavy headline typography is a defining visual feature."
+    },
+    {
+      "name": "shop-by-style-grid",
+      "type": "categories",
+      "layout": "4-column grid of square cards.",
+      "design": {
+        "background": "Inherits off-white page bg",
+        "text": "Large, bold white text centered horizontally and vertically on each image.",
+        "styling": "Cards have rounded corners (~0.5rem)."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Single floating button overlapping the bottom center of the section: white pill shape with dark text and a closing 'x' icon.",
+        "media": {
+          "type": "image",
+          "description": "Square lifestyle photos showing different sock styles in action (casual, compression, sport, dress).",
+          "position": "grid of 4"
+        },
+        "items": [
+          {
+            "title": "Style Name",
+            "image": "Lifestyle shot focused on feet/lower legs"
+          }
+        ],
+        "specialElements": "A floating promotional button 'Get 20% Off' overlaps this section."
+      },
+      "notes": "Visually striking category navigation using prominent text overlays."
+    },
+    {
+      "name": "mission-statement",
+      "type": "text-block",
+      "layout": "Full-width single column, centered content.",
+      "design": {
+        "background": "Inherits off-white page bg",
+        "text": "Very large, bold display font for headline. Standard serif or sans-serif for subtext.",
+        "styling": "Generous vertical padding."
+      },
+      "content": {
+        "headline": "Bold statement about donation model",
+        "body": "Single sentence explaining the donation mechanism across all 50 states.",
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Acts as a strong, simple divider reinforcing brand values."
+    },
+    {
+      "name": "womens-new-arrivals",
+      "type": "product-showcase",
+      "layout": "Flex container: Left column (narrow) for titles/actions, right area (wide) for scrolling product cards.",
+      "design": {
+        "background": "Inherits off-white page bg",
+        "text": "Serif font for 'New Arrivals' title, small sans-serif for category label.",
+        "styling": "Clean, minimal. Products have light grey background rectangles."
+      },
+      "content": {
+        "headline": "Category and section title (Women's New Arrivals)",
+        "body": null,
+        "cta": "2 buttons: Solid dark grey/black with white text, slightly rounded corners (~0.25rem), stacked vertically on the left.",
+        "media": {
+          "type": "product-images",
+          "description": "Minimal product shots on light grey backgrounds.",
+          "position": "right area, horizontal row"
+        },
+        "items": [
+          {
+            "image": "product photo",
+            "title": "product name",
+            "price": "pricing details"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Side-titled product carousel layout."
+    },
+    {
+      "name": "mens-new-arrivals",
+      "type": "product-showcase",
+      "layout": "Flex container: Left column (narrow) for titles/actions, right area (wide) for scrolling product cards.",
+      "design": {
+        "background": "Inherits off-white page bg",
+        "text": "Serif font for 'New Arrivals' title, small sans-serif for category label.",
+        "styling": "Clean, minimal. Products have light grey background rectangles."
+      },
+      "content": {
+        "headline": "Category and section title (Men's New Arrivals)",
+        "body": null,
+        "cta": "2 buttons: Solid dark grey/black with white text, slightly rounded corners (~0.25rem), stacked vertically on the left.",
+        "media": {
+          "type": "product-images",
+          "description": "Minimal product shots on light grey backgrounds.",
+          "position": "right area, horizontal row"
+        },
+        "items": [
+          {
+            "image": "product photo",
+            "title": "product name",
+            "price": "pricing details"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Identical layout to the Women's section above."
+    },
+    {
+      "name": "sock-height-guide",
+      "type": "categories",
+      "layout": "6-column grid of vertical rectangular cards.",
+      "design": {
+        "background": "Inherits off-white page bg",
+        "text": "Small, centered dark text at the bottom of each image.",
+        "styling": "Images have rounded corners (~0.5rem)."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Close up shots of lower legs showing different sock heights (no show to knee high) on various backgrounds.",
+          "position": "grid of 6"
+        },
+        "items": [
+          {
+            "title": "Sock height name",
+            "image": "Detail shot of sock height"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Visual guide to product variations."
+    },
+    {
+      "name": "impact-stats-banner",
+      "type": "split-content",
+      "layout": "2-column split (approx 60/40). Left side has a decorative graphic block, right side has text.",
+      "design": {
+        "background": "Solid warm yellow (#DFB342).",
+        "text": "Huge black display text on left, medium serif text on right.",
+        "styling": "The left graphic has wavy top and bottom edges (scalloped) holding the massive number. Right side is clean."
+      },
+      "content": {
+        "headline": "Massive donation milestone number",
+        "body": "Paragraph explaining the impact of customer purchases on donations.",
+        "cta": "Single button: Solid dark grey/black with white text, slightly rounded corners (~0.25rem).",
+        "media": {
+          "type": "illustration",
+          "description": "Scalloped-edge off-white shape on the left acting as a container for the large text. Small 'one purchased = one donated' graphic on right.",
+          "position": "left graphic, right icon"
+        },
+        "items": null,
+        "specialElements": "Wavy/scalloped graphic shape housing the main statistic."
+      },
+      "notes": "High visual contrast section to emphasize brand mission."
+    },
+    {
+      "name": "comfort-beyond-socks-categories",
+      "type": "categories",
+      "layout": "Single column heading, 3-column grid of large images below.",
+      "design": {
+        "background": "Solid muted sage green (#AAC196).",
+        "text": "Serif font for heading. Large, bold white display font centered on the category images.",
+        "styling": "Images have rounded corners (~0.5rem)."
+      },
+      "content": {
+        "headline": "Heading about expanding comfort to other items",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Three vertical lifestyle photos showing slippers, underwear, and t-shirts.",
+          "position": "grid of 3"
+        },
+        "items": [
+          {
+            "title": "Category Name",
+            "image": "Lifestyle photo"
+          }
+        ],
+        "specialElements": "Wavy line graphic placed below the main heading."
+      },
+      "notes": "Cross-selling section introducing non-core product lines."
+    },
+    {
+      "name": "newsletter",
+      "type": "newsletter",
+      "layout": "Full width, centered content.",
+      "design": {
+        "background": "Solid dark slate navy (#294060).",
+        "text": "White text. Bold headline, small legal text.",
+        "styling": "Generous padding. Input and button are side-by-side."
+      },
+      "content": {
+        "headline": "Offer for first order and newsletter sign up.",
+        "body": "Small legal disclaimer below input.",
+        "cta": "Single button next to input: Solid white with dark text, slightly rounded corners (~0.25rem).",
+        "media": {
+          "type": "icon-grid",
+          "description": "Social media icons (Instagram, Facebook, Twitter, Pinterest).",
+          "position": "below legal text"
+        },
+        "items": null,
+        "specialElements": "Email input field with white background."
+      },
+      "notes": "Classic bold newsletter signup block."
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "meta": {
+    "name": "Heritage Menswear",
+    "description": "A refined, outdoor-inspired menswear store with an editorial layout. It features a muted, earthy color palette, combining high-quality lifestyle imagery with clean typography to appeal to a sophisticated, quality-conscious demographic.",
+    "industry": "fashion",
+    "aesthetic": "editorial-organic",
+    "mood": "calm and refined",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "hero",
+      "categories",
+      "brand-mission",
+      "product-grid-carousel",
+      "split-promotions",
+      "featured-editorials",
+      "blog-carousel",
+      "testimonials",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#1a1a1a",
+      "card": "#f9f9f9",
+      "cardForeground": "#1a1a1a",
+      "popover": "#ffffff",
+      "popoverForeground": "#1a1a1a",
+      "primary": "#1a1a1a",
+      "primaryForeground": "#ffffff",
+      "secondary": "#f4f4f4",
+      "secondaryForeground": "#1a1a1a",
+      "muted": "#e5e5e5",
+      "mutedForeground": "#666666",
+      "accent": "#4a5d4e",
+      "accentForeground": "#ffffff",
+      "destructive": "#ef4444",
+      "border": "#e5e5e5",
+      "input": "#ffffff",
+      "ring": "#1a1a1a"
+    },
+    "customColors": {
+      "announcementBg": "#1a1a1a",
+      "announcementText": "#ffffff",
+      "darkOverlay": "rgba(0, 0, 0, 0.4)",
+      "footerBg": "#ffffff",
+      "buttonHoverBg": "#333333"
+    },
+    "radius": "0rem",
+    "radiusButton": "0rem",
+    "fonts": {
+      "sans": "Inter, sans-serif",
+      "display": "Playfair Display, serif",
+      "mono": "monospace",
+      "serif": "Playfair Display, serif"
+    },
+    "fontPackages": [
+      "@fontsource-variable/playfair-display",
+      "@fontsource/inter"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "large",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#1a1a1a",
+      "mutedText": "#666666",
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Top announcement bar is dark. Header is light, edge-to-edge. Logo on left, nav center, icons (search, user, cart) on right."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#1a1a1a",
+      "mutedText": "#666666",
+      "border": "#e5e5e5"
+    },
+    "description": "Email signup text offering a generic discount for first purchase.",
+    "notes": "Multi-column layout. Left column has logo, email signup, and social icons. Middle columns have links. Right column has contact options (chat, text, email). Bottom area includes a promotional club box, copyright, and utility links."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Clean minimal cards. Square or slightly vertical aspect ratio for images. Title, variant info, and price are left-aligned below the image. Typography is crisp and hierarchical."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "4",
+      "xl": "5"
+    },
+    "gap": "6",
+    "notes": "Used as a carousel for 'Newest Arrivals'. Carousel controls are arrows outside the grid and a progress bar below."
+  },
+  "featuredProducts": {
+    "label": "",
+    "heading": "Newest Arrivals",
+    "notes": "Carousel layout with a 'Shop New Arrivals ->' link right-aligned opposite the heading."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full-width single column, centered content",
+      "design": {
+        "background": "Solid black (#1a1a1a)",
+        "text": "White, small uppercase tracking",
+        "styling": "No padding, narrow height"
+      },
+      "content": {
+        "headline": "Promotional shipping offer text",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Appears at the very top of the page."
+    },
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "Full-bleed background image with text overlay",
+      "design": {
+        "background": "Full-bleed lifestyle photograph of a man on a beach",
+        "text": "Dark text on light area of image",
+        "styling": "Text positioned middle-left"
+      },
+      "content": {
+        "headline": "Seasonal collection title",
+        "body": null,
+        "cta": "Single solid dark rectangular button with white text",
+        "media": {
+          "type": "image",
+          "description": "Man walking on beach in casual knitwear and shorts, carrying a bag. Warm, coastal, relaxed mood.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Text is serif."
+    },
+    {
+      "name": "categories",
+      "type": "categories",
+      "layout": "CSS grid of 6 square images",
+      "design": {
+        "background": "Light grey (#f4f4f4)",
+        "text": "Dark foreground, uppercase small text below images",
+        "styling": "No gaps between images, horizontal scroll indicated by partially visible 6th item and an arrow button."
+      },
+      "content": {
+        "headline": "Shop by Category",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image-grid",
+          "description": "Grid of square product detail/lifestyle shots corresponding to categories.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": "Carousel next button overlaid on the right edge."
+      },
+      "notes": "Very tight layout, image-heavy."
+    },
+    {
+      "name": "brand-mission",
+      "type": "full-width-media",
+      "layout": "Full-bleed background image with split text content",
+      "design": {
+        "background": "Full-bleed landscape photograph with dark gradient overlay",
+        "text": "White text, large serif display font",
+        "styling": "Text is split: large paragraph top left, shorter title bottom left."
+      },
+      "content": {
+        "headline": "Brand values statement regarding environment and manufacturing",
+        "body": "Secondary title about responsible building",
+        "cta": "'Learn More' text link with arrow",
+        "media": {
+          "type": "image",
+          "description": "Wide, dark, moody landscape shot of rolling hills.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Creates a break in the product flow to tell brand story."
+    },
+    {
+      "name": "product-grid-carousel",
+      "type": "product-showcase",
+      "layout": "Grid carousel with heading and link",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground",
+        "styling": "Standard padding, clean white background"
+      },
+      "content": {
+        "headline": "Newest Arrivals",
+        "body": null,
+        "cta": "'Shop New Arrivals ->' text link",
+        "media": {
+          "type": "product-images",
+          "description": "Cut-out product shots on white/light grey backgrounds.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": "Progress bar indicator below the grid."
+      },
+      "notes": ""
+    },
+    {
+      "name": "split-promotions",
+      "type": "split-content",
+      "layout": "2-column grid, 50/50 split",
+      "design": {
+        "background": "Images act as background for each column",
+        "text": "White text on dark overlays",
+        "styling": "No gap between columns. Text positioned bottom-left in each block."
+      },
+      "content": {
+        "headline": "Category/Collection titles for each block",
+        "body": null,
+        "cta": "Solid white rectangular button with dark text in each block",
+        "media": {
+          "type": "image",
+          "description": "Left: Close up of a jacket on a hanger. Right: Man in dark suit outdoors.",
+          "position": "background per column"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Serves as large promotional banners for specific collections."
+    },
+    {
+      "name": "featured-editorials",
+      "type": "split-content",
+      "layout": "2-column grid, 50/50 split with text below images",
+      "design": {
+        "background": "White",
+        "text": "Dark text, serif headings",
+        "styling": "Generous gap between columns, large portrait images."
+      },
+      "content": {
+        "headline": "Editorial feature titles",
+        "body": "Short descriptive sentence for each feature.",
+        "cta": "'Shop Now ->' and 'Shop Shirts ->' text links",
+        "media": {
+          "type": "image",
+          "description": "Left: Man in dark overshirt. Right: Flat lay of layered shirts.",
+          "position": "above text"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Focuses on specific fabric or product types."
+    },
+    {
+      "name": "blog-carousel",
+      "type": "carousel",
+      "layout": "Grid of cards with horizontal scroll",
+      "design": {
+        "background": "White",
+        "text": "Dark foreground",
+        "styling": "Cards have image top, text bottom. Small gaps."
+      },
+      "content": {
+        "headline": "Latest from Dispatch",
+        "body": null,
+        "cta": "'Visit Dispatch ->' text link above grid",
+        "media": {
+          "type": "image",
+          "description": "Various editorial/lifestyle shots related to blog posts.",
+          "position": "card top"
+        },
+        "items": null,
+        "specialElements": "Carousel arrows on sides."
+      },
+      "notes": "Blog/Article preview section."
+    },
+    {
+      "name": "testimonials",
+      "type": "testimonials",
+      "layout": "Centered container over full-bleed background image. 3-column grid inside container.",
+      "design": {
+        "background": "White container overlapping a dark, moody background image",
+        "text": "Dark text in container, serif title",
+        "styling": "Container has white background, padding. Cards have image, stars, quote, author, product link."
+      },
+      "content": {
+        "headline": "Words From The Wild",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Background: dark ocean/landscape. Cards: Lifestyle product shots on men.",
+          "position": "background and card top"
+        },
+        "items": null,
+        "specialElements": "5-star rating icons on each review card. Carousel arrows on container edges."
+      },
+      "notes": "Effectively uses overlapping layout to stand out."
+    }
+  ]
+}

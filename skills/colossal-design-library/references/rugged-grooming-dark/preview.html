@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rugged Grooming Dark — Design Preview</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#F4F4F4;--fg:#000000;--primary:#000000;--primary-fg:#FFFFFF;--muted:#888;--border:#000000;--card:#F4F4F4;--product:#C4CBC7;--announce:#222222}
+html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.display{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:800;text-transform:uppercase}
+.serif{font-family:Georgia,Cambria,'Times New Roman',Times,serif}
+.cc-grid{display:grid;grid-template-columns:160px minmax(0,1fr);height:100vh;width:100vw}
+.cc-palette{display:flex;flex-direction:column;border-right:2px solid var(--border)}
+.cc-colors{display:flex;flex-direction:column;flex:1}
+.cc-cw{flex:1;display:flex;align-items:end;justify-content:space-between;padding:0.45rem 0.75rem;font-size:0.48rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;transition:flex 0.3s cubic-bezier(0.22,1,0.36,1)}
+.cc-cw:hover{flex:1.6}
+.cc-cw .hex{font-family:'Courier New',monospace;font-weight:400;opacity:0.45;font-size:0.42rem}
+.cc-right{display:flex;flex-direction:column;padding:0 1.25rem 0 0}
+.cc-row{flex:1;display:flex;align-items:center;gap:1rem;padding:0 1.25rem;border-bottom:2px solid var(--border);overflow:hidden;transition:background 0.2s ease}
+.cc-row:hover{background:rgba(0,0,0,0.02)}
+.cc-row-label{width:85px;flex-shrink:0;font-size:0.44rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--fg)}
+.cc-row-sub{display:block;font-size:0.36rem;font-weight:500;letter-spacing:0.08em;color:var(--muted);margin-top:0.04rem}
+.cc-row-sample{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cc-s-hero{font-size:2rem;line-height:0.92;letter-spacing:0.02em}
+.cc-s-section{font-size:1.1rem;line-height:1.1;color:#333}
+.cc-s-price{font-size:1.5rem;line-height:1;font-weight:700}
+.cc-s-price .c{font-size:0.8rem;vertical-align:super;margin-left:1px}
+.cc-s-body{font-size:0.75rem;line-height:1.55;color:var(--muted)}
+.cc-s-promo{font-size:0.55rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase}
+.cc-btn-row-wrap{flex:1;padding:0 1.25rem;display:flex;align-items:center;gap:1rem}
+.cc-btn-label{width:85px;flex-shrink:0;font-size:0.44rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--fg)}
+.cc-btn-items{display:flex;gap:0.4rem;flex-wrap:wrap;align-items:center}
+.b3{display:inline-flex;align-items:center;justify-content:center;padding:0.45rem 1rem;font-size:0.64rem;font-weight:700;font-family:inherit;border:none;cursor:pointer;border-radius:0;transition:all 0.2s ease}
+.b3:hover{transform:translateY(-1px)}
+.b3-dark{background:var(--primary);color:var(--primary-fg)}
+.b3-product{background:var(--product);color:var(--fg)}
+.b3-wire{background:transparent;color:var(--fg);border:2px solid var(--fg)}
+.b3-ghost{background:transparent;color:var(--muted);text-decoration:underline;text-underline-offset:3px;padding:0.45rem 0.55rem}
+</style>
+</head>
+<body>
+<div class="cc-grid">
+  <div class="cc-palette"><div class="cc-colors">
+    <div class="cc-cw" style="background:#F4F4F4;color:#000">Light Grey<span class="hex">#F4F4F4</span></div>
+    <div class="cc-cw" style="background:#000000;color:#fff">Black<span class="hex">#000000</span></div>
+    <div class="cc-cw" style="background:#222222;color:#fff">Announce<span class="hex">#222222</span></div>
+    <div class="cc-cw" style="background:#C4CBC7;color:#000">Product<span class="hex">#C4CBC7</span></div>
+    <div class="cc-cw" style="background:#EAEAEA;color:#000">Muted<span class="hex">#EAEAEA</span></div>
+  </div></div>
+  <div class="cc-right">
+    <div class="cc-row"><div class="cc-row-label">Hero Heading<span class="cc-row-sub">Helvetica Neue</span></div><div class="cc-row-sample cc-s-hero display">Built for Men.</div></div>
+    <div class="cc-row"><div class="cc-row-label">Section Title<span class="cc-row-sub">System Sans</span></div><div class="cc-row-sample cc-s-section">Grooming Essentials</div></div>
+    <div class="cc-row"><div class="cc-row-label">Product Price<span class="cc-row-sub">System Sans</span></div><div class="cc-row-sample cc-s-price">$28<span class="c">.00</span></div></div>
+    <div class="cc-row"><div class="cc-row-label">Body Copy<span class="cc-row-sub">System Sans</span></div><div class="cc-row-sample cc-s-body">No-nonsense grooming products built for performance and simplicity.</div></div>
+    <div class="cc-row"><div class="cc-row-label">Promo Banner<span class="cc-row-sub">Sans · Caps</span></div><div class="cc-row-sample cc-s-promo">Free Shipping on All Orders · Subscribe & Save</div></div>
+    <div class="cc-btn-row-wrap"><div class="cc-btn-label">Primary</div><div class="cc-btn-items"><button class="b3 b3-dark">Shop Now</button><button class="b3 b3-dark" style="font-size:0.55rem;padding:0.38rem 0.85rem">Small</button></div></div>
+    <div class="cc-btn-row-wrap" style="border-top:2px solid var(--border)"><div class="cc-btn-label">Accent</div><div class="cc-btn-items"><button class="b3 b3-product">Kits</button><button class="b3 b3-dark">Subscribe</button></div></div>
+    <div class="cc-btn-row-wrap" style="border-top:2px solid var(--border)"><div class="cc-btn-label">Secondary</div><div class="cc-btn-items"><button class="b3 b3-wire">View All</button><button class="b3 b3-ghost">Details</button></div></div>
+  </div>
+</div>
+</body>
+</html>

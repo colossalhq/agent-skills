@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glam Hair Extensions — Design Preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#ffffff;--fg:#333333;--primary:#3d516b;--primary-fg:#ffffff;--accent:#bfccdb;--marquee:#dbe3eb;--muted:#999;--border:#e5e5e5}
+html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--fg);font-family:'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.display{font-family:'Playfair Display',serif}
+.serif{font-family:'Playfair Display',serif}
+.cc-grid{display:grid;grid-template-columns:160px minmax(0,1fr);height:100vh;width:100vw}
+.cc-palette{display:flex;flex-direction:column;border-right:1px solid var(--border)}
+.cc-colors{display:flex;flex-direction:column;flex:1}
+.cc-cw{flex:1;display:flex;align-items:end;justify-content:space-between;padding:0.45rem 0.75rem;font-size:0.48rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;transition:flex 0.3s cubic-bezier(0.22,1,0.36,1)}
+.cc-cw:hover{flex:1.6}
+.cc-cw .hex{font-family:'Courier New',monospace;font-weight:400;opacity:0.45;font-size:0.42rem}
+.cc-right{display:flex;flex-direction:column;padding:0 1.25rem 0 0}
+.cc-row{flex:1;display:flex;align-items:center;gap:1rem;padding:0 1.25rem;border-bottom:1px solid var(--border);overflow:hidden;transition:background 0.2s ease}
+.cc-row:hover{background:rgba(0,0,0,0.012)}
+.cc-row-label{width:85px;flex-shrink:0;font-size:0.44rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--primary)}
+.cc-row-sub{display:block;font-size:0.36rem;font-weight:500;letter-spacing:0.08em;color:var(--muted);margin-top:0.04rem}
+.cc-row-sample{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cc-s-hero{font-size:2rem;line-height:0.95;letter-spacing:0.01em}
+.cc-s-section{font-size:1.1rem;line-height:1.1;color:#555}
+.cc-s-price{font-size:1.5rem;line-height:1;font-weight:500}
+.cc-s-price .c{font-size:0.8rem;vertical-align:super;margin-left:1px}
+.cc-s-body{font-size:0.75rem;line-height:1.55;color:var(--muted)}
+.cc-s-promo{font-size:0.55rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase}
+.cc-btn-row-wrap{flex:1;padding:0 1.25rem;display:flex;align-items:center;gap:1rem}
+.cc-btn-label{width:85px;flex-shrink:0;font-size:0.44rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--primary)}
+.cc-btn-items{display:flex;gap:0.4rem;flex-wrap:wrap;align-items:center}
+.b3{display:inline-flex;align-items:center;justify-content:center;padding:0.45rem 1rem;font-size:0.64rem;font-weight:600;font-family:inherit;border:none;cursor:pointer;border-radius:0;transition:all 0.2s ease}
+.b3:hover{transform:translateY(-1px)}
+.b3-primary{background:var(--primary);color:var(--primary-fg)}
+.b3-accent{background:var(--accent);color:var(--fg)}
+.b3-marquee{background:var(--marquee);color:var(--fg)}
+.b3-wire{background:transparent;color:var(--fg);border:1.5px solid var(--fg)}
+.b3-ghost{background:transparent;color:var(--muted);text-decoration:underline;text-underline-offset:3px;padding:0.45rem 0.55rem}
+</style>
+</head>
+<body>
+<div class="cc-grid">
+  <div class="cc-palette"><div class="cc-colors">
+    <div class="cc-cw" style="background:#ffffff;color:#333;border-bottom:1px solid var(--border)">White<span class="hex">#FFFFFF</span></div>
+    <div class="cc-cw" style="background:#3d516b;color:#fff">Blue<span class="hex">#3D516B</span></div>
+    <div class="cc-cw" style="background:#bfccdb;color:#333">Accent<span class="hex">#BFCCDB</span></div>
+    <div class="cc-cw" style="background:#dbe3eb;color:#333">Marquee<span class="hex">#DBE3EB</span></div>
+    <div class="cc-cw" style="background:#333333;color:#fff">Text<span class="hex">#333333</span></div>
+    <div class="cc-cw" style="background:#f9f9f9;color:#333">Header<span class="hex">#F9F9F9</span></div>
+  </div></div>
+  <div class="cc-right">
+    <div class="cc-row"><div class="cc-row-label">Hero Heading<span class="cc-row-sub">Playfair Display</span></div><div class="cc-row-sample cc-s-hero display">Effortless Glam.</div></div>
+    <div class="cc-row"><div class="cc-row-label">Section Title<span class="cc-row-sub">Helvetica Neue</span></div><div class="cc-row-sample cc-s-section">Shop by Length</div></div>
+    <div class="cc-row"><div class="cc-row-label">Product Price<span class="cc-row-sub">Helvetica Neue</span></div><div class="cc-row-sample cc-s-price">$189<span class="c">.00</span></div></div>
+    <div class="cc-row"><div class="cc-row-label">Body Copy<span class="cc-row-sub">Helvetica Neue</span></div><div class="cc-row-sample cc-s-body">Premium clip-in extensions for effortless volume and length.</div></div>
+    <div class="cc-row"><div class="cc-row-label">Promo Banner<span class="cc-row-sub">Sans · Caps</span></div><div class="cc-row-sample cc-s-promo">Free Color Match Kit · Easy Returns</div></div>
+    <div class="cc-btn-row-wrap"><div class="cc-btn-label">Primary</div><div class="cc-btn-items"><button class="b3 b3-primary">Shop All</button><button class="b3 b3-primary" style="font-size:0.55rem;padding:0.38rem 0.85rem">Small</button></div></div>
+    <div class="cc-btn-row-wrap" style="border-top:1px solid var(--border)"><div class="cc-btn-label">Accent</div><div class="cc-btn-items"><button class="b3 b3-accent">Color Match</button><button class="b3 b3-marquee">Bundles</button></div></div>
+    <div class="cc-btn-row-wrap" style="border-top:1px solid var(--border)"><div class="cc-btn-label">Secondary</div><div class="cc-btn-items"><button class="b3 b3-wire">View Guide</button><button class="b3 b3-ghost">Details</button></div></div>
+  </div>
+</div>
+</body>
+</html>

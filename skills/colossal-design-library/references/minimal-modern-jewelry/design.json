@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "name": "Modern Jewelry",
+    "description": "A modern, minimalist jewelry store targeting contemporary consumers with a clean, high-fashion aesthetic. The design relies heavily on stark photography, muted neutral backgrounds, and precise, delicate typography to convey a sense of understated luxury and craftsmanship.",
+    "industry": "jewelry",
+    "aesthetic": "minimal-luxury",
+    "mood": "calm and refined",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "hero",
+      "product-grid-new",
+      "featured-collection",
+      "product-grid-bestsellers",
+      "brand-story-split",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#F5F5F5",
+      "foreground": "#333333",
+      "card": "#EBEBEB",
+      "cardForeground": "#333333",
+      "popover": "#F5F5F5",
+      "popoverForeground": "#333333",
+      "primary": "#333333",
+      "primaryForeground": "#FFFFFF",
+      "secondary": "#EBEBEB",
+      "secondaryForeground": "#333333",
+      "muted": "#A3A3A3",
+      "mutedForeground": "#666666",
+      "accent": "#F5F5F5",
+      "accentForeground": "#333333",
+      "destructive": "#FF0000",
+      "border": "#E5E5E5",
+      "input": "#E5E5E5",
+      "ring": "#333333"
+    },
+    "customColors": {
+      "announcement-bg": "#333333",
+      "announcement-text": "#FFFFFF",
+      "hero-overlay": "transparent",
+      "sold-out-text": "#A3A3A3"
+    },
+    "radius": "0rem",
+    "radiusButton": "0rem",
+    "fonts": {
+      "sans": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+      "display": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+      "serif": "Georgia, Cambria, 'Times New Roman', Times, serif"
+    },
+    "fontPackages": []
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "centered",
+    "floating": false,
+    "colors": {
+      "bg": "transparent",
+      "text": "#FFFFFF",
+      "mutedText": "#FFFFFF",
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Header is overlaid on the hero image, making text white for contrast. Logo is dead center. Navigation on left, icons (search, user, cart) on right."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": "#FFFFFF",
+      "text": "#333333",
+      "mutedText": "#666666",
+      "border": "#E5E5E5"
+    },
+    "description": null,
+    "notes": "Clean multi-column layout. 4 link columns (About, Support, Connect, Legal). Newsletter signup below with minimal styling (bottom border input, text button). Bottom area has copyright and region selector."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "hover",
+    "notes": "Very clean, minimal cards. Square images with a very light grey/off-white background. Title and price left-aligned below image. No visible border or heavy shadow. 'Sold out' items use strikethrough text."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "4",
+      "xl": "4"
+    },
+    "gap": "1",
+    "notes": "Tight grid with very minimal gap (approx 4px or less) between product images, giving a slightly editorial, continuous feel."
+  },
+  "featuredProducts": {
+    "label": "Small text above heading",
+    "heading": "Section heading",
+    "notes": "Layout style"
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full width, centered text, single line",
+      "design": {
+        "background": "Solid dark charcoal/black",
+        "text": "White, small, sans-serif, uppercase",
+        "styling": "No border, minimal padding (py-1 or py-2)"
+      },
+      "content": {
+        "headline": "Promotional shipping announcement",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Standard scrolling or static text banner"
+      },
+      "notes": "Sits at the very top of the page above the header."
+    },
+    {
+      "name": "hero",
+      "type": "full-width-media",
+      "layout": "Full bleed, 2-column split image layout filling the viewport height",
+      "design": {
+        "background": "Image-based",
+        "text": "Dark text for CTA button",
+        "styling": "No visible margins, images touch edges"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Single white rectangular button placed centrally at the bottom of the section, dark text, sharp square corners (0rem radius).",
+        "media": {
+          "type": "image",
+          "description": "Two distinct lifestyle images placed side-by-side. Left shows close-up of textured earrings on a warm background. Right shows a model wearing a pendant necklace against a light textured garment.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Header overlays this section."
+    },
+    {
+      "name": "product-grid-new",
+      "type": "product-showcase",
+      "layout": "CSS Grid 4 equal columns with minimal gap, 2 rows",
+      "design": {
+        "background": "Inherits page background (off-white)",
+        "text": "Dark foreground, small sans-serif font for title and price",
+        "styling": "No borders around cards, images sit flush with tight spacing"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "'View all' link centered below the grid with an arrow.",
+        "media": {
+          "type": "product-images",
+          "description": "Clean product shots on light neutral grey backgrounds. Focus entirely on the jewelry items (rings, necklaces, earrings).",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Very stark and minimal presentation. Focus is entirely on the product forms."
+    },
+    {
+      "name": "featured-collection",
+      "type": "full-width-media",
+      "layout": "Full bleed, 2-column split image layout",
+      "design": {
+        "background": "Image-based",
+        "text": "Dark text for CTA button",
+        "styling": "Images touch edges"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Single white rectangular button placed centrally at the bottom, dark text, sharp square corners (0rem).",
+        "media": {
+          "type": "image",
+          "description": "Side-by-side layout. Left: Model wearing black top and jewelry. Right: Close up flat lay of shiny silver jewelry pieces on a muted olive green background.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Serves as a visual break between product grids."
+    },
+    {
+      "name": "product-grid-bestsellers",
+      "type": "product-showcase",
+      "layout": "CSS Grid 4 equal columns with minimal gap, 2 rows",
+      "design": {
+        "background": "Inherits page background",
+        "text": "Dark foreground, small sans-serif",
+        "styling": "No borders, flush tight spacing"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "'View all' link centered below the grid with an arrow.",
+        "media": {
+          "type": "product-images",
+          "description": "Consistent clean product photography on light grey backgrounds.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Structurally identical to the first product grid."
+    },
+    {
+      "name": "brand-story-split",
+      "type": "split-content",
+      "layout": "2-column grid, 50/50 split. Images on top, text below each image respectively.",
+      "design": {
+        "background": "Inherits page background",
+        "text": "White text overlaid on images for title. Dark text for descriptions below.",
+        "styling": "Images touch edges. Text blocks have ample padding."
+      },
+      "content": {
+        "headline": "Bold white text centered over each image (e.g., 'ABOUT US', 'VISIT US')",
+        "body": "Short, single-paragraph descriptions below each image explaining craftsmanship or studio visits.",
+        "cta": "Text link with arrow below each paragraph (e.g., 'BRAND NAME ->', 'SHOP IN STUDIO ->')",
+        "media": {
+          "type": "image",
+          "description": "Two black and white lifestyle/behind-the-scenes images. Left: Hands working on jewelry with tools. Right: Flat lay of tools and jewelry pieces on a table.",
+          "position": "top"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Provides brand context and an invitation to physical locations. The black and white photography adds to the editorial feel."
+    }
+  ]
+}

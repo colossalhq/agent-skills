@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "name": "Swim Editorial",
+    "description": "A high-end, editorial swimwear store with a minimalist, image-focused design. The layout uses full-bleed product imagery, bold uppercase typography for headers, and a clean white background to emphasize the colorful lifestyle photography.",
+    "industry": "fashion",
+    "aesthetic": "editorial",
+    "mood": "energetic and bold",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "category-links",
+      "product-grid",
+      "pagination",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "card": "#ffffff",
+      "cardForeground": "#000000",
+      "popover": "#ffffff",
+      "popoverForeground": "#000000",
+      "primary": "#000000",
+      "primaryForeground": "#ffffff",
+      "secondary": "#f4f4f4",
+      "secondaryForeground": "#000000",
+      "muted": "#f4f4f4",
+      "mutedForeground": "#666666",
+      "accent": "#000000",
+      "accentForeground": "#ffffff",
+      "destructive": "#ff0000",
+      "border": "#e5e5e5",
+      "input": "#ffffff",
+      "ring": "#000000"
+    },
+    "customColors": {
+      "announcement-bg": "#000000",
+      "announcement-text": "#ffffff"
+    },
+    "radius": "0rem",
+    "radiusButton": "0rem",
+    "fonts": {
+      "sans": "Helvetica, Arial, sans-serif",
+      "display": "Impact, sans-serif",
+      "mono": "monospace",
+      "serif": "serif"
+    },
+    "fontPackages": [
+      "@fontsource/helvetica",
+      "@fontsource/impact"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "centered",
+    "floating": false,
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#000000",
+      "mutedText": "#000000",
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Minimalist header with bold, condensed logo centered. Navigation on the left, utility icons (search, wishlist, cart) on the right. Upper announcement bar is solid black with white text."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#000000",
+      "mutedText": "#666666",
+      "border": false
+    },
+    "description": null,
+    "notes": "Clean, multi-column footer. Left side contains text links grouped by category. Right side features a newsletter signup form with a black, square 'SUBSCRIBE' button."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "icon-only",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Large, portrait-oriented lifestyle images. Product details (name, price) below image in small, uppercase sans-serif. Heart icon overlay on image top right. Bag icon overlay below image bottom right."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": 2,
+      "md": 3,
+      "lg": 3,
+      "xl": 3
+    },
+    "gap": "0",
+    "notes": "Seamless, edge-to-edge grid with no gaps between product images. This creates a highly visual, lookbook-style presentation."
+  },
+  "featuredProducts": {
+    "label": null,
+    "heading": "NEW ARRIVALS",
+    "notes": "Section header features filter dropdowns on left and right, with bold uppercase title in center."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full-width single row, centered text",
+      "design": {
+        "background": "Solid black (#000000)",
+        "text": "White (#ffffff), uppercase, small sans-serif",
+        "styling": "Thin bar at very top, no padding"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": null,
+        "specialElements": "Scrolling or static text banner highlighting shipping/tax info"
+      },
+      "notes": "Standard top promo bar."
+    },
+    {
+      "name": "category-links",
+      "type": "categories",
+      "layout": "Flexbox row, horizontally centered icons and text",
+      "design": {
+        "background": "White (#ffffff)",
+        "text": "Black (#000000), small sans-serif below icons",
+        "styling": "Minimalist, generous spacing between items"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "icon-grid",
+          "description": "Simple line drawings of bikini types (Bikinis, Separates, Neoprene)",
+          "position": "above text labels"
+        },
+        "items": [
+          {
+            "icon": "bikini top and bottom outline",
+            "title": "Bikinis",
+            "image": null
+          },
+          {
+            "icon": "bikini bottom outline",
+            "title": "Separates",
+            "image": null
+          },
+          {
+            "icon": "bikini top outline",
+            "title": "Neoprene",
+            "image": null
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Visual navigation for sub-categories placed below header, above main grid."
+    },
+    {
+      "name": "product-grid",
+      "type": "product-showcase",
+      "layout": "CSS grid 3 equal columns, no gap",
+      "design": {
+        "background": "White (#ffffff)",
+        "text": "Black (#000000), small uppercase for product names and prices",
+        "styling": "Edge-to-edge images, no margins or padding between columns or rows"
+      },
+      "content": {
+        "headline": "Bold uppercase section title",
+        "body": null,
+        "cta": "Icon-only add to bag button (shopping bag outline)",
+        "media": {
+          "type": "product-images",
+          "description": "Full-body lifestyle shots of models wearing swimwear in sunny, outdoor settings (pools, boats, beaches)",
+          "position": "grid"
+        },
+        "items": "Array of product objects with image, title, price, and icons",
+        "specialElements": "Filter and sorting dropdowns positioned horizontally above the grid"
+      },
+      "notes": "The dominant visual element of the page. High-impact imagery drives engagement."
+    },
+    {
+      "name": "pagination",
+      "type": "text-block",
+      "layout": "Centered flex container",
+      "design": {
+        "background": "White (#ffffff)",
+        "text": "Black (#000000), small sans-serif",
+        "styling": "Vertical padding (py-8)"
+      },
+      "content": {
+        "headline": null,
+        "body": "Text indicating showing 1-30 of X products, followed by page numbers",
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": null,
+        "specialElements": "Simple numbered pagination with next arrow"
+      },
+      "notes": "Standard list pagination below the massive grid."
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "meta": {
+    "name": "Eco Footwear",
+    "description": "A modern, eco-conscious footwear and apparel store with a clean, airy, and slightly earthy aesthetic. It uses full-width lifestyle imagery, prominent typography, and a muted, nature-inspired color palette to appeal to sustainably-minded consumers.",
+    "industry": "fashion",
+    "aesthetic": "modern-clean",
+    "mood": "calm and refined",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "hero",
+      "category-tiles",
+      "featured-product",
+      "brand-collaboration",
+      "split-feature",
+      "collection-grid",
+      "product-grid",
+      "value-props",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#F4F2EC",
+      "foreground": "#212A2F",
+      "card": "#FFFFFF",
+      "cardForeground": "#212A2F",
+      "popover": "#FFFFFF",
+      "popoverForeground": "#212A2F",
+      "primary": "#212A2F",
+      "primaryForeground": "#FFFFFF",
+      "secondary": "#EAE8E3",
+      "secondaryForeground": "#212A2F",
+      "muted": "#E5E5E5",
+      "mutedForeground": "#6B7280",
+      "accent": "#F4F2EC",
+      "accentForeground": "#212A2F",
+      "destructive": "#EF4444",
+      "border": "#D1D5DB",
+      "input": "#E5E5E5",
+      "ring": "#212A2F"
+    },
+    "customColors": {
+      "announcementBg": "#212A2F",
+      "announcementText": "#FFFFFF",
+      "footerBg": "#212A2F",
+      "footerText": "#FFFFFF"
+    },
+    "radius": "0.5rem",
+    "radiusButton": "9999px",
+    "fonts": {
+      "sans": "'Geograph', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "display": "'Geograph', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+      "serif": "'Georgia', serif"
+    },
+    "fontPackages": [
+      "@fontsource/inter"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#F4F2EC",
+      "text": "#212A2F",
+      "mutedText": "#212A2F",
+      "border": null,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Clean header with logo on left, centered navigation links, and icon-only actions on the right."
+  },
+  "footer": {
+    "colorScheme": "inverted",
+    "colors": {
+      "bg": "#212A2F",
+      "text": "#FFFFFF",
+      "mutedText": "#9CA3AF",
+      "border": "#374151"
+    },
+    "description": "Email signup, multiple link columns, social icons, and B-Corp certification.",
+    "notes": "Dark footer contrasting with the mostly light page. Features a prominent email subscription input, 4 columns of links, social media icons, and regional/certification badges."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Clean white cards with product image, title, variant name, color swatches, and price (with original price struck through if on sale)."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": 2,
+      "md": 3,
+      "lg": 4,
+      "xl": 4
+    },
+    "gap": "6",
+    "notes": "Horizontal scrolling or wrapped grid of 4 product cards. Navigation arrows or category tabs above."
+  },
+  "featuredProducts": {
+    "label": "BESTSELLERS",
+    "heading": "Dasher NZ",
+    "notes": "Large featured product shot with title, description, price, and CTA buttons."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full-width single row, centered text",
+      "design": {
+        "background": "Solid dark navy (#212A2F)",
+        "text": "White, small sans-serif",
+        "styling": "No borders, tight padding"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": null,
+        "specialElements": "Promotional banner with shipping offer"
+      },
+      "notes": "Sticks to top above header"
+    },
+    {
+      "name": "header",
+      "type": "navigation",
+      "layout": "Flexbox row, logo left, nav center, actions right",
+      "design": {
+        "background": "Solid light (#F4F2EC)",
+        "text": "Dark foreground (#212A2F), uppercase nav links",
+        "styling": "No borders, standard padding"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "Full-width background image, text/CTAs in top right",
+      "design": {
+        "background": "Full-bleed lifestyle/product photograph",
+        "text": "White headings, sans-serif",
+        "styling": "Overlay or embedded text, pill-shaped buttons"
+      },
+      "content": {
+        "headline": "Campaign title for new collection",
+        "body": "Subtitle/collection name",
+        "cta": "2 buttons: white background, dark text, pill-shaped (9999px radius)",
+        "media": {
+          "type": "image",
+          "description": "Overhead shot of several pairs of shoes arranged in a circle on a neutral background, highlighting a specific color with a white box.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": "White box overlay highlighting a specific product color"
+      },
+      "notes": ""
+    },
+    {
+      "name": "category-tiles",
+      "type": "categories",
+      "layout": "CSS grid 4 equal columns with gap",
+      "design": {
+        "background": "Transparent",
+        "text": "White text, small uppercase, outline buttons",
+        "styling": "Rounded corners on images, subtle hover effect"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Outline buttons on each tile, pill-shaped",
+        "media": {
+          "type": "product-images",
+          "description": "Grid of 4 category tiles, each showing a single shoe against a solid, muted color background matching the shoe.",
+          "position": "background of tiles"
+        },
+        "items": [
+          {
+            "icon": null,
+            "title": "Category label",
+            "image": "Shoe on colored background"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Tiles act as links to categories"
+    },
+    {
+      "name": "featured-product",
+      "type": "product-showcase",
+      "layout": "Full-width background image, text/CTAs below",
+      "design": {
+        "background": "Transparent, large product image",
+        "text": "Dark foreground, prominent serif or display font for title",
+        "styling": "Centered text, outline buttons"
+      },
+      "content": {
+        "headline": "Product name and model",
+        "body": "Color name and price",
+        "cta": "2 buttons: outline dark, pill-shaped (9999px radius)",
+        "media": {
+          "type": "image",
+          "description": "Large side-profile shot of a single shoe on a light background with subtle dot pattern.",
+          "position": "above text"
+        },
+        "items": null,
+        "specialElements": "Category tabs above product image"
+      },
+      "notes": ""
+    },
+    {
+      "name": "brand-collaboration",
+      "type": "split-content",
+      "layout": "2-column grid, unequal split or mixed media sizes",
+      "design": {
+        "background": "Transparent",
+        "text": "White or dark depending on background, sans-serif",
+        "styling": "Rounded corners on media, pill-shaped buttons"
+      },
+      "content": {
+        "headline": "Collaboration title",
+        "body": "Short descriptive text",
+        "cta": "Single white button, dark text, pill-shaped (9999px radius)",
+        "media": {
+          "type": "image",
+          "description": "Mix of lifestyle shot with person outdoors, a landscape shot with brand logos, and top-down product shots.",
+          "position": "grid arrangement"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "split-feature",
+      "type": "split-content",
+      "layout": "2-column grid, 50/50 split",
+      "design": {
+        "background": "Transparent",
+        "text": "Dark foreground, sans-serif",
+        "styling": "Centered text in left column, rounded corners on media"
+      },
+      "content": {
+        "headline": "Product category title",
+        "body": "Short supporting paragraph",
+        "cta": "2 buttons: outline dark, pill-shaped (9999px radius)",
+        "media": {
+          "type": "image",
+          "description": "Left: product shot on light background. Right: lifestyle shot of person leaning against a vintage car.",
+          "position": "split columns"
+        },
+        "items": null,
+        "specialElements": "Small label above title"
+      },
+      "notes": ""
+    },
+    {
+      "name": "collection-grid",
+      "type": "categories",
+      "layout": "CSS grid 3 equal columns with gap",
+      "design": {
+        "background": "Transparent",
+        "text": "White text, serif or display font for title",
+        "styling": "Rounded corners on images, overlay text, outline buttons"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Outline buttons on each tile, white, pill-shaped (9999px radius)",
+        "media": {
+          "type": "image",
+          "description": "Grid of 3 lifestyle/product images (shoes on books, sandals outdoors, person in suit with flats) with dark overlays.",
+          "position": "background of tiles"
+        },
+        "items": [
+          {
+            "icon": null,
+            "title": "Collection name",
+            "image": "Lifestyle shot"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Tiles act as links to collections"
+    },
+    {
+      "name": "product-grid",
+      "type": "product-grid",
+      "layout": "CSS grid 4 equal columns",
+      "design": {
+        "background": "Solid light (#F4F2EC) or white cards",
+        "text": "Dark foreground, small sans-serif",
+        "styling": "Cards with white background, rounded corners (0.5rem)"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "product-images",
+          "description": "Grid of 4 product shots (shoes) on solid white backgrounds.",
+          "position": "in cards"
+        },
+        "items": [
+          {
+            "title": "Product title",
+            "subtitle": "Variant",
+            "price": "Price info",
+            "image": "Product shot"
+          }
+        ],
+        "specialElements": "Category tabs and slider navigation arrows above grid"
+      },
+      "notes": ""
+    },
+    {
+      "name": "value-props",
+      "type": "features",
+      "layout": "CSS grid 3 equal columns",
+      "design": {
+        "background": "Transparent",
+        "text": "Dark foreground, sans-serif, small uppercase titles",
+        "styling": "White cards, rounded corners, padding"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": [
+          {
+            "title": "Value proposition title",
+            "body": "Short descriptive paragraph"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Text-only cards highlighting brand values (comfort, sustainability, materials)"
+    },
+    {
+      "name": "footer",
+      "type": "footer",
+      "layout": "Grid layout, email left, link columns right, bottom bar",
+      "design": {
+        "background": "Solid dark navy (#212A2F)",
+        "text": "White headings, light grey links",
+        "styling": "Pill-shaped input for email, divider lines"
+      },
+      "content": {
+        "headline": "Subscribe text",
+        "body": null,
+        "cta": "Sign up button inside input field",
+        "media": {
+          "type": "icon-grid",
+          "description": "Social media icons, certification logo",
+          "position": "bottom left"
+        },
+        "items": null,
+        "specialElements": "B-Corp logo"
+      },
+      "notes": ""
+    }
+  ]
+}
