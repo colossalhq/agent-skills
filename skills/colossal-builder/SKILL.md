@@ -1,6 +1,6 @@
 ---
 name: colossal-builder
-description: Use the Colossal Storefront SDK (@colossal-sh/storefront-sdk) in a React app. Use when wiring up a storefront's data layer — initializing the client, mounting QueryClientProvider + CartProvider, fetching products (useProducts/useProduct), store metadata (useStore/useCurrentStore), managing cart state (useCartContext), creating checkout sessions (useCreateCheckoutSession), or running custom GraphQL via executeStorefront. Covers the full hook surface, provider setup, helpers (formatPrice, toSimpleProduct, etc.), and the backend constraints that apply to any Colossal storefront (no contact/review forms, no accounts, no wishlists). Generic React guidance — for the Colossal React Vite template specifics, pair with colossal-template-builder.
+description: Use the Colossal Storefront SDK (@colossal-sh/storefront-sdk) in a React app. Use when wiring up a storefront's data layer — initializing the client, mounting QueryClientProvider + CartProvider, fetching products (useProducts/useProduct), store metadata (useStore/useCurrentStore), managing cart state (useCartContext), creating checkout sessions (useCreateCheckoutSession), or running custom GraphQL via executeStorefront. Covers the full hook surface, provider setup, and helpers (formatPrice, toSimpleProduct, etc.). Generic React guidance — for the Colossal React Vite template specifics, pair with colossal-template-builder.
 ---
 
 # Colossal Builder
@@ -353,21 +353,6 @@ queryClient.invalidateQueries({ queryKey: cartKeys.all });
 queryClient.invalidateQueries({ queryKey: cartKeys.detail(cartUid) });
 queryClient.invalidateQueries({ queryKey: checkoutKeys.session(uid) });
 ```
-
----
-
-## Data constraints
-
-The SDK only covers product, store, cart, and checkout. **Never add UI that implies a backend the storefront doesn't have:**
-
-- No contact forms
-- No review/rating forms
-- No newsletter signup integrations
-- No login or account pages
-- No wishlists or favorites
-- No email inputs at all — even as static elements
-
-An inert input that looks functional is misleading. These constraints apply to every Colossal storefront, regardless of template or framework. They are not aesthetic preferences.
 
 ---
 
