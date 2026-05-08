@@ -1,0 +1,529 @@
+{
+  "meta": {
+    "name": "Tech Charge Premium",
+    "reference_url": "https://www.anker.com",
+    "description": "A clean, modern electronics brand store featuring large hero imagery, clear grid layouts, and high-contrast typography. The design emphasizes product innovation and reliability with a dark-accented modern aesthetic.",
+    "industry": "electronics",
+    "aesthetic": "modern-clean",
+    "mood": "tech-forward and premium",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "hero",
+      "promo-banner",
+      "brand-stats",
+      "featured-promos",
+      "category-grid",
+      "flagship-series",
+      "lifestyle-solutions",
+      "product-tabs",
+      "value-props",
+      "membership-cta",
+      "exclusive-offers",
+      "recommendations",
+      "testimonials",
+      "blog-updates",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#f5f5f5",
+      "foreground": "#000000",
+      "card": "#ffffff",
+      "cardForeground": "#000000",
+      "popover": "#ffffff",
+      "popoverForeground": "#000000",
+      "primary": "#000000",
+      "primaryForeground": "#ffffff",
+      "secondary": "#e5e5e5",
+      "secondaryForeground": "#000000",
+      "muted": "#f3f4f6",
+      "mutedForeground": "#6b7280",
+      "accent": "#f5f5f5",
+      "accentForeground": "#000000",
+      "destructive": "#ef4444",
+      "border": "#e5e7eb",
+      "input": "#e5e7eb",
+      "ring": "#000000"
+    },
+    "customColors": {
+      "header-top": "#3b5b9f",
+      "footer-bg": "#000000",
+      "tab-active": "#ffffff",
+      "tab-inactive": "#e5e5e5"
+    },
+    "radius": "0rem",
+    "radiusButton": "0rem",
+    "fonts": {
+      "sans": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "display": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+      "serif": "ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif"
+    },
+    "fontPackages": [
+      "@fontsource/inter"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#000000",
+      "mutedText": "#6b7280",
+      "border": false,
+      "badgeBg": "#000000",
+      "badgeText": "#ffffff"
+    },
+    "notes": "Features a dark blue announcement bar above the main white header. Logo on the left, navigation in the center, and icon-only search/cart on the right. Transparent/light border bottom."
+  },
+  "footer": {
+    "colorScheme": "inverted",
+    "colors": {
+      "bg": "#000000",
+      "text": "#ffffff",
+      "mutedText": "#9ca3af",
+      "border": "#374151"
+    },
+    "description": "Lengthy legal and brand disclaimer text at the top of the footer before standard links.",
+    "notes": "Dark footer with small text disclaimers, followed by an email subscription input area."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "outline",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Square image containers with light grey background. Title and description below, followed by price. Two square buttons at the bottom: 'Shop Now' (outline) and 'Learn More' (solid dark)."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "1",
+      "md": "2",
+      "lg": "3",
+      "xl": "4"
+    },
+    "gap": "6",
+    "notes": "Cards have solid white backgrounds against the light grey page background. Horizontal scroll or overflow hidden visible on the right edge."
+  },
+  "featuredProducts": {
+    "label": "Must-Have Selections",
+    "heading": "Explore Anker's Flagship Series",
+    "notes": "Grid of large promotional banners mixing product photography with dark/light backgrounds."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full-width single row, centered content.",
+      "design": {
+        "background": "Solid dark blue top strip with a lighter blue secondary strip below.",
+        "text": "White text on top strip, dark text on secondary strip.",
+        "styling": "No borders, minimal padding."
+      },
+      "content": {
+        "headline": "Promotional banner with discount offer",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Two-tiered announcement area."
+      },
+      "notes": "Topmost element of the page."
+    },
+    {
+      "name": "header",
+      "type": "header",
+      "layout": "Flexbox row, logo left, nav center, actions right.",
+      "design": {
+        "background": "Solid white.",
+        "text": "Dark foreground for logo and icons.",
+        "styling": "No bottom border, sticky behavior."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Icon buttons for search, user, and cart.",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Clean, minimal top navigation."
+    },
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "Full-width single column, text overlay top, large central image.",
+      "design": {
+        "background": "Light gradient/product photography full bleed.",
+        "text": "Dark centered heading and subheading.",
+        "styling": "No borders, content edge-to-edge."
+      },
+      "content": {
+        "headline": "Bold product innovation statement.",
+        "body": "Subheading with promotional discount.",
+        "cta": "Single solid black button, square corners.",
+        "media": {
+          "type": "product-images",
+          "description": "Stack of colorful smart display chargers on a reflective surface.",
+          "position": "center background/inline"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Large prominent hero image highlighting product features."
+    },
+    {
+      "name": "promo-banner",
+      "type": "full-width-media",
+      "layout": "Full-width image banner with centered text overlay.",
+      "design": {
+        "background": "Dark cinematic lifestyle photograph.",
+        "text": "White centered text.",
+        "styling": "Edge-to-edge banner."
+      },
+      "content": {
+        "headline": "Aspirational statement about outdoor usage.",
+        "body": "Subtext with promotional offer.",
+        "cta": "Single solid white button, square corners.",
+        "media": {
+          "type": "image",
+          "description": "People enjoying an outdoor camping setup at dusk, powered by a large portable generator.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Strong contrast from the lighter hero section above."
+    },
+    {
+      "name": "brand-stats",
+      "type": "stats",
+      "layout": "Flex row, large heading on left, smaller stat columns on right.",
+      "design": {
+        "background": "Inherits light grey page background.",
+        "text": "Dark foreground.",
+        "styling": "Generous vertical padding, no borders."
+      },
+      "content": {
+        "headline": "Bold brand leadership statement.",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": [
+          "Market availability stat",
+          "Customer base stat",
+          "Pioneering years stat"
+        ],
+        "specialElements": null
+      },
+      "notes": "Builds trust before showing more products."
+    },
+    {
+      "name": "featured-promos",
+      "type": "split-content",
+      "layout": "2-column grid, equal split.",
+      "design": {
+        "background": "Inherits light page background.",
+        "text": "White text overlay on dark images.",
+        "styling": "Square image containers, text overlay bottom left."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Single white button per card, square corners.",
+        "media": {
+          "type": "product-images",
+          "description": "Two separate product setup shots. Left: wireless chargers. Right: docking station setup.",
+          "position": "background of cards"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Highlights two distinct product categories with lifestyle/setup imagery."
+    },
+    {
+      "name": "category-grid",
+      "type": "categories",
+      "layout": "Flex row / grid of 4 small square cards.",
+      "design": {
+        "background": "Inherits light page background.",
+        "text": "Dark, small centered text.",
+        "styling": "Light grey background squares for icons/products."
+      },
+      "content": {
+        "headline": "Section heading for categories.",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "icon-grid",
+          "description": "Small product icons representing categories.",
+          "position": "centered in cards"
+        },
+        "items": [
+          "Power Banks",
+          "Chargers",
+          "Wireless Chargers",
+          "Hubs and Docks"
+        ],
+        "specialElements": null
+      },
+      "notes": "Quick navigation to main product lines."
+    },
+    {
+      "name": "flagship-series",
+      "type": "split-content",
+      "layout": "2-column grid, equal split.",
+      "design": {
+        "background": "Inherits light page background.",
+        "text": "Contrasting text (white on left dark image, dark on right light image).",
+        "styling": "Large square image containers, text overlay bottom left."
+      },
+      "content": {
+        "headline": "Section heading for flagship lines.",
+        "body": "Brief product line descriptions.",
+        "cta": "Solid buttons (white on left, black on right), square corners.",
+        "media": {
+          "type": "product-images",
+          "description": "Left: premium dark series products on dark background. Right: compact white series products on light background.",
+          "position": "background of cards"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Visually separates two main sub-brands by color scheme."
+    },
+    {
+      "name": "lifestyle-solutions",
+      "type": "split-content",
+      "layout": "Large main image on left, grid of smaller vertical images on right.",
+      "design": {
+        "background": "Inherits light page background.",
+        "text": "White text overlay on main image.",
+        "styling": "Tight gaps between images."
+      },
+      "content": {
+        "headline": "Section heading for usage scenarios.",
+        "body": "Subtext describing ecosystem.",
+        "cta": "Solid white button on main image, square corners.",
+        "media": {
+          "type": "image",
+          "description": "Lifestyle shots of people using devices in various settings (relaxing, working, traveling).",
+          "position": "grid arrangement"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Shows products in real-world contexts."
+    },
+    {
+      "name": "product-tabs",
+      "type": "product-showcase",
+      "layout": "Tabs above a row of product cards.",
+      "design": {
+        "background": "Inherits light page background.",
+        "text": "Dark foreground.",
+        "styling": "White product cards, light grey background."
+      },
+      "content": {
+        "headline": "Section heading for must-have selections.",
+        "body": null,
+        "cta": "Two square buttons per card: 'Shop Now' (outline) and 'Learn More' (solid dark).",
+        "media": {
+          "type": "product-images",
+          "description": "Clean product shots on light grey background.",
+          "position": "top of product cards"
+        },
+        "items": "Product cards with title, description, price, and actions.",
+        "specialElements": "Pill-shaped toggle tabs for 'New Arrivals' and 'Bestsellers'."
+      },
+      "notes": "Classic e-commerce product shelf layout."
+    },
+    {
+      "name": "value-props",
+      "type": "features",
+      "layout": "CSS Grid 2x3 or 3x2 depending on viewport, solid white cards.",
+      "design": {
+        "background": "Inherits light page background.",
+        "text": "Dark text.",
+        "styling": "White cards with generous padding, small icons."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "icon-grid",
+          "description": "Simple line icons representing shipping, returns, warranty, etc.",
+          "position": "top right of each card"
+        },
+        "items": [
+          "Delivery info",
+          "Guarantee info",
+          "Payment info",
+          "Support info",
+          "Rewards info",
+          "Warranty info"
+        ],
+        "specialElements": null
+      },
+      "notes": "Highlights customer service and purchase benefits."
+    },
+    {
+      "name": "membership-cta",
+      "type": "cta-banner",
+      "layout": "Full-width single row, image right, text left.",
+      "design": {
+        "background": "Dark gradient background.",
+        "text": "White text.",
+        "styling": "Card-like banner with dark background."
+      },
+      "content": {
+        "headline": "Membership program invitation.",
+        "body": "Benefits description.",
+        "cta": "Two buttons: Outline dark/white border, and Solid white. Square corners.",
+        "media": {
+          "type": "image",
+          "description": "Sleek metallic membership card graphic.",
+          "position": "right side"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Drives loyalty program signups."
+    },
+    {
+      "name": "exclusive-offers",
+      "type": "promotions",
+      "layout": "3-column grid of square cards.",
+      "design": {
+        "background": "Inherits light page background.",
+        "text": "Dark text on left/center cards, white text on right card.",
+        "styling": "White and dark card backgrounds."
+      },
+      "content": {
+        "headline": "Section heading for exclusive offers.",
+        "body": "Offer details.",
+        "cta": null,
+        "media": {
+          "type": "product-images",
+          "description": "Graphics depicting special offers, corporate orders, and refurbished products.",
+          "position": "top of cards"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Highlights alternative purchase paths."
+    },
+    {
+      "name": "recommendations",
+      "type": "split-content",
+      "layout": "2-column grid of horizontal cards.",
+      "design": {
+        "background": "Inherits light page background.",
+        "text": "Dark text.",
+        "styling": "Cards with large image on left, text on right."
+      },
+      "content": {
+        "headline": "Section heading for recommendations.",
+        "body": "Editorial copy about product usage.",
+        "cta": "Circular play button icon over image.",
+        "media": {
+          "type": "video",
+          "description": "Video thumbnails of people using products in interesting locations.",
+          "position": "left side of cards"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Video content or editorial spotlights."
+    },
+    {
+      "name": "testimonials",
+      "type": "testimonials",
+      "layout": "Grid of cards, horizontal scroll likely.",
+      "design": {
+        "background": "Inherits light page background.",
+        "text": "Dark text.",
+        "styling": "Light grey card backgrounds."
+      },
+      "content": {
+        "headline": "Section heading for fan reviews.",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "product-images",
+          "description": "Small thumbnail of the purchased product at the bottom of the review.",
+          "position": "bottom of cards"
+        },
+        "items": [
+          "Customer name, rating stars, review text, product thumbnail"
+        ],
+        "specialElements": "Orange star rating icons."
+      },
+      "notes": "Social proof section."
+    },
+    {
+      "name": "blog-updates",
+      "type": "categories",
+      "layout": "3-column grid of vertical cards.",
+      "design": {
+        "background": "Inherits light page background.",
+        "text": "White text overlay on images.",
+        "styling": "Image cards with text at the bottom."
+      },
+      "content": {
+        "headline": "Section heading for blogs and updates.",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Lifestyle photography illustrating blog post topics.",
+          "position": "background of cards"
+        },
+        "items": [
+          "Blog post titles overlaid on images"
+        ],
+        "specialElements": "'All Blogs >' link top right."
+      },
+      "notes": "Content marketing section."
+    },
+    {
+      "name": "footer",
+      "type": "footer",
+      "layout": "Full width, text heavy top section.",
+      "design": {
+        "background": "Solid dark background.",
+        "text": "Light grey/muted text.",
+        "styling": "Small text size, dense information."
+      },
+      "content": {
+        "headline": null,
+        "body": "Extensive brand positioning and legal disclaimers.",
+        "cta": "Newsletter signup input with solid button.",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Standard complex footer beginning with legal text."
+    }
+  ]
+}

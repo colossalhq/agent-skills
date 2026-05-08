@@ -1,0 +1,457 @@
+{
+  "meta": {
+    "name": "Athletic Flow",
+    "reference_url": "https://www.lululemon.com",
+    "description": "A premium activewear and lifestyle brand focusing on movement, comfort, and performance. The aesthetic is clean, modern, and editorial with large imagery and minimal typography, targeting an active, affluent demographic.",
+    "industry": "fashion",
+    "aesthetic": "modern-clean",
+    "mood": "calm and refined",
+    "sectionNames": [
+      "announcement-bar",
+      "hero",
+      "product-carousel",
+      "split-features",
+      "secondary-hero",
+      "category-grid",
+      "social-gallery",
+      "activity-categories",
+      "seasonal-carousel",
+      "color-categories",
+      "fit-categories",
+      "footer",
+      "final-cta-banner"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "card": "#f7f7f7",
+      "cardForeground": "#000000",
+      "popover": "#ffffff",
+      "popoverForeground": "#000000",
+      "primary": "#000000",
+      "primaryForeground": "#ffffff",
+      "secondary": "#e5e5e5",
+      "secondaryForeground": "#000000",
+      "muted": "#f2f2f2",
+      "mutedForeground": "#555555",
+      "accent": "#f7f7f7",
+      "accentForeground": "#000000",
+      "destructive": "#ff0000",
+      "border": "#e5e5e5",
+      "input": "#ffffff",
+      "ring": "#000000"
+    },
+    "customColors": {
+      "light-grey-bg": "#fafafa",
+      "dark-grey-text": "#333333",
+      "button-light-bg": "#f5f5f5"
+    },
+    "radius": "0rem",
+    "radiusButton": "9999px",
+    "fonts": {
+      "sans": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "display": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+      "serif": "ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif"
+    },
+    "fontPackages": [
+      "@fontsource/inter"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#000000",
+      "mutedText": "#000000",
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "The header appears near the bottom of the screenshot before the final CTA banner, featuring a logo on the left, standard navigation links, a search bar, location setting, and icon buttons on the right."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#000000",
+      "mutedText": "#555555",
+      "border": false
+    },
+    "description": null,
+    "notes": "A true footer is not clearly visible; the closest element is the header/nav bar appearing lower on the page before a final large background image CTA."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Clean product cards with a light grey background for the image. Below the image, the product name, price, and color swatches are displayed. No visible borders or complex hover effects are apparent."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "4",
+      "xl": "4"
+    },
+    "gap": "6",
+    "notes": "Horizontal scrolling carousels are used for product grids, with previous/next arrow buttons positioned below the cards."
+  },
+  "featuredProducts": {
+    "label": "",
+    "heading": "Your practice, expanded.",
+    "notes": "A horizontal scrolling carousel of product cards with a section heading on the left and a 'Shop now' button on the right."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full width, centered text",
+      "design": {
+        "background": "Very light grey/off-white",
+        "text": "Dark grey text",
+        "styling": "Thin strip at the very top, minimal padding."
+      },
+      "content": {
+        "headline": "Promotional banner with delivery offer",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Left and right arrow icons for scrolling multiple messages."
+      },
+      "notes": ""
+    },
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "Full-bleed background image with text overlay, bottom-aligned text.",
+      "design": {
+        "background": "Full-bleed lifestyle photograph showing a group yoga session outdoors.",
+        "text": "White, large, bold sans-serif headline, smaller regular weight subtitle.",
+        "styling": "Text overlay is positioned on the left, slightly above the bottom edge. Pill-shaped buttons."
+      },
+      "content": {
+        "headline": "Bold statement about feeling and space",
+        "body": "A short descriptive sentence about the sensation of the practice.",
+        "cta": "Two solid light grey pill-shaped buttons with dark text, and circular play/arrow buttons.",
+        "media": {
+          "type": "image",
+          "description": "Group outdoor yoga session on mats.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "product-carousel",
+      "type": "product-showcase",
+      "layout": "Header with title left, button right. Below, a horizontal scrollable row of product cards.",
+      "design": {
+        "background": "White background.",
+        "text": "Large black sans-serif heading.",
+        "styling": "Standard grid-like spacing, but implemented as a carousel with navigation arrows at the bottom right."
+      },
+      "content": {
+        "headline": "Section title introducing new practice wear.",
+        "body": null,
+        "cta": "Single black pill-shaped 'Shop now' button at the top right.",
+        "media": {
+          "type": "product-images",
+          "description": "Studio shots of models wearing activewear on light grey backgrounds.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": "Circular arrow buttons for carousel navigation."
+      },
+      "notes": ""
+    },
+    {
+      "name": "split-features",
+      "type": "split-content",
+      "layout": "Two column grid (50/50 split), image on top, text below for each column.",
+      "design": {
+        "background": "White background.",
+        "text": "Large black headings, regular body text.",
+        "styling": "Large square lifestyle images, minimal padding between image and text below."
+      },
+      "content": {
+        "headline": "Short descriptive titles for each feature block.",
+        "body": "Brief paragraph describing the fabric/fit benefits.",
+        "cta": "Solid black pill-shaped button under each description.",
+        "media": {
+          "type": "image",
+          "description": "Lifestyle shots of models in yoga poses.",
+          "position": "above text"
+        },
+        "items": null,
+        "specialElements": "Small download/share icon overlaid on the bottom right of each image."
+      },
+      "notes": ""
+    },
+    {
+      "name": "secondary-hero",
+      "type": "hero",
+      "layout": "Full-bleed background image with large faint text behind, and clear text in front, centered.",
+      "design": {
+        "background": "Full-bleed lifestyle image in a gym setting.",
+        "text": "Very large, faint, light-colored background text; smaller, clear white subtitle in front.",
+        "styling": "Centered content overlay. Pill-shaped buttons."
+      },
+      "content": {
+        "headline": "Massive faint background text, with a clear subtitle regarding heavy lifting.",
+        "body": null,
+        "cta": "Two solid light grey pill-shaped buttons with dark text.",
+        "media": {
+          "type": "image",
+          "description": "Man lifting weights in a gym.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "category-grid",
+      "type": "categories",
+      "layout": "Title top left, followed by a 4-column grid of tall, portrait-oriented category cards.",
+      "design": {
+        "background": "White background.",
+        "text": "Large black heading, centered category labels below images.",
+        "styling": "Images touch each other (zero gap) forming a continuous visual block."
+      },
+      "content": {
+        "headline": "Section title for new arrivals.",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Models showcasing different clothing lines in varied settings.",
+          "position": "grid"
+        },
+        "items": [
+          {
+            "title": "Category Name 1",
+            "image": "Model in activewear"
+          },
+          {
+            "title": "Category Name 2",
+            "image": "Model in activewear"
+          },
+          {
+            "title": "Category Name 3",
+            "image": "Model in lifestyle wear"
+          },
+          {
+            "title": "Category Name 4",
+            "image": "Model in men's wear"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": ""
+    },
+    {
+      "name": "social-gallery",
+      "type": "gallery",
+      "layout": "Centered header and subtext, followed by a masonry/collage style grid of user-generated content.",
+      "design": {
+        "background": "White background.",
+        "text": "Centered black heading and small body text.",
+        "styling": "Complex grid layout combining vertical, horizontal, and square images/videos with no gaps."
+      },
+      "content": {
+        "headline": "Call to action to wear and share.",
+        "body": "Instructions on how to get featured using tags.",
+        "cta": null,
+        "media": {
+          "type": "image and video",
+          "description": "Collage of user-generated lifestyle photos and videos in various active settings.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": "Shopping bag icon overlay on images indicating shoppable content, video player controls on video items."
+      },
+      "notes": ""
+    },
+    {
+      "name": "activity-categories",
+      "type": "categories",
+      "layout": "Title left, filter tabs right. Below, a 6-column grid of square category images.",
+      "design": {
+        "background": "White background.",
+        "text": "Large black heading, centered text below images.",
+        "styling": "Images touch each other (zero gap) forming a continuous visual block."
+      },
+      "content": {
+        "headline": "Shop by Activity.",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Models engaged in specific activities (yoga, running, tennis, etc.).",
+          "position": "grid"
+        },
+        "items": [
+          {
+            "title": "Shop Category 1"
+          },
+          {
+            "title": "Shop Category 2"
+          },
+          {
+            "title": "Shop Category 3"
+          },
+          {
+            "title": "Shop Category 4"
+          },
+          {
+            "title": "Shop Category 5"
+          },
+          {
+            "title": "Shop Category 6"
+          }
+        ],
+        "specialElements": "Tabbed navigation (Women/Men) to the right of the headline."
+      },
+      "notes": ""
+    },
+    {
+      "name": "seasonal-carousel",
+      "type": "product-showcase",
+      "layout": "Large headline left, stacked buttons right. Below, a horizontal scrollable row of product cards.",
+      "design": {
+        "background": "White background.",
+        "text": "Very large black heading spanning multiple lines.",
+        "styling": "Standard carousel layout for products."
+      },
+      "content": {
+        "headline": "Seasonal statement about styles belonging in the sunshine.",
+        "body": null,
+        "cta": "Two pill-shaped buttons stacked vertically (one outlined, one solid black).",
+        "media": {
+          "type": "product-images",
+          "description": "Studio shots of models in seasonal wear.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": "Circular arrow buttons for carousel navigation."
+      },
+      "notes": ""
+    },
+    {
+      "name": "color-categories",
+      "type": "categories",
+      "layout": "Title left, filter tabs right. Below, a 6-column grid of tall portrait category images.",
+      "design": {
+        "background": "White background.",
+        "text": "Large black heading, centered text below images.",
+        "styling": "Images touch each other (zero gap) forming a continuous visual block."
+      },
+      "content": {
+        "headline": "Shop by colour.",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Models wearing monochrome outfits in various colors on background colors matching the outfits.",
+          "position": "grid"
+        },
+        "items": [
+          {
+            "title": "Shop Color 1"
+          },
+          {
+            "title": "Shop Color 2"
+          },
+          {
+            "title": "Shop Color 3"
+          },
+          {
+            "title": "Shop Color 4"
+          },
+          {
+            "title": "Shop Color 5"
+          },
+          {
+            "title": "Shop Color 6"
+          }
+        ],
+        "specialElements": "Tabbed navigation (Women/Men) to the right of the headline."
+      },
+      "notes": ""
+    },
+    {
+      "name": "fit-categories",
+      "type": "categories",
+      "layout": "Title left, filter tabs right. Below, a 4-column grid of tall portrait category images.",
+      "design": {
+        "background": "White background.",
+        "text": "Large black heading, centered text below images.",
+        "styling": "Images touch each other (zero gap) forming a continuous visual block."
+      },
+      "content": {
+        "headline": "Meet the greatest fits.",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Models showcasing different fits/styles on light grey backgrounds.",
+          "position": "grid"
+        },
+        "items": [
+          {
+            "title": "Shop Fit 1"
+          },
+          {
+            "title": "Shop Fit 2"
+          },
+          {
+            "title": "Shop Fit 3"
+          },
+          {
+            "title": "Shop Fit 4"
+          }
+        ],
+        "specialElements": "Tabbed navigation (Women/Men) to the right of the headline."
+      },
+      "notes": ""
+    },
+    {
+      "name": "final-cta-banner",
+      "type": "cta-banner",
+      "layout": "Full-width background image with centered text overlay.",
+      "design": {
+        "background": "Full-bleed outdoor lifestyle image (water/beach).",
+        "text": "Large white headline, smaller regular subtitle.",
+        "styling": "Centered content over a large image."
+      },
+      "content": {
+        "headline": "Large promotional statement regarding delivery and returns.",
+        "body": "Details about the delivery offer.",
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Abstract/blurred outdoor scene, likely water/beach.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": "A small vertical 'Feedback' tab is visible on the right edge of the screen."
+      },
+      "notes": ""
+    }
+  ]
+}

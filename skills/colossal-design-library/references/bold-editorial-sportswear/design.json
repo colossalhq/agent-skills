@@ -1,0 +1,256 @@
+{
+  "meta": {
+    "name": "Athletic Edge",
+    "reference_url": "https://www.nike.com",
+    "description": "A high-energy, image-led sportswear store with a clean, modern aesthetic. Heavy use of full-bleed lifestyle imagery, bold typography, and a grid-based layout for editorial content blocks. Focuses heavily on prominent CTAs overlaid on dynamic photography.",
+    "industry": "sports",
+    "aesthetic": "modern-clean",
+    "mood": "energetic and bold",
+    "sectionNames": [
+      "hero",
+      "editorial-grid-1",
+      "editorial-grid-2",
+      "secondary-hero",
+      "icon-carousel",
+      "category-links",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#FFFFFF",
+      "foreground": "#111111",
+      "card": "#FFFFFF",
+      "cardForeground": "#111111",
+      "popover": "#FFFFFF",
+      "popoverForeground": "#111111",
+      "primary": "#111111",
+      "primaryForeground": "#FFFFFF",
+      "secondary": "#F5F5F5",
+      "secondaryForeground": "#111111",
+      "muted": "#F5F5F5",
+      "mutedForeground": "#707072",
+      "accent": "#F5F5F5",
+      "accentForeground": "#111111",
+      "destructive": "#E53E3E",
+      "border": "#E5E5E5",
+      "input": "#E5E5E5",
+      "ring": "#111111"
+    },
+    "customColors": {
+      "top-bar-bg": "#F5F5F5",
+      "overlay-text": "#FFFFFF",
+      "overlay-button-bg": "#FFFFFF",
+      "overlay-button-text": "#111111",
+      "carousel-nav-bg": "#E5E5E5"
+    },
+    "radius": "0rem",
+    "radiusButton": "9999px",
+    "fonts": {
+      "sans": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+      "display": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+      "serif": "ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif"
+    },
+    "fontPackages": []
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#FFFFFF",
+      "text": "#111111",
+      "mutedText": "#111111",
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Features a very thin, light grey utility bar above the main header containing secondary links. Main header has logo on left, centered navigation links, and icon-only actions on the right."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": "#FFFFFF",
+      "text": "#111111",
+      "mutedText": "#707072",
+      "border": "#E5E5E5"
+    },
+    "description": null,
+    "notes": "Clean multi-column layout with a top section for links divided into categories, and a bottom section for legal/copyright information separated by a thin subtle border."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "The primary product showcase shown is a carousel of 'Icons'. These are large, landscape-oriented product shots on a gradient grey background with a pill-shaped label overlaid at the bottom left."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "1",
+      "md": "2",
+      "lg": "3",
+      "xl": "4"
+    },
+    "gap": "6",
+    "notes": "Grid layout is mostly used for large editorial image blocks rather than standard product grids. The product showcase section uses a horizontal scrolling carousel."
+  },
+  "featuredProducts": {
+    "label": "Shop Our Icons",
+    "heading": "Shop Our Icons",
+    "notes": "Horizontal scrolling carousel with prominent left/right navigation arrows placed above the content on the right."
+  },
+  "sections": [
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "Full-width single column, overlaid content in bottom left",
+      "design": {
+        "background": "Full-bleed landscape lifestyle photograph",
+        "text": "White text overlaid on image. Small subhead, very large bold display headline, normal weight body text.",
+        "styling": "No borders, edge-to-edge image, content anchored to bottom-left with generous padding."
+      },
+      "content": {
+        "headline": "Massive, bold display typography in uppercase",
+        "body": "Short sentence describing the product benefit",
+        "cta": "Single white pill-shaped button with dark text, solid fill, small text.",
+        "media": {
+          "type": "image",
+          "description": "Dynamic, moody product shot of a trail running shoe surrounded by smoke and moss/rocks on a table.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": "Text subhead above main headline acts as a product identifier."
+      },
+      "notes": "High contrast between the white typography and the dark, textured background image."
+    },
+    {
+      "name": "editorial-grid-1",
+      "type": "gallery",
+      "layout": "2-column equal split grid",
+      "design": {
+        "background": "Inherits page background, but columns are filled entirely by images",
+        "text": "White text overlaid on bottom-left of each image block. Small subhead, larger headline.",
+        "styling": "Small gap between the two columns. Images are tall/portrait orientation."
+      },
+      "content": {
+        "headline": "Campaign specific headlines",
+        "body": null,
+        "cta": "Single white pill-shaped button with dark text on each block.",
+        "media": {
+          "type": "image",
+          "description": "Two distinct lifestyle images: left shows a person in vibrant athletic wear hanging off a structure, right shows a person standing in light-colored sportswear in an urban setting.",
+          "position": "background within grid items"
+        },
+        "items": [
+          {
+            "subhead": "Campaign label",
+            "title": "Campaign title",
+            "cta": "Shop button"
+          },
+          {
+            "subhead": "Campaign label",
+            "title": "Campaign title",
+            "cta": "Shop button"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Classic editorial 'split' banner approach used heavily in sportswear and fashion."
+    },
+    {
+      "name": "editorial-grid-2",
+      "type": "gallery",
+      "layout": "2-column equal split grid",
+      "design": {
+        "background": "Inherits page background, columns filled by images",
+        "text": "White text overlaid on bottom-left of each image block.",
+        "styling": "Small gap between columns. Same layout as editorial-grid-1."
+      },
+      "content": {
+        "headline": "Campaign specific headlines",
+        "body": null,
+        "cta": "White pill-shaped buttons. Left image has one CTA, right image has two CTAs side-by-side.",
+        "media": {
+          "type": "image",
+          "description": "Left: moody portrait of a man in dark green sportswear against a green background. Right: three women in mixed athletic/casual wear against a concrete backdrop.",
+          "position": "background within grid items"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Continuance of the editorial block pattern."
+    },
+    {
+      "name": "secondary-hero",
+      "type": "full-width-media",
+      "layout": "Full-width single column, overlaid content in bottom left",
+      "design": {
+        "background": "Full-bleed landscape photograph",
+        "text": "White text overlaid on image. Subhead and headline.",
+        "styling": "Edge-to-edge image, content anchored bottom-left."
+      },
+      "content": {
+        "headline": "Campaign headline",
+        "body": null,
+        "cta": "Single white pill-shaped button with dark text.",
+        "media": {
+          "type": "image",
+          "description": "Action shot of a runner from behind on a road at dusk, showing motion blur.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Provides a break between the grid sections and the upcoming product carousel."
+    },
+    {
+      "name": "icon-carousel",
+      "type": "product-showcase",
+      "layout": "Header with title left and nav arrows right, followed by a horizontally scrolling row of large product cards.",
+      "design": {
+        "background": "White page background",
+        "text": "Dark text for header. Dark text inside pill overlays on cards.",
+        "styling": "Cards have a light grey gradient background. Large visual presence."
+      },
+      "content": {
+        "headline": "Section title indicating featured iconic products",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "product-images",
+          "description": "Large, detailed side-profile shots of footwear on seamless grey gradient backgrounds.",
+          "position": "grid items"
+        },
+        "items": null,
+        "specialElements": "Circular, light-grey prev/next navigation arrows positioned above the carousel on the right side. Each product image has a white, pill-shaped label identifying the product family in the bottom left corner."
+      },
+      "notes": "This section acts more like a category or franchise discovery portal rather than direct 'add to cart' product cards."
+    },
+    {
+      "name": "category-links",
+      "type": "categories",
+      "layout": "4-column grid of text links",
+      "design": {
+        "background": "White",
+        "text": "Dark headings, slightly muted grey links.",
+        "styling": "Minimalist text-only layout, generous spacing."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "A 'fat footer' style directory of popular search terms and categories placed before the actual footer."
+    }
+  ]
+}

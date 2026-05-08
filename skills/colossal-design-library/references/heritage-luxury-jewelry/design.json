@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "name": "Cyan Elegance",
+    "reference_url": "https://www.tiffany.com",
+    "description": "A high-end luxury e-commerce design characterized by an editorial layout, ample whitespace, and high-contrast typography. It utilizes a signature light teal accent color against stark white and subtle grey backgrounds to convey premium quality and refined heritage.",
+    "industry": "jewelry",
+    "aesthetic": "minimal-luxury",
+    "mood": "calm and refined",
+    "sectionNames": [
+      "promotional-banner",
+      "hero-split",
+      "filter-bar",
+      "product-grid",
+      "category-showcase",
+      "newsletter-signup"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "card": "#f8f8f8",
+      "cardForeground": "#000000",
+      "popover": "#ffffff",
+      "popoverForeground": "#000000",
+      "primary": "#000000",
+      "primaryForeground": "#ffffff",
+      "secondary": "#81D8D0",
+      "secondaryForeground": "#000000",
+      "muted": "#f4f4f4",
+      "mutedForeground": "#666666",
+      "accent": "#81D8D0",
+      "accentForeground": "#000000",
+      "destructive": "#ef4444",
+      "border": "#e5e5e5",
+      "input": "#ffffff",
+      "ring": "#000000"
+    },
+    "customColors": {
+      "accent-teal": "#81D8D0",
+      "surface-light": "#f8f8f8",
+      "button-beige": "#f0ece6",
+      "dark-editorial-bg": "#112228"
+    },
+    "radius": "0rem",
+    "radiusButton": "0rem",
+    "fonts": {
+      "sans": "Inter, system-ui, -apple-system, sans-serif",
+      "display": "'Playfair Display', Georgia, serif",
+      "mono": "ui-monospace, SFMono-Regular, monospace",
+      "serif": "'Playfair Display', Georgia, serif"
+    },
+    "fontPackages": [
+      "@fontsource/inter",
+      "@fontsource/playfair-display"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "large",
+    "layout": "centered",
+    "floating": false,
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#000000",
+      "mutedText": "#000000",
+      "border": "#e5e5e5",
+      "badgeBg": "#81D8D0",
+      "badgeText": "#000000"
+    },
+    "notes": "Two-tier header construction. Top row features utility icons (search, location) on the left, an absolutely centered brand logo in a serif font, and action icons (account, cart) on the right. A secondary row below contains centered navigation links. Sits immediately below a full-width solid teal promotional banner."
+  },
+  "footer": {
+    "colorScheme": "custom",
+    "colors": {
+      "bg": "#f8f8f8",
+      "text": "#000000",
+      "mutedText": "#111111",
+      "border": "#e5e5e5"
+    },
+    "description": null,
+    "notes": "Spacious layout with a slightly off-white background to differentiate from the main page. Features a 4-column link structure. A horizontal divider line separates the links from the bottom copyright area, which contains regional settings on the left, a large centered monogram icon, and social media links on the right. A floating teal chat widget sits over the bottom right corner."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Extreme minimalism. Images sit within a perfectly square aspect ratio on a very faint off-white background (#f8f8f8) with no visible borders. Text is centered below the image: title in a serif font, subtitle and price below in a smaller sans-serif font. No visible add-to-cart buttons in default state."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "3",
+      "xl": "3"
+    },
+    "gap": "8",
+    "notes": "A strictly uniform grid layout, but interspersed with 'editorial' tiles that break the pattern. Some grid spots are replaced by lifestyle imagery or dark newsletter signup blocks featuring stark white, sharp-cornered CTA buttons ('SHOP THE LOOK', 'SIGN UP'). Generous white space between columns."
+  },
+  "featuredProducts": {
+    "label": "",
+    "heading": "Shop by Category",
+    "notes": "Displays a horizontal row of square images, each featuring a consistent teal thematic background displaying a specific product type, with uppercase category names centered underneath."
+  },
+  "sections": [
+    {
+      "name": "promotional-banner",
+      "type": "banner",
+      "layout": "Full-width single row, centered text",
+      "design": {
+        "background": "Solid signature teal/cyan",
+        "text": "Dark foreground, small sans-serif text",
+        "styling": "Extremely narrow height, sits at the very top edge of the viewport"
+      },
+      "content": {
+        "headline": null,
+        "body": "Brief promotional or informational text with an inline link",
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Top-of-page announcement bar"
+      },
+      "notes": ""
+    },
+    {
+      "name": "hero-split",
+      "type": "split-content",
+      "layout": "2-column grid, 50/50 split. Image flush left, text block centered in the right half.",
+      "design": {
+        "background": "Solid white or very faint grey behind the text",
+        "text": "Dark, high-contrast. Large serif display heading, smaller sans-serif body text.",
+        "styling": "No visible boundaries or borders between the split sections. Edge-to-edge full width."
+      },
+      "content": {
+        "headline": "Aspirational category or collection title",
+        "body": "One to two sentences describing craftsmanship and heritage.",
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Abstract, high-end product photography featuring jewelry resting on curved, glossy teal surfaces with dramatic lighting.",
+          "position": "left column"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Creates an immediate editorial feel upon scrolling past the header."
+    },
+    {
+      "name": "filter-bar",
+      "type": "utility",
+      "layout": "Flexbox row, space-between alignment",
+      "design": {
+        "background": "Solid white",
+        "text": "Dark, uppercase, small sans-serif font",
+        "styling": "Top and bottom subtle grey borders spanning full width, generous vertical padding."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Dropdown triggers on left and right, product count centered, toggle switch for personalization."
+      },
+      "notes": "Sticky behavior likely on scroll."
+    },
+    {
+      "name": "product-grid",
+      "type": "product-showcase",
+      "layout": "3-column CSS grid",
+      "design": {
+        "background": "Solid white",
+        "text": "Dark foreground, serif titles, sans-serif prices",
+        "styling": "Very loose layout, large gaps between items. Items are a mix of standard products and full-bleed editorial image tiles."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Single 'VIEW MORE' button centered at the bottom of the grid: white background, black text, thin black border, sharp square corners (0rem radius), uppercase text. Editorial tiles feature solid white 'SHOP THE LOOK' buttons with sharp square corners.",
+        "media": {
+          "type": "product-images",
+          "description": "Gold and silver jewelry isolated on faint off-white square backgrounds.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": "Pagination text and 'BACK TO TOP' link below the 'View More' button."
+      },
+      "notes": "The inclusion of dark, full-bleed tiles within the standard grid creates visual rhythm."
+    },
+    {
+      "name": "category-showcase",
+      "type": "categories",
+      "layout": "Full-width single column containing a centered heading, followed by a horizontal row/grid of items.",
+      "design": {
+        "background": "Solid white",
+        "text": "Large serif heading centered above. Category labels below images are small, dark, uppercase sans-serif.",
+        "styling": "Generous margin above the section. Images are perfectly square."
+      },
+      "content": {
+        "headline": "Instructional heading to browse by product type",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Grid of 6 square images. Each image features a single piece of jewelry against a signature teal/cyan glossy background, creating a unified color block effect.",
+          "position": "below text"
+        },
+        "items": [
+          {
+            "icon": null,
+            "title": "Category Name",
+            "image": "Teal thematic product shot"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Visually distinct from the main product grid due to the heavy use of the brand's accent color in the photography."
+    },
+    {
+      "name": "newsletter-signup",
+      "type": "newsletter",
+      "layout": "Centered single column, max-width container",
+      "design": {
+        "background": "Solid white",
+        "text": "Dark foreground, medium serif heading",
+        "styling": "Very minimal. Input field has no background or side/top borders, only a thin bottom border."
+      },
+      "content": {
+        "headline": "Call to action for brand updates",
+        "body": null,
+        "cta": "Single button placed inline to the right of the input field: light beige/grey background, black text, no border, sharp square corners (0rem radius), uppercase text.",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Input and button form a single horizontal visual line."
+    }
+  ]
+}

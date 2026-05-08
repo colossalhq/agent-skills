@@ -1,0 +1,464 @@
+{
+  "meta": {
+    "name": "Nordic Home",
+    "reference_url": "https://www.ikea.com",
+    "description": "A clean, functional home goods e-commerce store with a modular grid layout. Features extensive use of lifestyle imagery, clear pricing, and prominent promotional badging in a highly structured, dense format.",
+    "industry": "home-decor",
+    "aesthetic": "modern-clean",
+    "mood": "practical and accessible",
+    "sectionNames": [
+      "top-bar",
+      "announcement",
+      "category-quick-links",
+      "hero-grid",
+      "offers-carousel",
+      "promotional-banner",
+      "deals-carousel",
+      "trending-carousel",
+      "new-arrivals-carousel",
+      "room-inspiration-carousel",
+      "shop-the-look",
+      "gift-ideas-carousel",
+      "articles-carousel",
+      "sustainability-carousel",
+      "instagram-feed"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#111111",
+      "card": "#f5f5f5",
+      "cardForeground": "#111111",
+      "popover": "#ffffff",
+      "popoverForeground": "#111111",
+      "primary": "#0058a3",
+      "primaryForeground": "#ffffff",
+      "secondary": "#dfdfdf",
+      "secondaryForeground": "#111111",
+      "muted": "#f5f5f5",
+      "mutedForeground": "#484848",
+      "accent": "#cc0008",
+      "accentForeground": "#ffffff",
+      "destructive": "#cc0008",
+      "border": "#dfdfdf",
+      "input": "#ffffff",
+      "ring": "#0058a3"
+    },
+    "customColors": {
+      "top-bar-bg": "#111111",
+      "top-bar-text": "#ffffff",
+      "promo-blue": "#357ab7",
+      "badge-orange": "#ca5008",
+      "badge-red": "#cc0008",
+      "sale-text": "#cc0008",
+      "sustainability-green": "#6db08f"
+    },
+    "radius": "0rem",
+    "radiusButton": "9999px",
+    "fonts": {
+      "sans": "Inter, system-ui, sans-serif",
+      "display": "Inter, system-ui, sans-serif",
+      "mono": "ui-monospace, monospace",
+      "serif": "ui-serif, serif"
+    },
+    "fontPackages": [
+      "@fontsource/inter"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#111111",
+      "text": "#ffffff",
+      "mutedText": "#ffffff",
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "The screenshot only shows a very thin dark top bar with utility links (language, postal code, store selector). The main navigation header with logo and cart is not visible in this capture."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": null,
+      "text": null,
+      "mutedText": null,
+      "border": null
+    },
+    "description": null,
+    "notes": "Footer is not visible in the screenshot."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "icon-only",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Cards have a white or light grey background, square images. Very information-dense with title, description, price (often with larger whole numbers and smaller decimals), prominent red or blue badges (New, Clearance, Offers), review stars, and circular icon buttons for add-to-cart (blue background) and heart/save. Swatches available under some products."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": 2,
+      "md": 3,
+      "lg": 4,
+      "xl": 5
+    },
+    "gap": "6",
+    "notes": "Heavy use of horizontal scrolling carousels rather than wrapped grids. Carousels have prominent black circular arrow buttons extending over the right edge."
+  },
+  "featuredProducts": {
+    "label": "",
+    "heading": "Today's best deals",
+    "notes": "Features filter pills (Clearance, Offers) above the grid. Cards show original price crossed out and new red price."
+  },
+  "sections": [
+    {
+      "name": "top-bar",
+      "type": "utility-bar",
+      "layout": "Flexbox row, right-aligned content",
+      "design": {
+        "background": "Solid black (#111111)",
+        "text": "White text, small size",
+        "styling": "Very slim height, icons next to text labels"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Utility links: Language, postal code entry, store selector",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Global utility navigation."
+      },
+      "notes": "Standard e-commerce utility bar."
+    },
+    {
+      "name": "announcement",
+      "type": "banner",
+      "layout": "Full width, single row",
+      "design": {
+        "background": "Light grey (#f5f5f5)",
+        "text": "Dark text, small",
+        "styling": "Thin bar with an icon and text link, subtle bottom border"
+      },
+      "content": {
+        "headline": null,
+        "body": "Link promoting a credit card",
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Secondary announcement area."
+    },
+    {
+      "name": "category-quick-links",
+      "type": "categories",
+      "layout": "Horizontal scrolling carousel",
+      "design": {
+        "background": "White",
+        "text": "Dark text, centered under image",
+        "styling": "Square light grey cards with cutout product images and text below. Circular next arrow button."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "product-images",
+          "description": "Cutout images of generic product categories (storage, outdoor, kitchen).",
+          "position": "Centered in grey square above text"
+        },
+        "items": "Array of category objects with an image and label.",
+        "specialElements": null
+      },
+      "notes": "Quick visual navigation to main product categories."
+    },
+    {
+      "name": "hero-grid",
+      "type": "hero",
+      "layout": "CSS Grid: One large left column, stacked right columns (split into 3 smaller blocks)",
+      "design": {
+        "background": "White",
+        "text": "White text overlaid on images",
+        "styling": "Full-bleed images within grid cells, gap between cells. Gradients at bottom of images to ensure text legibility."
+      },
+      "content": {
+        "headline": "Promotional offers on categories",
+        "body": "Subtext for promotions",
+        "cta": "Arrow icons functioning as links on the bottom right of each image block",
+        "media": {
+          "type": "image",
+          "description": "Lifestyle room settings showing furniture and decor in use.",
+          "position": "Background of grid cells"
+        },
+        "items": null,
+        "specialElements": "Blue and orange rectangular badges in top left of some images."
+      },
+      "notes": "Asymmetrical mosaic grid layout for high visual impact."
+    },
+    {
+      "name": "offers-carousel",
+      "type": "product-showcase",
+      "layout": "Horizontal carousel with introductory text block followed by product cards",
+      "design": {
+        "background": "Light grey (#f5f5f5)",
+        "text": "Dark text",
+        "styling": "First item is a solid blue block with text and button, followed by standard product/offer cards."
+      },
+      "content": {
+        "headline": "Introductory text for a specific member program",
+        "body": null,
+        "cta": "Circular outline button with arrow icon in the blue block",
+        "media": {
+          "type": "image",
+          "description": "Lifestyle and product images corresponding to offers.",
+          "position": "Top half of cards"
+        },
+        "items": "Array of offer cards",
+        "specialElements": "Solid blue promo card as the first item in the carousel."
+      },
+      "notes": "Mixes a solid color CTA block with image-based offer cards in the same carousel."
+    },
+    {
+      "name": "promotional-banner",
+      "type": "cta-banner",
+      "layout": "Full width block",
+      "design": {
+        "background": "Solid promotional blue (#357ab7)",
+        "text": "White text",
+        "styling": "Large padding, bold typography, simple layout"
+      },
+      "content": {
+        "headline": "Large bold promotional statement about an event/day",
+        "body": "Asterisked explanatory paragraph about the promotion details.",
+        "cta": "Circular white outline button with arrow icon",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "High contrast interruption in the flow to highlight a specific program."
+    },
+    {
+      "name": "deals-carousel",
+      "type": "product-showcase",
+      "layout": "Section with heading, filter pills, and a horizontal carousel of product cards",
+      "design": {
+        "background": "White",
+        "text": "Dark text, red text for sale prices",
+        "styling": "Standard dense product cards with red 'Clearance' or black 'Last chance' badges."
+      },
+      "content": {
+        "headline": "Section title for deals",
+        "body": null,
+        "cta": "Filter pill buttons above the carousel. Circular blue cart add buttons on cards.",
+        "media": {
+          "type": "product-images",
+          "description": "Cutout product images on white backgrounds.",
+          "position": "Top of cards"
+        },
+        "items": "Array of discounted product items",
+        "specialElements": "Red pricing text showing original vs new price, star ratings."
+      },
+      "notes": "Classic sale section."
+    },
+    {
+      "name": "trending-carousel",
+      "type": "product-showcase",
+      "layout": "Horizontal carousel with heading",
+      "design": {
+        "background": "Light grey section background",
+        "text": "Dark text",
+        "styling": "Square image cards with brief text below. 'New' orange badges."
+      },
+      "content": {
+        "headline": "Section title indicating trending items",
+        "body": null,
+        "cta": "Arrow icons next to text",
+        "media": {
+          "type": "image",
+          "description": "Quirky, colorful lifestyle or stylized product shots.",
+          "position": "Top of cards"
+        },
+        "items": "Array of trending items",
+        "specialElements": null
+      },
+      "notes": "More editorial feel compared to standard product cards."
+    },
+    {
+      "name": "new-arrivals-carousel",
+      "type": "product-showcase",
+      "layout": "Section with heading, 'View all' button, and horizontal carousel",
+      "design": {
+        "background": "White",
+        "text": "Dark text",
+        "styling": "Dense product cards with 'New' text above brand name."
+      },
+      "content": {
+        "headline": "Section title for new products",
+        "body": null,
+        "cta": "Outline pill button 'View all' next to heading. Blue circular cart buttons on cards.",
+        "media": {
+          "type": "product-images",
+          "description": "Cutout product images on white backgrounds.",
+          "position": "Top of cards"
+        },
+        "items": "Array of new product cards",
+        "specialElements": "Some cards show color/material swatches below the main info."
+      },
+      "notes": "Standard product carousel."
+    },
+    {
+      "name": "room-inspiration-carousel",
+      "type": "gallery",
+      "layout": "Horizontal carousel with heading and 'View all' button",
+      "design": {
+        "background": "Light grey section background",
+        "text": "Dark text below images",
+        "styling": "Square lifestyle images with room category names below."
+      },
+      "content": {
+        "headline": "Inspirational section heading",
+        "body": null,
+        "cta": "Outline pill button 'View all'. Arrow icons next to category names.",
+        "media": {
+          "type": "image",
+          "description": "Styled room sets showing products in context (bedroom, kitchen, living room).",
+          "position": "Top of cards"
+        },
+        "items": "Array of room inspiration categories",
+        "specialElements": null
+      },
+      "notes": "Navigational section disguised as inspiration."
+    },
+    {
+      "name": "shop-the-look",
+      "type": "full-width-media",
+      "layout": "Three tall portrait images side-by-side filling width",
+      "design": {
+        "background": "White",
+        "text": "Dark text on floating product cards",
+        "styling": "Tall lifestyle images with interactive hotspots (circular buttons) that open floating product detail cards."
+      },
+      "content": {
+        "headline": "Section title and subtitle",
+        "body": null,
+        "cta": "Circular hotspot buttons on the images.",
+        "media": {
+          "type": "image",
+          "description": "Tall portrait lifestyle images showing organized closets and rooms.",
+          "position": "Side by side filling the container"
+        },
+        "items": null,
+        "specialElements": "Floating white product card hovering over an image, pointing to a hotspot."
+      },
+      "notes": "Highly interactive 'shop the room' feature."
+    },
+    {
+      "name": "gift-ideas-carousel",
+      "type": "categories",
+      "layout": "Horizontal carousel with heading",
+      "design": {
+        "background": "Light grey section background",
+        "text": "Dark text",
+        "styling": "Solid white square cards with text in the center and arrow icon."
+      },
+      "content": {
+        "headline": "Section title for gift ideas",
+        "body": null,
+        "cta": "Circular outline button with arrow in the cards.",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": "Array of text-only cards for different gift recipient categories.",
+        "specialElements": null
+      },
+      "notes": "Text-based navigational cards instead of image-based."
+    },
+    {
+      "name": "articles-carousel",
+      "type": "blog-showcase",
+      "layout": "Horizontal carousel with heading",
+      "design": {
+        "background": "White",
+        "text": "Dark text",
+        "styling": "Cards with large lifestyle images, bold headline, and short excerpt."
+      },
+      "content": {
+        "headline": "Section title for articles",
+        "body": null,
+        "cta": "Circular outline button with arrow below excerpt.",
+        "media": {
+          "type": "image",
+          "description": "Editorial style lifestyle photography (under stairs storage, food styling).",
+          "position": "Top half of cards"
+        },
+        "items": "Array of article preview cards",
+        "specialElements": null
+      },
+      "notes": "Content marketing section."
+    },
+    {
+      "name": "sustainability-carousel",
+      "type": "categories",
+      "layout": "Horizontal carousel with heading",
+      "design": {
+        "background": "Light grey section background",
+        "text": "Dark text on grey, dark text on green",
+        "styling": "Mix of a solid green introductory card and light grey text cards."
+      },
+      "content": {
+        "headline": "Section title for sustainability ideas",
+        "body": null,
+        "cta": "Circular outline button with arrow.",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": "Array of text-only navigation cards, starting with a green featured card.",
+        "specialElements": null
+      },
+      "notes": "Similar structure to the gift ideas carousel but with a colored intro card."
+    },
+    {
+      "name": "instagram-feed",
+      "type": "gallery",
+      "layout": "Grid of square images with heading and subtitle",
+      "design": {
+        "background": "White",
+        "text": "Dark text",
+        "styling": "Simple grid of square placeholders for social media images."
+      },
+      "content": {
+        "headline": "Social proof heading",
+        "body": "Call to action to share photos with a specific handle/hashtag.",
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "User-generated content style lifestyle images (shown as grey placeholders).",
+          "position": "Grid"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Standard UGC/Social feed section at the bottom."
+    }
+  ]
+}

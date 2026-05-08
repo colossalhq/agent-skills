@@ -1,0 +1,273 @@
+{
+  "meta": {
+    "name": "Auto Shield",
+    "reference_url": "https://www.weathertech.com",
+    "description": "A clean, functional e-commerce design focused on automotive and lifestyle protection products. It features high-contrast typography, prominent red calls to action, and structured grids emphasizing utility and durability.",
+    "industry": "automotive-accessories",
+    "aesthetic": "functional-utility",
+    "mood": "reliable and practical",
+    "sectionNames": [
+      "hero",
+      "promotions",
+      "categories",
+      "trending",
+      "brand-story",
+      "more-from-brand",
+      "social-proof"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#FFFFFF",
+      "foreground": "#000000",
+      "card": "#FFFFFF",
+      "cardForeground": "#000000",
+      "popover": "#FFFFFF",
+      "popoverForeground": "#000000",
+      "primary": "#CE2029",
+      "primaryForeground": "#FFFFFF",
+      "secondary": "#F5F5F5",
+      "secondaryForeground": "#000000",
+      "muted": "#F5F5F5",
+      "mutedForeground": "#666666",
+      "accent": "#CE2029",
+      "accentForeground": "#FFFFFF",
+      "destructive": "#CE2029",
+      "border": "#E5E5E5",
+      "input": "#FFFFFF",
+      "ring": "#CE2029"
+    },
+    "customColors": {
+      "promo-bg": "#EBEBEB",
+      "header-top-bar": "#000000",
+      "footer-bg": "#F9F9F9"
+    },
+    "radius": "0rem",
+    "radiusButton": "0rem",
+    "fonts": {
+      "sans": "Arial, Helvetica, sans-serif",
+      "display": "'Arial Black', Impact, sans-serif",
+      "mono": "monospace",
+      "serif": "Georgia, serif"
+    },
+    "fontPackages": [
+      "@fontsource/inter"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "large",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#FFFFFF",
+      "text": "#000000",
+      "mutedText": "#333333",
+      "border": "#E5E5E5",
+      "badgeBg": "#CE2029",
+      "badgeText": "#FFFFFF"
+    },
+    "notes": "Header includes a top announcement bar (black background, white text) with a close button. Main navigation features bold, uppercase links. A special highlighted link is in red."
+  },
+  "footer": {
+    "colorScheme": "custom",
+    "colors": {
+      "bg": "#F9F9F9",
+      "text": "#000000",
+      "mutedText": "#333333",
+      "border": "#E5E5E5"
+    },
+    "description": null,
+    "notes": "Features a prominent newsletter signup section, multiple columns of links, a bold official sponsor banner, social icons, and a dark 'Back to Top' floating button."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Minimal card design. Usually image over bold text title. No visible borders. Focus on clear imagery."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "4",
+      "xl": "4"
+    },
+    "gap": "6",
+    "notes": "Clean horizontal alignment. Images are prominently displayed with titles directly beneath."
+  },
+  "featuredProducts": {
+    "label": "",
+    "heading": "TRENDING NOW",
+    "notes": "Standard 4-column grid layout with large images and bold, brief titles below."
+  },
+  "sections": [
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "Full-width full-bleed background image with content overlay aligned to the left.",
+      "design": {
+        "background": "Full-bleed lifestyle photograph with subtle gradient or overlay for text readability.",
+        "text": "Extremely bold, large, uppercase black typography for headline. Regular weight for body.",
+        "styling": "No container borders. Includes large circular left/right navigation arrows."
+      },
+      "content": {
+        "headline": "Bold lifestyle statement, ~4-5 words, split into multiple lines.",
+        "body": "Short supportive sentence explaining the product utility.",
+        "cta": "Single outline button with black text and border, square corners, uppercase.",
+        "media": {
+          "type": "image",
+          "description": "Mother and child in a vehicle, conveying family, safety, and protection.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": "Carousel dot indicators and play/pause controls at the bottom center."
+      },
+      "notes": "Creates an immediate emotional connection focusing on utility."
+    },
+    {
+      "name": "promotions",
+      "type": "split-content",
+      "layout": "Two column grid (roughly 40/60 split).",
+      "design": {
+        "background": "Left side has solid light grey background. Right side is an image with text overlay.",
+        "text": "Very bold uppercase headlines.",
+        "styling": "Minimal spacing between the two blocks. Square corner aesthetics."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Solid red buttons with white text, square corners, uppercase.",
+        "media": {
+          "type": "image",
+          "description": "Right side shows a close-up of a multi-purpose protective mat being used with plants.",
+          "position": "right column, full bleed within its container"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Designed to push specific offers and versatile product use cases simultaneously."
+    },
+    {
+      "name": "categories",
+      "type": "categories",
+      "layout": "Grid of circular elements, typical 6-column wrap on large screens.",
+      "design": {
+        "background": "Solid light grey background across the entire section.",
+        "text": "Centered, bold, uppercase section heading. Small, bold labels below each circular image.",
+        "styling": "Generous vertical padding."
+      },
+      "content": {
+        "headline": "CATEGORIES",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "icon-grid",
+          "description": "Grid of circular cropped images showing various automotive and home protection products.",
+          "position": "grid"
+        },
+        "items": [
+          {
+            "image": "circular cropped lifestyle or product shot",
+            "title": "Category Label"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Classic visual navigation to direct users to specific product lines quickly."
+    },
+    {
+      "name": "trending",
+      "type": "product-showcase",
+      "layout": "4-column CSS grid.",
+      "design": {
+        "background": "White",
+        "text": "Centered bold section headline. Left-aligned, bold, normal-cased product titles.",
+        "styling": "Clean, unboxed presentation of items."
+      },
+      "content": {
+        "headline": "TRENDING NOW",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "product-images",
+          "description": "High quality close-ups of automotive accessories installed in vehicles.",
+          "position": "grid of 4"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Highlights popular items without cluttering the view with prices or immediate 'add to cart' buttons."
+    },
+    {
+      "name": "brand-story",
+      "type": "split-content",
+      "layout": "Two main columns: large circular image on the left, text content and stats on the right.",
+      "design": {
+        "background": "White",
+        "text": "Large bold section header centered above. Inner content uses bold subheaders and standard body text. Stats use large red numbers.",
+        "styling": "Left image is cropped into a large perfect circle. Right column is divided into two sub-columns (text vs stats)."
+      },
+      "content": {
+        "headline": "WHY [BRAND]",
+        "body": "Mission and vision statements emphasizing quality and domestic manufacturing.",
+        "cta": "Single solid red button, square corners, white uppercase text.",
+        "media": {
+          "type": "image",
+          "description": "Large circular image showing manufacturing process or factory worker.",
+          "position": "left column"
+        },
+        "items": null,
+        "specialElements": "Rightmost area features bold red numbers representing statistics."
+      },
+      "notes": "Builds trust and highlights corporate values."
+    },
+    {
+      "name": "more-from-brand",
+      "type": "product-showcase",
+      "layout": "3-column grid.",
+      "design": {
+        "background": "Subtle textured/cloudy light grey background.",
+        "text": "Left-aligned bold section header. Bold labels below images.",
+        "styling": "Images have slightly rounded top corners (barely perceptible) or are square. Clean layout."
+      },
+      "content": {
+        "headline": "MORE FROM [BRAND]",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Three distinct lifestyle/action shots: racing car, bracelets on rock, dog on grass.",
+          "position": "grid of 3"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Shows brand involvement outside of core product line (sponsorships, charity)."
+    },
+    {
+      "name": "social-proof",
+      "type": "cta-banner",
+      "layout": "Centered single column text block.",
+      "design": {
+        "background": "White",
+        "text": "Very bold, uppercase headline with a red hashtag. Standard body text.",
+        "styling": "Minimal padding, acts as a transition to the footer."
+      },
+      "content": {
+        "headline": "JOIN THE #[BRAND]FAMILY",
+        "body": "Call to action to tag photos on social media.",
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Encourages user-generated content."
+    }
+  ]
+}

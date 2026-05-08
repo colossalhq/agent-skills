@@ -1,0 +1,401 @@
+{
+  "meta": {
+    "name": "Pet Paradise",
+    "reference_url": "https://www.chewy.com",
+    "description": "A bright, friendly, and vibrant e-commerce store focused on pet supplies and services. The design uses a clean white background with bold primary blue accents, rounded shapes for an approachable feel, and rich, colorful photography to engage users.",
+    "industry": "pet-supplies",
+    "aesthetic": "modern-clean",
+    "mood": "friendly and vibrant",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "promotional-hero",
+      "quick-actions",
+      "shop-by-pet",
+      "membership-banner",
+      "popular-categories",
+      "featured-product-split",
+      "secondary-promotional-hero",
+      "services-features",
+      "product-grid-showcase",
+      "brand-promotional-banner",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#111111",
+      "card": "#ffffff",
+      "cardForeground": "#111111",
+      "popover": "#ffffff",
+      "popoverForeground": "#111111",
+      "primary": "#1251c8",
+      "primaryForeground": "#ffffff",
+      "secondary": "#f4f4f4",
+      "secondaryForeground": "#111111",
+      "muted": "#f4f4f4",
+      "mutedForeground": "#666666",
+      "accent": "#ff6b81",
+      "accentForeground": "#ffffff",
+      "destructive": "#d32f2f",
+      "border": "#e5e5e5",
+      "input": "#ffffff",
+      "ring": "#1251c8"
+    },
+    "customColors": {
+      "header-bg": "#1251c8",
+      "promo-green": "#00b259",
+      "promo-light-green": "#e6f7ef",
+      "nav-text": "#ffffff",
+      "light-blue-bg": "#eef2fb",
+      "star-rating": "#ffc107"
+    },
+    "radius": "0.5rem",
+    "radiusButton": "0.25rem",
+    "fonts": {
+      "sans": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+      "display": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+      "serif": "Georgia, Cambria, 'Times New Roman', Times, serif"
+    },
+    "fontPackages": []
+  },
+  "header": {
+    "buttonStyle": "default",
+    "size": "large",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#1251c8",
+      "text": "#ffffff",
+      "mutedText": "#ffffff",
+      "border": false,
+      "badgeBg": "#ffffff",
+      "badgeText": "#1251c8"
+    },
+    "notes": "Header contains a top bar with search, utility links, and cart. Below it is a secondary navigation bar with category dropdowns. A green promotional banner sits below the header. The search bar is prominently centered."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#111111",
+      "mutedText": "#666666",
+      "border": "#e5e5e5"
+    },
+    "description": null,
+    "notes": "A blue contact banner precedes the main white footer. The footer includes utility links, app download buttons, pharmacy accreditation badges, and standard copyright/legal links."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "outline",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Cards have a subtle border and shadow. They include product image, brand name, title, star rating, price, promotional text, and an outlined 'Add to Cart' button."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "4",
+      "xl": "5"
+    },
+    "gap": "4",
+    "notes": "The product grid section has a featured promotional card spanning two columns on the left, followed by standard product cards. A horizontal scroll arrow indicates more products."
+  },
+  "featuredProducts": {
+    "label": null,
+    "heading": "Meet Chewy Made",
+    "notes": "A distinct section combining a lifestyle brand image and text with a horizontal scrolling grid of specific brand products."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full-width single row, centered text",
+      "design": {
+        "background": "Solid light green (#e6f7ef)",
+        "text": "Dark green/black small bold text",
+        "styling": "No borders, tight padding"
+      },
+      "content": {
+        "headline": "Generic promotional offer statement",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": null,
+        "specialElements": "Floating promotional banner bar at top"
+      },
+      "notes": "Sits directly below the main navigation."
+    },
+    {
+      "name": "promotional-hero",
+      "type": "hero",
+      "layout": "Full-width container with rounded corners and centered content overlay",
+      "design": {
+        "background": "Full-bleed lifestyle photograph with integrated central graphic panel",
+        "text": "White primary text, bold display font",
+        "styling": "Rounded corners, internal padding"
+      },
+      "content": {
+        "headline": "Major promotional offer headline",
+        "body": "Supporting details for the promotion",
+        "cta": "Single vibrant green button, slightly rounded corners",
+        "media": {
+          "type": "image",
+          "description": "Pets in an outdoor setting with product packaging integrated into the scene",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Hero banner is contained within a rounded rectangle, not edge-to-edge on larger screens."
+    },
+    {
+      "name": "quick-actions",
+      "type": "features",
+      "layout": "Flexbox row, horizontally centered within a rounded container",
+      "design": {
+        "background": "Solid light grey (#f4f4f4)",
+        "text": "Dark foreground",
+        "styling": "Rounded corners, moderate padding, evenly spaced items"
+      },
+      "content": {
+        "headline": "Greeting text",
+        "body": null,
+        "cta": "Single primary blue button next to greeting",
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": [
+          {
+            "icon": "Promotional icon",
+            "title": "Service offering detail",
+            "linkText": "Call to action text"
+          },
+          {
+            "icon": "Promotional icon",
+            "title": "Service offering detail",
+            "linkText": "Call to action text"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Acts as a quick dashboard or personalized entry point."
+    },
+    {
+      "name": "shop-by-pet",
+      "type": "categories",
+      "layout": "Horizontal row of circular items",
+      "design": {
+        "background": "Transparent / inherits page background",
+        "text": "Dark foreground, centered below circles",
+        "styling": "Circular image containers, equal spacing"
+      },
+      "content": {
+        "headline": "Category prompt question",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": [
+          {
+            "image": "Circular portrait of pet type",
+            "title": "Pet category name"
+          }
+        ],
+        "specialElements": "Right navigation arrow for horizontal scroll"
+      },
+      "notes": "Visual navigation based on user's primary interest."
+    },
+    {
+      "name": "membership-banner",
+      "type": "banner",
+      "layout": "Full-width container, text right, image left",
+      "design": {
+        "background": "Solid light grey (#f4f4f4) with subtle pattern",
+        "text": "Dark foreground, bold brand colors",
+        "styling": "Rounded corners, contained width"
+      },
+      "content": {
+        "headline": "Membership program value proposition",
+        "body": "Brief benefit description",
+        "cta": "Single bright pink button, fully rounded/pill",
+        "media": {
+          "type": "illustration",
+          "description": "Playful illustration of pets and brand elements",
+          "position": "left"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Promotes a subscription or loyalty program."
+    },
+    {
+      "name": "popular-categories",
+      "type": "categories",
+      "layout": "Horizontal row of circular items",
+      "design": {
+        "background": "Transparent / inherits page background",
+        "text": "Dark foreground, centered below circles",
+        "styling": "Circular icon containers with light blue backgrounds, equal spacing"
+      },
+      "content": {
+        "headline": "Section title indicating popular items",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "icon-grid",
+          "description": "Illustrated icons representing product types",
+          "position": "grid"
+        },
+        "items": [
+          {
+            "icon": "Illustrated category icon",
+            "title": "Category name"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Secondary category navigation using illustrated icons rather than photography."
+    },
+    {
+      "name": "featured-product-split",
+      "type": "split-content",
+      "layout": "2-column split, ~50/50, contained in a single rounded box",
+      "design": {
+        "background": "Split background: vibrant pink left, solid primary blue right",
+        "text": "White text on both sides",
+        "styling": "Rounded corners, full width container"
+      },
+      "content": {
+        "headline": "Product introduction headline",
+        "body": "Descriptive paragraph highlighting product benefits",
+        "cta": "Single white button, dark text, slightly rounded corners",
+        "media": {
+          "type": "product-images",
+          "description": "Hands holding fresh product packaging on pink background",
+          "position": "left column"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "High contrast, visually striking section for a new product launch."
+    },
+    {
+      "name": "secondary-promotional-hero",
+      "type": "banner",
+      "layout": "Full-width container, similar to main hero but shorter height",
+      "design": {
+        "background": "Full-bleed lifestyle photograph with integrated central graphic panel",
+        "text": "White primary text",
+        "styling": "Rounded corners"
+      },
+      "content": {
+        "headline": "Secondary promotional offer",
+        "body": "Supporting details",
+        "cta": "Single vibrant green button",
+        "media": {
+          "type": "image",
+          "description": "Pets in outdoor setting with products",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Reinforces an offer presented earlier or introduces a related one."
+    },
+    {
+      "name": "services-features",
+      "type": "features",
+      "layout": "CSS grid 4 equal columns with gap",
+      "design": {
+        "background": "Transparent / inherits page background",
+        "text": "Dark foreground, centered below images",
+        "styling": "Cards with very light blue backgrounds and rounded corners"
+      },
+      "content": {
+        "headline": "Section title grouping brand services",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Mix of app mockups, expert portraits, and service graphics",
+          "position": "top of cards"
+        },
+        "items": [
+          {
+            "image": "Visual representation of service",
+            "title": "Service description"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Highlights value-adds beyond standard e-commerce."
+    },
+    {
+      "name": "product-grid-showcase",
+      "type": "product-showcase",
+      "layout": "Featured vertical card on left (spanning 2 columns), standard product cards on right, horizontal scroll",
+      "design": {
+        "background": "Light grey/blue background container",
+        "text": "Dark foreground for products",
+        "styling": "Rounded container enclosing the grid, individual white product cards with borders"
+      },
+      "content": {
+        "headline": "Brand collection title",
+        "body": "Short descriptive text for the collection",
+        "cta": "Text link with arrow for the collection, individual 'Add to Cart' buttons on products",
+        "media": {
+          "type": "product-images",
+          "description": "Lifestyle image of dog catching treat for the featured card, isolated product shots for the grid",
+          "position": "featured left, grid right"
+        },
+        "items": [
+          {
+            "image": "Product shot",
+            "title": "Product title",
+            "price": "Product price",
+            "rating": "Star rating",
+            "promo": "Promotional text tag"
+          }
+        ],
+        "specialElements": "Horizontal scroll navigation arrow"
+      },
+      "notes": "Effectively groups products under a specific brand or theme."
+    },
+    {
+      "name": "brand-promotional-banner",
+      "type": "banner",
+      "layout": "Full-width container, centered text overlay",
+      "design": {
+        "background": "Lifestyle image with soft gradient fade to solid color",
+        "text": "Dark blue primary text",
+        "styling": "Rounded corners"
+      },
+      "content": {
+        "headline": "Brand specific aspirational statement",
+        "body": "Supporting brand text",
+        "cta": "Single dark blue button, slightly rounded corners",
+        "media": {
+          "type": "image",
+          "description": "Dog face and specific brand packaging",
+          "position": "background split"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Co-branded or specific brand highlight section."
+    }
+  ]
+}

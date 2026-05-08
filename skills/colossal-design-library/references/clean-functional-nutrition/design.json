@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "name": "Complete Nutrition",
+    "reference_url": "https://huel.com",
+    "description": "A modern, bold ecommerce design focused on health and performance. Features high contrast with dark sections interspersed among clean white areas, using bold typography with italic accents for emphasis. Clean grid layouts for products and features.",
+    "industry": "food-supplements",
+    "aesthetic": "modern-performance",
+    "mood": "energetic, clean, and reliable",
+    "sectionNames": [
+      "hero",
+      "goals-category",
+      "shop-category",
+      "benefits",
+      "why-it-works",
+      "testimonials",
+      "press",
+      "bestsellers",
+      "promotions",
+      "newsletter",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "card": "#f4f4f4",
+      "cardForeground": "#0a0a0a",
+      "popover": "#ffffff",
+      "popoverForeground": "#0a0a0a",
+      "primary": "#0a0a0a",
+      "primaryForeground": "#ffffff",
+      "secondary": "#ffffff",
+      "secondaryForeground": "#0a0a0a",
+      "muted": "#f4f4f4",
+      "mutedForeground": "#666666",
+      "accent": "#d5e9d3",
+      "accentForeground": "#0a0a0a",
+      "destructive": "#ef4444",
+      "border": "#e5e5e5",
+      "input": "#ffffff",
+      "ring": "#0a0a0a"
+    },
+    "customColors": {
+      "dark-bg": "#111111",
+      "success-green": "#22c55e",
+      "border-light": "#d1d5db"
+    },
+    "radius": "0.5rem",
+    "radiusButton": "9999px",
+    "fonts": {
+      "sans": "Inter, sans-serif",
+      "display": "Inter, sans-serif",
+      "mono": "monospace",
+      "serif": "Georgia, serif"
+    },
+    "fontPackages": [
+      "@fontsource/inter"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#0a0a0a",
+      "mutedText": "#4b5563",
+      "border": "#e5e5e5",
+      "badgeBg": "#0a0a0a",
+      "badgeText": "#ffffff"
+    },
+    "notes": "Includes a top ticker announcement bar (dark theme). Features a secondary navigational aid button 'Which product is right for you?' with a pale green background. Navigation links have dropdown chevrons."
+  },
+  "footer": {
+    "colorScheme": "inverted",
+    "colors": {
+      "bg": "#0a0a0a",
+      "text": "#ffffff",
+      "mutedText": "#a3a3a3",
+      "border": "#333333"
+    },
+    "description": "Plant-based nutrition to help the planet thrive. All products are 100% vegan, designed for low-carbon eating.",
+    "notes": "Complex footer layout with multiple columns for navigation (Food, Company, Support), a left column for brand mission and a primary CTA. Below the main links is a divider line, country selector, copyright info, and payment icons. The very bottom includes social links and detailed disclaimers in small muted text."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "outline",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Bestseller cards feature a pale grey background for the product image, which sits above product title, short description, and key nutritional stats (protein/calories) displayed with icons. 'Bestseller' badge in top left corner with a fire icon. Price is listed at the bottom with price-per-meal context. The 'View product' button is pill-shaped, solid dark."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "4",
+      "xl": "4"
+    },
+    "gap": "6",
+    "notes": "Grid items are uniform in height and width. The layout is clean and spacious."
+  },
+  "featuredProducts": {
+    "label": null,
+    "heading": "Shop our Bestsellers",
+    "notes": "Section has a header with a heading, a short subtitle below it, and a 'Shop now' button floated to the right."
+  },
+  "sections": [
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "2-column split, text left, dynamic product imagery right",
+      "design": {
+        "background": "Solid pale grey/off-white with a slight gradient or natural lighting effect",
+        "text": "Dark foreground, very large bold display font for headline with an italicized word for emphasis. Small muted text for subtitle.",
+        "styling": "No borders, generous padding. Right side features multiple products arranged diagonally."
+      },
+      "content": {
+        "headline": "Bold headline emphasizing speed, nutrition, and completeness.",
+        "body": "Brief statement about expert design and daily convenience.",
+        "cta": "Two pill-shaped buttons: Primary is solid dark, secondary is outlined.",
+        "media": {
+          "type": "product-images",
+          "description": "Dynamic top-down arrangement of various branded food and supplement products (bottles, pouches, bars) arranged diagonally across the right half of the section.",
+          "position": "right half"
+        },
+        "items": null,
+        "specialElements": "Star rating component above the headline showing 5 green stars and customer count."
+      },
+      "notes": "High impact entry point. The use of italic text ('complete') within a bold sans-serif headline is a recurring typographic theme."
+    },
+    {
+      "name": "goals-category",
+      "type": "categories",
+      "layout": "Grid of 4 square cards",
+      "design": {
+        "background": "White",
+        "text": "Dark text for section headers, white text inside the image cards",
+        "styling": "Cards have rounded corners (approx 16px) and feature full-bleed imagery with a subtle dark gradient at the top for text legibility. Arrow icon buttons in bottom left."
+      },
+      "content": {
+        "headline": "Heading indicating goal-based shopping, with an italicized action word.",
+        "body": "Short subtitle supporting the goal-oriented approach.",
+        "cta": "Top right 'Shop All' pill button.",
+        "media": {
+          "type": "image",
+          "description": "High-quality lifestyle/product shots relating to specific goals (e.g., pouring a shake, a healthy meal, a snack bar) with warm lighting.",
+          "position": "background of cards"
+        },
+        "items": [
+          {
+            "title": "Goal category name",
+            "icon": "Arrow right in a white circle"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Section header aligns with the grid. The cards use visual storytelling rather than just product shots."
+    },
+    {
+      "name": "shop-category",
+      "type": "categories",
+      "layout": "Grid of 6 horizontal pill-shaped cards (2 columns x 3 rows)",
+      "design": {
+        "background": "White",
+        "text": "Dark text",
+        "styling": "Cards are pale grey (#f4f4f4), fully rounded pill shape. They contain a small product thumbnail on the left, bold text in the center, and a right arrow in a white circle on the right."
+      },
+      "content": {
+        "headline": "Heading for browsing by product type, with italicized word.",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "icon-grid",
+          "description": "Small isolated product thumbnails representing categories.",
+          "position": "left side of each pill card"
+        },
+        "items": [
+          {
+            "title": "Product category name",
+            "image": "thumbnail",
+            "icon": "arrow right"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Highly functional, easy-to-tap navigation for product categories."
+    },
+    {
+      "name": "benefits",
+      "type": "features",
+      "layout": "Grid of 6 items (3 columns x 2 rows) centered",
+      "design": {
+        "background": "Solid dark background (#111111)",
+        "text": "White text, large numbers/bold titles, smaller descriptive text.",
+        "styling": "Centered icons above text. Generous vertical spacing."
+      },
+      "content": {
+        "headline": "Section title highlighting brand benefits, centered.",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": [
+          {
+            "icon": "Minimal line icons (check, clock, coins, trash, thumb up, hand)",
+            "title": "Short punchy benefit statement",
+            "subtitle": "Brief explanatory sentence"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Acts as a strong visual break due to the dark background. Typography is crisp and authoritative."
+    },
+    {
+      "name": "why-it-works",
+      "type": "bento-grid",
+      "layout": "Asymmetric bento grid. One large tall column on the left, and a 2x2 grid of smaller square cards on the right.",
+      "design": {
+        "background": "White",
+        "text": "Dark text.",
+        "styling": "Cards have rounded corners (~12px) and a pale grey background (#f4f4f4). Left tall card features a large product image. Right cards feature smaller graphical elements."
+      },
+      "content": {
+        "headline": "Heading asking why the product works, with italicized emphasis.",
+        "body": null,
+        "cta": "Top right 'See the science' pill button.",
+        "media": {
+          "type": "mixed",
+          "description": "Left card: Large bottle. Right cards: Macro charts, ingredients laid out cleanly, profile pictures of experts.",
+          "position": "integrated into cards"
+        },
+        "items": null,
+        "specialElements": "Use of small data visualization blocks (e.g., black square for '35g protein' next to outlined squares) inside the cards."
+      },
+      "notes": "Effectively breaks down complex nutritional information into scannable, visually interesting chunks."
+    },
+    {
+      "name": "testimonials",
+      "type": "testimonials",
+      "layout": "Horizontal scrolling carousel of portrait-oriented cards",
+      "design": {
+        "background": "White",
+        "text": "White text on the cards, overlaid on images.",
+        "styling": "Cards are tall rectangles with rounded corners. Images are dark and dramatic. Text is situated at the bottom of the card with a slight gradient overlay for legibility."
+      },
+      "content": {
+        "headline": "Longer headline about recommendations from experts.",
+        "body": "Subtitle reinforcing global leadership status.",
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "High contrast, dramatically lit portraits of athletes and influencers holding or consuming the product.",
+          "position": "full card background"
+        },
+        "items": [
+          {
+            "image": "portrait",
+            "title": "Person's Name",
+            "quote": "Quote text in double quotes"
+          }
+        ],
+        "specialElements": "Blue verification checkmarks next to names. Carousel dots and arrow navigation controls below the grid."
+      },
+      "notes": "Creates a premium, aspirational feel through the photography style."
+    },
+    {
+      "name": "press",
+      "type": "logo-strip",
+      "layout": "3 equal columns",
+      "design": {
+        "background": "Solid dark background (#111111)",
+        "text": "White text.",
+        "styling": "Logos centered above descriptive quotes."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": [
+          {
+            "logo": "Publication Logo",
+            "quote": "Quote from the publication"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Builds trust through social proof. Another dark section for contrast."
+    },
+    {
+      "name": "bestsellers",
+      "type": "product-grid",
+      "layout": "4 column grid",
+      "design": {
+        "background": "White",
+        "text": "Dark text.",
+        "styling": "Standard product card layout. Images on pale grey backgrounds."
+      },
+      "content": {
+        "headline": "Heading 'Shop our Bestsellers' with italicized emphasis.",
+        "body": "Subtitle 'Discover our most popular products'",
+        "cta": "Top right 'Shop now' button.",
+        "media": {
+          "type": "product-images",
+          "description": "Clean product shots on pale grey backgrounds.",
+          "position": "top of card"
+        },
+        "items": null,
+        "specialElements": "Product cards include small icons for 'protein' and 'kcal' alongside text. Bestseller badge in top left."
+      },
+      "notes": "Clear, information-dense product presentation."
+    },
+    {
+      "name": "promotions",
+      "type": "split-content",
+      "layout": "2 equal columns (side-by-side large cards)",
+      "design": {
+        "background": "White",
+        "text": "White text inside the cards.",
+        "styling": "Cards are large, slightly rounded rectangles with dark photographic backgrounds. Text is top-left aligned, CTA button bottom-left aligned."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "White pill-shaped buttons with black text ('Shop now').",
+        "media": {
+          "type": "image",
+          "description": "Dark, moody photography of products, apparel, and lifestyle usage.",
+          "position": "full card background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Used for specific offers (free t-shirt, taste guarantee). Visually heavy to draw attention."
+    },
+    {
+      "name": "newsletter",
+      "type": "newsletter",
+      "layout": "2 column split: Text on left, form on right.",
+      "design": {
+        "background": "Solid dark background (#111111)",
+        "text": "White text.",
+        "styling": "Simple input field and button side-by-side."
+      },
+      "content": {
+        "headline": "Call to action to join the community.",
+        "body": "Incentive offer for first order and newsletter benefits.",
+        "cta": "Outlined button 'Sign up', rounded corners.",
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": null,
+        "specialElements": "Email input field with placeholder text."
+      },
+      "notes": "Transitions directly into the dark footer."
+    }
+  ]
+}

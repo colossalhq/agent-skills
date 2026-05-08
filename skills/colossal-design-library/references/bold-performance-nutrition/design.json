@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "name": "Active Fuel",
+    "reference_url": "https://www.myprotein.com",
+    "description": "A high-energy, performance-focused sports nutrition and activewear store. The design uses bold typography, high-contrast promotional banners, and a dense, functional layout optimized for quick shopping and conveying value offers.",
+    "industry": "sports-nutrition",
+    "aesthetic": "bold-functional",
+    "mood": "energetic and urgent",
+    "sectionNames": [
+      "header",
+      "announcement-bars",
+      "hero-banner",
+      "promotional-banners",
+      "category-pills",
+      "whats-new",
+      "product-tabs-bestsellers",
+      "clothing-sale",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#FFFFFF",
+      "foreground": "#002B36",
+      "card": "#F9F9F9",
+      "cardForeground": "#002B36",
+      "popover": "#FFFFFF",
+      "popoverForeground": "#002B36",
+      "primary": "#003A4D",
+      "primaryForeground": "#FFFFFF",
+      "secondary": "#E5533D",
+      "secondaryForeground": "#FFFFFF",
+      "muted": "#F3F4F6",
+      "mutedForeground": "#6B7280",
+      "accent": "#003A4D",
+      "accentForeground": "#FFFFFF",
+      "destructive": "#DC2626",
+      "border": "#E5E7EB",
+      "input": "#F3F4F6",
+      "ring": "#003A4D"
+    },
+    "customColors": {
+      "promo-orange": "#E5533D",
+      "promo-teal": "#004B59",
+      "sale-badge-bg": "#FEE2E2",
+      "sale-badge-text": "#991B1B"
+    },
+    "radius": "0.25rem",
+    "radiusButton": "9999px",
+    "fonts": {
+      "sans": "Inter, Helvetica, Arial, sans-serif",
+      "display": "Impact, Arial Black, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+      "serif": "ui-serif, Georgia, Cambria, Times New Roman, Times, serif"
+    },
+    "fontPackages": [
+      "@fontsource/inter"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "large",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#FFFFFF",
+      "text": "#002B36",
+      "mutedText": "#4B5563",
+      "border": "#E5E7EB",
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Complex multi-tier header. Top tier has logo left, primary nav center, search/account/cart right. Search is an input field with an inner button. Below is a secondary navigation bar with categories. Below that are multiple full-width announcement/promo bars with varied backgrounds."
+  },
+  "footer": {
+    "colorScheme": "custom",
+    "colors": {
+      "bg": "#002B36",
+      "text": "#FFFFFF",
+      "mutedText": "#9CA3AF",
+      "border": "#1F424E"
+    },
+    "description": "A complex footer split into a newsletter signup block on the left (lighter grey bg) and a large multi-column link area on the right (dark teal bg). Below is a lighter grey area for legal text and payment methods.",
+    "notes": "Footer features a distinctive split layout. Left side has a prominent newsletter sign-up box. Right side has 4 columns of links. Social icons are located below the newsletter. The very bottom section has legal text and payment logos."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "outline",
+    "cartButtonIcon": "plus",
+    "carousel": "none",
+    "notes": "Cards have a very light grey/off-white background for the image area. Strong emphasis on pricing with 'Was/Now' styling and 'Save X' badges. Reviews are prominently displayed. The Add to Cart button ('Quick Buy') is a distinct dark teal pill-shaped button."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "4",
+      "xl": "4"
+    },
+    "gap": "6",
+    "notes": "Standard grid layout. Cards have consistent heights. Very uniform and structured."
+  },
+  "featuredProducts": {
+    "label": null,
+    "heading": "What's New",
+    "notes": "Uses large promotional image cards rather than standard product cards for this specific section, linking to categories or collections rather than individual items."
+  },
+  "sections": [
+    {
+      "name": "announcement-bars",
+      "type": "banner",
+      "layout": "Full-width stacked bars",
+      "design": {
+        "background": "Multiple solid colors (white, teal) with text and icons.",
+        "text": "Contrasting text colors depending on background (dark on light, light on dark). Small font sizes.",
+        "styling": "No borders, tight padding, horizontal layout with flexbox for content distribution."
+      },
+      "content": {
+        "headline": null,
+        "body": "Multiple promotional messages, shipping details, and a countdown timer.",
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": null,
+          "position": null
+        },
+        "items": [
+          "Shipping offer",
+          "App discount offer",
+          "Credit offer",
+          "Review rating",
+          "Major sale offer with countdown"
+        ],
+        "specialElements": "Countdown timer visually distinct in small boxes."
+      },
+      "notes": "Very dense informational area at the top of the page designed to drive urgency."
+    },
+    {
+      "name": "hero-banner",
+      "type": "hero",
+      "layout": "Full-width single column, text overlay on left side",
+      "design": {
+        "background": "Full-bleed lifestyle image",
+        "text": "Large, bold white display typography with drop shadow for legibility.",
+        "styling": "Overlay text is left-aligned. Call to action button is prominent."
+      },
+      "content": {
+        "headline": "Massive discount promotion with secondary code offer",
+        "body": null,
+        "cta": "Single solid orange button, square or slightly rounded corners, bold white text.",
+        "media": {
+          "type": "image",
+          "description": "Active person running outdoors in desert landscape, dynamic angle.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Highly promotional hero section focused entirely on a major sale event."
+    },
+    {
+      "name": "promotional-banners",
+      "type": "banner",
+      "layout": "Full width image banner followed by horizontal row of pills",
+      "design": {
+        "background": "Image banner followed by white background for pills.",
+        "text": "White text on banner, white text on dark pills.",
+        "styling": "Banner is full width. Pills are uniformly spaced in a row."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Multiple dark teal pill-shaped buttons serving as category quick-links.",
+        "media": {
+          "type": "image",
+          "description": "Product assortment with promotional text.",
+          "position": "top banner"
+        },
+        "items": [
+          "Protein",
+          "Creatine",
+          "Activewear",
+          "Bars, Food & Snacks",
+          "Vitamins",
+          "Pre-Workout"
+        ],
+        "specialElements": "Floating pop-up offer on the bottom left of the banner."
+      },
+      "notes": "Secondary promotional area leading directly into category navigation."
+    },
+    {
+      "name": "whats-new",
+      "type": "categories",
+      "layout": "3-column grid",
+      "design": {
+        "background": "White page background.",
+        "text": "Bold white text overlaid on images, dark text for headers.",
+        "styling": "Large image cards with dark overlays at bottom for text readability. Outline pill buttons below each card."
+      },
+      "content": {
+        "headline": "What's New",
+        "body": null,
+        "cta": "Outline pill-shaped buttons with dark text, one under each image card.",
+        "media": {
+          "type": "image",
+          "description": "High-quality product and lifestyle photography for specific product lines.",
+          "position": "grid items"
+        },
+        "items": [
+          "Clothing offer",
+          "Protein offer",
+          "Peptide offer"
+        ],
+        "specialElements": "Small 'NEW IN' badges on top of some images."
+      },
+      "notes": "Visual category entry points."
+    },
+    {
+      "name": "product-tabs-bestsellers",
+      "type": "product-showcase",
+      "layout": "Tabs for category selection above a 4-column product grid.",
+      "design": {
+        "background": "White background.",
+        "text": "Dark text. Tab text is styled distinctly to show active/inactive state.",
+        "styling": "Product cards have very light backgrounds, prominent pricing with red 'Was' price and green 'Save' badge. Dark teal 'Quick Buy' pill buttons."
+      },
+      "content": {
+        "headline": "Best Sellers / Trending This Week (Tabs)",
+        "body": null,
+        "cta": "Dark teal solid pill buttons with icon and text 'Quick Buy' on every card. 'View All' outline pill button below the grid.",
+        "media": {
+          "type": "product-images",
+          "description": "Clear product packaging shots on very light grey backgrounds.",
+          "position": "grid"
+        },
+        "items": [
+          "Product 1",
+          "Product 2",
+          "Product 3",
+          "Product 4"
+        ],
+        "specialElements": "Review stars, pricing badges, 'Quick Buy' buttons. Promotional text under the 'Quick Buy' button on each card."
+      },
+      "notes": "High density of information on product cards (reviews, current price, old price, savings, secondary promo offer)."
+    },
+    {
+      "name": "clothing-sale",
+      "type": "product-grid",
+      "layout": "4-column product grid",
+      "design": {
+        "background": "White background.",
+        "text": "Dark text.",
+        "styling": "Similar to bestsellers, but for apparel. Features color swatches below images."
+      },
+      "content": {
+        "headline": "Clothing Sale",
+        "body": null,
+        "cta": "Dark teal solid pill buttons with icon and text 'Quick Buy' on every card. 'View All' outline pill button below the grid.",
+        "media": {
+          "type": "product-images",
+          "description": "Apparel modeled on people, light grey backgrounds.",
+          "position": "grid"
+        },
+        "items": [
+          "Apparel 1",
+          "Apparel 2",
+          "Apparel 3",
+          "Apparel 4"
+        ],
+        "specialElements": "Color swatch selectors below product images. Heart icon for favorites in top right of images."
+      },
+      "notes": "Apparel specific product grid featuring swatches."
+    }
+  ]
+}

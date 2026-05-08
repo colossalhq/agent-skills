@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "name": "Edgy Beverage",
+    "reference_url": "https://liquiddeath.com",
+    "description": "An aggressive, bold, and humorous e-commerce design for an edgy beverage brand. It features high-contrast typography, provocative imagery, and a mix of full-width banners and clean product grids.",
+    "industry": "beverage",
+    "aesthetic": "bold-maximalist",
+    "mood": "energetic and bold",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "hero-carousel",
+      "featured-products",
+      "mission-banner",
+      "merch-grid",
+      "action-cards",
+      "cart-drawer",
+      "upsell-drawer",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "card": "#ffffff",
+      "cardForeground": "#000000",
+      "popover": "#ffffff",
+      "popoverForeground": "#000000",
+      "primary": "#000000",
+      "primaryForeground": "#ffffff",
+      "secondary": "#f3f4f6",
+      "secondaryForeground": "#000000",
+      "muted": "#f3f4f6",
+      "mutedForeground": "#6b7280",
+      "accent": "#000000",
+      "accentForeground": "#ffffff",
+      "destructive": "#ef4444",
+      "border": "#e5e7eb",
+      "input": "#ffffff",
+      "ring": "#000000"
+    },
+    "customColors": {
+      "announcement-bg": "#f3f4f6",
+      "cart-drawer-bg": "#f3f4f6"
+    },
+    "radius": "0rem",
+    "radiusButton": "0rem",
+    "fonts": {
+      "sans": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "display": "'Oswald', Impact, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+      "serif": "ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif"
+    },
+    "fontPackages": [
+      "@fontsource/oswald",
+      "@fontsource/inter"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "transparent",
+      "text": "#ffffff",
+      "mutedText": "#ffffff",
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Header is transparent and overlays the hero image. Features a logo on the far left, centered navigation links, and icon-only account/cart buttons on the right."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#000000",
+      "mutedText": "#4b5563",
+      "border": "#e5e7eb"
+    },
+    "description": "If you are visually-impaired and having difficulty with our website, call us...",
+    "notes": "Multi-column layout. Left column includes social follow stats (very large text/icons) and a newsletter signup with country selector and legal checkbox. Right columns contain standard footer links (Information, Company, Shop). Includes a bottom row with secondary links, copyright, and a currency/country selector dropdown."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "plus",
+    "carousel": "none",
+    "notes": "Clean product presentation. Images are cut out on white or light grey backgrounds. Typography is distinct: bold uppercase titles, small subtitle (e.g., 'Sparkling Energy'), and a small pill badge (e.g., '5 Calories'). 'ADD TO CART' button is text-only, bold, uppercase, positioned below the price on merch cards."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": 2,
+      "md": 3,
+      "lg": 3,
+      "xl": 4
+    },
+    "gap": "8",
+    "notes": "Two distinct grid styles: a 3-column featured beverage section with centered text, and a 4-column merch section with left-aligned text."
+  },
+  "featuredProducts": {
+    "label": null,
+    "heading": "MURDER YOUR THIRST",
+    "notes": "Centered, high-impact uppercase headline. Displays 3 key products with tall can imagery, centered titles, subtitles, and calorie badges. Followed by a solid black 'SHOP NOW' button."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full width, centered text",
+      "design": {
+        "background": "Light grey (#f3f4f6)",
+        "text": "Small black sans-serif",
+        "styling": "Minimal padding, sits above the header"
+      },
+      "content": {
+        "headline": "Promotional shipping offer based on threshold",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Standard top-of-page announcement."
+    },
+    {
+      "name": "hero-carousel",
+      "type": "hero",
+      "layout": "Full width, edge-to-edge",
+      "design": {
+        "background": "Full-bleed image",
+        "text": "White centered content overlay",
+        "styling": "Tall section (approx 70-80vh). Carousel indicators at bottom."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Single solid white button with black text, sharp square corners, uppercase.",
+        "media": {
+          "type": "image",
+          "description": "Humorous composite image showing a person drinking from an oversized faucet attached to a house, with a bold promotional logo in the center.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": "Carousel dots/dashes below the image."
+      },
+      "notes": "The focal point is the imagery and central promotional graphic. Header sits transparently over top."
+    },
+    {
+      "name": "mission-banner",
+      "type": "full-width-media",
+      "layout": "Full width image with centered text overlay",
+      "design": {
+        "background": "Image with dark overlay or natural darkness",
+        "text": "White, bold, centered, all-caps sans-serif",
+        "styling": "Medium height (approx 40vh), sharp edges."
+      },
+      "content": {
+        "headline": "Aggressive environmental statement about recycling",
+        "body": null,
+        "cta": "Transparent button with white border and white text (outline style), sharp corners.",
+        "media": {
+          "type": "image",
+          "description": "Massive pile of crushed plastic water bottles, conveying waste.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": "Brand logo variant ('Death to Plastic Bottles') positioned above the text."
+      },
+      "notes": "Serves as a brand value statement breaking up the product grids."
+    },
+    {
+      "name": "action-cards",
+      "type": "split-content",
+      "layout": "2-column CSS grid, equal width",
+      "design": {
+        "background": "Black (#000000)",
+        "text": "White",
+        "styling": "Large edge-to-edge blocks, no gap between columns."
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Bottom band of each card acts as a button: solid black with white text and a right-pointing chevron.",
+        "media": {
+          "type": "illustration",
+          "description": "Gold detailed skull/crossbones logo on one card, gold handshake logo on the other.",
+          "position": "centered within block"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Used for community/loyalty programs ('Join the club', 'Sell...'). High contrast."
+    },
+    {
+      "name": "cart-drawer",
+      "type": "overlay",
+      "layout": "Right-side slide-out panel",
+      "design": {
+        "background": "White",
+        "text": "Black",
+        "styling": "Shadow on left edge."
+      },
+      "content": {
+        "headline": "YOUR CART",
+        "body": "Empty state message encouraging adding items.",
+        "cta": "Solid black block button spanning full width of drawer.",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Standard e-commerce slide-out cart."
+    },
+    {
+      "name": "upsell-drawer",
+      "type": "overlay",
+      "layout": "Nested within or adjacent to cart drawer",
+      "design": {
+        "background": "Light grey (#f3f4f6)",
+        "text": "Black",
+        "styling": "Horizontal scrolling list of products."
+      },
+      "content": {
+        "headline": "Promotional upsell heading",
+        "body": null,
+        "cta": "Simple text 'ADD TO CART'",
+        "media": {
+          "type": "product-images",
+          "description": "Small product thumbnails (merch).",
+          "position": "top of cards"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Cross-sell section typically found inside cart drawers to increase AOV."
+    }
+  ]
+}

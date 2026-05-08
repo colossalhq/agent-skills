@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "name": "Luxe Jewelry",
+    "reference_url": "https://mejuri.com",
+    "description": "A refined, editorial e-commerce design for a premium jewelry brand. It features large, high-quality photography, clean typography mixing sans-serif and monospace fonts, and a minimalist black-and-white color palette with subtle off-white backgrounds.",
+    "industry": "jewelry",
+    "aesthetic": "minimal-luxury",
+    "mood": "calm and refined",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "hero",
+      "split-feature",
+      "product-carousel",
+      "stores-services",
+      "sustainability-banner",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "card": "#f9f9f9",
+      "cardForeground": "#000000",
+      "popover": "#ffffff",
+      "popoverForeground": "#000000",
+      "primary": "#000000",
+      "primaryForeground": "#ffffff",
+      "secondary": "#f4f4f4",
+      "secondaryForeground": "#000000",
+      "muted": "#e5e5e5",
+      "mutedForeground": "#666666",
+      "accent": "#000000",
+      "accentForeground": "#ffffff",
+      "destructive": "#ef4444",
+      "border": "#e5e5e5",
+      "input": "#e5e5e5",
+      "ring": "#000000"
+    },
+    "customColors": {
+      "off-white": "#f4f3f0",
+      "light-grey": "#ececec",
+      "dark-grey": "#333333"
+    },
+    "radius": "0rem",
+    "radiusButton": "0rem",
+    "fonts": {
+      "sans": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+      "display": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+      "serif": "Georgia, Cambria, 'Times New Roman', Times, serif"
+    },
+    "fontPackages": [
+      "@fontsource/inter",
+      "@fontsource/fira-code"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#000000",
+      "text": "#ffffff",
+      "mutedText": "#cccccc",
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Header is solid black with white text. Logo is on the far left, navigation links follow next to it. Far right contains location, search, account, favorites, and cart icons."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": "#f9f9f9",
+      "text": "#000000",
+      "mutedText": "#666666",
+      "border": "#e5e5e5"
+    },
+    "description": "Store location details and hours.",
+    "notes": "Comprehensive footer with multiple columns for links (Help, Stores & Services, Resources, About), a section for certification logos, and a right column highlighting a specific store location with an image and address details. Bottom section includes a 'Become a member' CTA and a sub-footer (black bg) with language/currency selector, legal links, and social icons."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "icon-only",
+    "cartButtonIcon": "plus",
+    "carousel": "none",
+    "notes": "Minimal product cards with light grey/off-white backgrounds. A small square button with a '+' icon is placed in the bottom center/right of the image area. Thin borders separate the cards in the grid. Below the image: title, type, and price."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "4",
+      "xl": "4"
+    },
+    "gap": "0",
+    "notes": "Cards are flush against each other with a 1px border acting as a grid separator. A 'NEW' badge appears in the top right of some cards."
+  },
+  "featuredProducts": {
+    "label": "We think you'll love these",
+    "heading": "PICKED JUST FOR YOU",
+    "notes": "Carousel layout with arrow navigation on the top right. 4 items visible at a time."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full width, centered text, side navigation arrows",
+      "design": {
+        "background": "Solid black (#000000)",
+        "text": "White text (#ffffff), monospace font",
+        "styling": "Small height padding, very minimal"
+      },
+      "content": {
+        "headline": "Service announcement",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Navigation arrows on the left side to cycle announcements"
+      },
+      "notes": "Sits at the very top of the page above the header."
+    },
+    {
+      "name": "header",
+      "type": "header",
+      "layout": "Flexbox row, logo left, nav left-center, actions right",
+      "design": {
+        "background": "Solid black (#000000)",
+        "text": "White text (#ffffff), sans-serif",
+        "styling": "No border, sticky top"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Navigation text is slightly smaller/lighter weight than logo."
+    },
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "Full-bleed image, text overlay bottom left",
+      "design": {
+        "background": "Large lifestyle/product photography",
+        "text": "Dark foreground, large sans-serif heading, monospace body",
+        "styling": "No borders, text sits directly on image background"
+      },
+      "content": {
+        "headline": "Campaign title focusing on layered jewelry",
+        "body": "Short sentence describing the collection's purpose",
+        "cta": "Single text link with solid underline",
+        "media": {
+          "type": "image",
+          "description": "Close-up arrangement of various gold rings with colorful gemstones on a textured off-white background",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "High quality, editorial-style imagery."
+    },
+    {
+      "name": "split-feature",
+      "type": "split-content",
+      "layout": "2-column grid, 50/50 split",
+      "design": {
+        "background": "Images act as background for each column",
+        "text": "Dark text, placed bottom left within each image block",
+        "styling": "No gap between columns, full bleed to edges"
+      },
+      "content": {
+        "headline": "Category names",
+        "body": null,
+        "cta": "Text links with solid underlines",
+        "media": {
+          "type": "image",
+          "description": "Left: Stacked gold and gemstone rings. Right: Hanging gold and gemstone necklaces on green beaded chains",
+          "position": "background of each column"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Acts as a secondary hero highlighting specific collections."
+    },
+    {
+      "name": "product-carousel",
+      "type": "product-showcase",
+      "layout": "Header top left, nav arrows top right, 4-column product grid below",
+      "design": {
+        "background": "White page background, off-white card backgrounds",
+        "text": "Black text, monospace for subtitle",
+        "styling": "1px borders around product cards"
+      },
+      "content": {
+        "headline": "Curated selection heading",
+        "body": "Short welcoming subtitle",
+        "cta": "Plus icon buttons inside product cards",
+        "media": {
+          "type": "product-images",
+          "description": "Individual gold jewelry pieces on plain off-white backgrounds",
+          "position": "grid"
+        },
+        "items": [
+          {
+            "icon": "none",
+            "title": "Product Title",
+            "image": "Product shot"
+          }
+        ],
+        "specialElements": "Square navigation buttons (prev/next) aligned to the right of the section header."
+      },
+      "notes": "Clean grid with borders creating a structured look."
+    },
+    {
+      "name": "stores-services",
+      "type": "features",
+      "layout": "Header top left, 3-column grid below",
+      "design": {
+        "background": "White (#ffffff)",
+        "text": "Black text, monospace subtitle and body",
+        "styling": "Images top, text below, generous spacing"
+      },
+      "content": {
+        "headline": "Physical locations and services",
+        "body": "Subtitle explaining global presence",
+        "cta": "Text links with solid underlines beneath descriptions",
+        "media": {
+          "type": "image",
+          "description": "Left: Bright, modern store interior. Center: Piercing studio setup. Right: Close up of a stacked ring.",
+          "position": "above text in grid columns"
+        },
+        "items": [
+          {
+            "icon": "none",
+            "title": "Service/Location name",
+            "image": "Relevant photography"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Highlights offline brand experiences."
+    },
+    {
+      "name": "sustainability-banner",
+      "type": "banner",
+      "layout": "Flexbox row, text left, description right",
+      "design": {
+        "background": "Warm grey/taupe solid block (#cfcbc8)",
+        "text": "Black text, monospace description",
+        "styling": "Full width banner, padding inside"
+      },
+      "content": {
+        "headline": "Sustainability initiatives",
+        "body": "Paragraph explaining brand journey and commitments",
+        "cta": "Text link with solid underline",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Breaks up the white space with a solid color block."
+    },
+    {
+      "name": "footer",
+      "type": "footer",
+      "layout": "Multi-section: main nav columns, membership sign up, sub-footer bottom",
+      "design": {
+        "background": "Off-white/light grey main area, black sub-footer",
+        "text": "Black text main area, white text sub-footer. Small sans-serif and monospace.",
+        "styling": "Dividers separating sections, dense information layout"
+      },
+      "content": {
+        "headline": "Membership call to action",
+        "body": "Description of member benefits",
+        "cta": "Outlined button for sign up with square corners",
+        "media": {
+          "type": "image",
+          "description": "Storefront exterior shot",
+          "position": "right column"
+        },
+        "items": null,
+        "specialElements": "Array of certification/partnership logos in a grid."
+      },
+      "notes": "A floating chat bubble icon is visible in the bottom right corner over the footer."
+    }
+  ]
+}

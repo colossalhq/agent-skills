@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "name": "Neon Edge Gaming",
+    "reference_url": "https://www.razer.com",
+    "description": "A high-contrast, dark-themed e-commerce store focused on premium electronics and gaming gear. The aesthetic is bold, aggressive, and highly visual, utilizing full-width hero imagery, dramatic lighting on products, and signature accent colors against black backgrounds to create a highly immersive, tech-forward shopping experience.",
+    "industry": "electronics",
+    "aesthetic": "dark-gamer",
+    "mood": "intense, premium, and energetic",
+    "sectionNames": [
+      "header",
+      "hero-collaboration",
+      "featured-product-mouse",
+      "featured-collaboration-pink",
+      "split-promo-chairs-kombat",
+      "split-promo-laptops-atlas",
+      "split-promo-audio-intel",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#111111",
+      "foreground": "#FFFFFF",
+      "card": "#181818",
+      "cardForeground": "#FFFFFF",
+      "popover": "#181818",
+      "popoverForeground": "#FFFFFF",
+      "primary": "#44D62C",
+      "primaryForeground": "#000000",
+      "secondary": "#222222",
+      "secondaryForeground": "#FFFFFF",
+      "muted": "#333333",
+      "mutedForeground": "#999999",
+      "accent": "#44D62C",
+      "accentForeground": "#000000",
+      "destructive": "#FF0000",
+      "border": "#333333",
+      "input": "#222222",
+      "ring": "#44D62C"
+    },
+    "customColors": {
+      "accent-green": "#44D62C",
+      "dark-grey": "#222222",
+      "light-blue-bg": "#a3d3ef",
+      "promo-red": "#E01F26",
+      "promo-yellow": "#F7A800",
+      "footer-bg": "#151515"
+    },
+    "radius": "0rem",
+    "radiusButton": "0rem",
+    "fonts": {
+      "sans": "system-ui, -apple-system, sans-serif",
+      "display": "system-ui, -apple-system, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+      "serif": "ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif"
+    },
+    "fontPackages": []
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "centered",
+    "floating": false,
+    "colors": {
+      "bg": "#000000",
+      "text": "#44D62C",
+      "mutedText": "#FFFFFF",
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Minimal black header with a bright green centered logo. Hamburger menu icon on the left, search and cart icons on the right."
+  },
+  "footer": {
+    "colorScheme": "custom",
+    "colors": {
+      "bg": "#111111",
+      "text": "#FFFFFF",
+      "mutedText": "#999999",
+      "border": "#333333"
+    },
+    "description": "Store tagline in signature accent color located above the social icons.",
+    "notes": "Four-column link layout (Shop, Explore, Support, Company). Fifth column for Follow Us with circular social icons. Copyright and legal links in a thin bottom bar separated by a subtle border."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "No traditional product cards are visible in this design; the layout relies entirely on large featured image blocks acting as entry points to categories or specific products."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "1",
+      "md": "2",
+      "lg": "2",
+      "xl": "2"
+    },
+    "gap": "2",
+    "notes": "The lower half of the page uses a 50/50 split grid for promotional blocks, almost seamless with very thin gaps."
+  },
+  "featuredProducts": {
+    "label": "Featured items text",
+    "heading": "Featured product heading",
+    "notes": "Full width or 50/50 split image blocks acting as massive featured product links."
+  },
+  "sections": [
+    {
+      "name": "hero-collaboration",
+      "type": "hero",
+      "layout": "Full-width single column, text overlay centered at the top.",
+      "design": {
+        "background": "Light blue gradient sky with fluffy 3D clouds.",
+        "text": "Large black bold display heading, smaller black sub-heading. Black text links with arrows.",
+        "styling": "No borders, full bleed edge-to-edge image."
+      },
+      "content": {
+        "headline": "Collaboration Brand Name in Bold",
+        "body": "Short descriptive tagline about the collaboration aesthetic.",
+        "cta": "Two simple text links (e.g. 'Learn More >', 'Buy >')",
+        "media": {
+          "type": "product-images",
+          "description": "Two light-blue/white gaming chairs featuring a cute cloud dog character, positioned side-by-side in front of a cartoonish sky background.",
+          "position": "Centered, bottom of section"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "A surprisingly bright and soft hero section contrasting with the rest of the dark site, clearly highlighting a specific brand collaboration."
+    },
+    {
+      "name": "featured-product-mouse",
+      "type": "full-width-media",
+      "layout": "Full-width single column, text overlay centered at the top.",
+      "design": {
+        "background": "Dark, moody vignette background, darker at edges, slightly lighter center.",
+        "text": "White bold display heading, white sub-heading. Green text links with arrows.",
+        "styling": "No borders, full bleed edge-to-edge image."
+      },
+      "content": {
+        "headline": "Product Name in Bold Uppercase",
+        "body": "Short punchy tagline about product capability.",
+        "cta": "Two simple text links with green accent arrows (e.g. 'Learn More >', 'Buy >')",
+        "media": {
+          "type": "product-images",
+          "description": "Two sleek gaming mice (one black, one white) hovering vertically next to each other against a dark studio background with subtle underlighting.",
+          "position": "Centered, bottom of section"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Classic dark gamer aesthetic block."
+    },
+    {
+      "name": "featured-collaboration-pink",
+      "type": "full-width-media",
+      "layout": "Full-width single column, text overlay centered at the top.",
+      "design": {
+        "background": "Dark background with intense pink glowing smoke/light effects from the bottom.",
+        "text": "White bold display heading, white sub-heading. Red badge at top. Green text link with arrow.",
+        "styling": "No borders, full bleed edge-to-edge image."
+      },
+      "content": {
+        "headline": "Music Group Collaboration Name",
+        "body": "Tagline incorporating the color pink.",
+        "cta": "Single text link with green accent arrow (e.g. 'Learn More >')",
+        "media": {
+          "type": "product-images",
+          "description": "A collection of bright pink gaming gear (chair, keyboard, mouse, mousepad, headset) stacked together, illuminated by dramatic pink stage lighting.",
+          "position": "Centered, bottom of section"
+        },
+        "items": null,
+        "specialElements": "Red 'SOLD OUT' badge above the main heading."
+      },
+      "notes": "High contrast between the pink products and dark background."
+    },
+    {
+      "name": "split-promo-chairs-kombat",
+      "type": "split-content",
+      "layout": "2 equal columns side-by-side, seamless or very thin dark gap.",
+      "design": {
+        "background": "Left: Dark moody gradient. Right: Dark moody cinematic scene.",
+        "text": "White headings, subheadings, and green arrow text links.",
+        "styling": "Image blocks filling their respective containers."
+      },
+      "content": {
+        "headline": "Left: Category Promo. Right: Movie Tie-in Promo",
+        "body": "Left: Promotional offer text. Right: Call to action text relating to a movie.",
+        "cta": "Simple text links with green accent arrows in each block.",
+        "media": {
+          "type": "image",
+          "description": "Left: Three dark ergonomic gaming chairs. Right: Movie poster style collage of characters with a branded gaming controller box.",
+          "position": "Background/filling the block"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Transition from full-width horizontal banners to vertical square/portrait banners."
+    },
+    {
+      "name": "split-promo-laptops-atlas",
+      "type": "split-content",
+      "layout": "2 equal columns side-by-side, seamless or very thin dark gap.",
+      "design": {
+        "background": "Left: Dark vignette with bright neon green/blue glowing screen light. Right: Pure black/very dark subtle gradient.",
+        "text": "White headings, subheadings, and green arrow text links. Orange badge on left.",
+        "styling": "Image blocks filling their respective containers."
+      },
+      "content": {
+        "headline": "Left: New Laptop Model. Right: New Mousepad Model",
+        "body": "Left: Descriptive adjectives for laptop. Right: Tagline about a glass surface.",
+        "cta": "Simple text links with green accent arrows in each block.",
+        "media": {
+          "type": "image",
+          "description": "Left: A sleek open laptop showing a bright neon green abstract wallpaper, sitting in a dark blue/green neon lit environment. Right: A very thin, glowing white rectangular sheet (glass mousepad) floating in deep black space.",
+          "position": "Background/filling the block"
+        },
+        "items": null,
+        "specialElements": "Yellow 'ONLY AT [STORE NAME]' badge on the left block."
+      },
+      "notes": "Strong use of stark contrast."
+    },
+    {
+      "name": "split-promo-audio-intel",
+      "type": "split-content",
+      "layout": "2 equal columns side-by-side, seamless or very thin dark gap.",
+      "design": {
+        "background": "Left: Black with subtle spotlight effect. Right: Dark blue/black cityscape night scene.",
+        "text": "White headings, subheadings, and green arrow text links.",
+        "styling": "Image blocks filling their respective containers."
+      },
+      "content": {
+        "headline": "Left: Earbud Model Name. Right: Processor Brand Promo",
+        "body": "Left: Tagline about audio latency and immersion. Right: Promo tagline linking a processor brand and a superhero game.",
+        "cta": "Simple text links with green accent arrows in each block.",
+        "media": {
+          "type": "image",
+          "description": "Left: Black wireless earbuds floating above their open charging case, which has a rainbow RGB light strip. Right: A laptop showing a neon green wallpaper next to a superhero figure and a branded logo graphic against a dark rainy city backdrop.",
+          "position": "Background/filling the block"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Consistent typography and link styling across all diverse image blocks unifies the chaotic imagery."
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "meta": {
+    "name": "Prep Lifestyle",
+    "reference_url": "https://www.tommy.com",
+    "description": "A classic, preppy lifestyle fashion store with a focus on editorial, full-bleed imagery and clean, white-space heavy layouts. The aesthetic is bright, summery, and aspirational, targeting a premium market that appreciates traditional American style.",
+    "industry": "fashion",
+    "aesthetic": "modern-classic",
+    "mood": "aspirational and summery",
+    "sectionNames": [
+      "announcement-bar",
+      "header",
+      "hero-campaign",
+      "product-carousel",
+      "featured-campaign-1",
+      "category-grid-1",
+      "featured-campaign-2",
+      "category-grid-2",
+      "split-feature",
+      "news-stories",
+      "seo-text",
+      "newsletter",
+      "footer"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#000000",
+      "card": "#f8f8f8",
+      "cardForeground": "#000000",
+      "popover": "#ffffff",
+      "popoverForeground": "#000000",
+      "primary": "#000000",
+      "primaryForeground": "#ffffff",
+      "secondary": "#f4f4f4",
+      "secondaryForeground": "#000000",
+      "muted": "#f4f4f4",
+      "mutedForeground": "#666666",
+      "accent": "#000000",
+      "accentForeground": "#ffffff",
+      "destructive": "#ef4444",
+      "border": "#e5e5e5",
+      "input": "#e5e5e5",
+      "ring": "#000000"
+    },
+    "customColors": {
+      "announcement-bg": "#000000",
+      "announcement-text": "#ffffff",
+      "overlay-text": "#ffffff",
+      "light-grey-bg": "#f9f9f9",
+      "split-bg-left": "#cdd6db",
+      "split-bg-right": "#eaeaea"
+    },
+    "radius": "0rem",
+    "radiusButton": "0rem",
+    "fonts": {
+      "sans": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+      "display": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+      "serif": "'Times New Roman', Times, serif"
+    },
+    "fontPackages": []
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "default",
+    "layout": "centered",
+    "floating": false,
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#000000",
+      "mutedText": "#000000",
+      "border": false,
+      "badgeBg": null,
+      "badgeText": null
+    },
+    "notes": "Classic centered logo with left-aligned navigation links and right-aligned icon actions. Minimalist with no visible bottom border in the default state."
+  },
+  "footer": {
+    "colorScheme": "default",
+    "colors": {
+      "bg": "#ffffff",
+      "text": "#000000",
+      "mutedText": "#4a4a4a",
+      "border": "#e5e5e5"
+    },
+    "description": null,
+    "notes": "Large multi-column footer. Top section features a prominent newsletter signup. Middle section is a 5-column link directory. Bottom section features a large, centered logo with copyright and social media icons aligned to the bottom."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "icon-only",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Very clean product cards. Light grey background (#f4f4f4) for product images. Text is left-aligned below the image. Prices are standard weight. Includes subtle badges like 'Size Inclusive' or 'New' on the bottom left of the image area. A small heart icon for favorites is visible in the top right of the image."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "4",
+      "lg": "6",
+      "xl": "6"
+    },
+    "gap": "4",
+    "notes": "Product carousels often show 6 items at a time, very tightly packed with thin gaps. Category grids use 4 equal columns."
+  },
+  "featuredProducts": {
+    "label": "New Arrivals",
+    "heading": "HOSTED BY",
+    "notes": "The primary feature areas are large, full-width imagery rather than typical product grids."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full-width single column, centered content",
+      "design": {
+        "background": "Solid black",
+        "text": "White, small sans-serif font",
+        "styling": "Very narrow height, minimal padding"
+      },
+      "content": {
+        "headline": "Promotional message with link",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Underlined link text"
+      },
+      "notes": "Simple, standard top announcement bar."
+    },
+    {
+      "name": "hero-campaign",
+      "type": "full-width-media",
+      "layout": "Full-width single column, centered overlay content",
+      "design": {
+        "background": "Full-bleed lifestyle photograph",
+        "text": "White text over image. Mix of italicized serif for label, large bold sans-serif for main headline, and smaller sans-serif for CTA links.",
+        "styling": "Edge-to-edge layout, tall aspect ratio (almost full screen height)"
+      },
+      "content": {
+        "headline": "Large campaign title",
+        "body": "Subheading or season indicator",
+        "cta": "Text links with white underlines instead of traditional buttons",
+        "media": {
+          "type": "image",
+          "description": "High-quality, bright lifestyle shot of a person relaxing outdoors, summery mood, wearing striped casual wear.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": "Layered text typography (italicized top line, large tracking middle line)"
+      },
+      "notes": "Highly editorial feel. CTAs are simple underlined text links rather than boxes."
+    },
+    {
+      "name": "product-carousel",
+      "type": "product-showcase",
+      "layout": "Horizontal scroll / slider, 6 visible items",
+      "design": {
+        "background": "White background",
+        "text": "Dark text",
+        "styling": "Tight spacing between cards, side navigation arrow overlay on the right"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "product-images",
+          "description": "Studio shots of models wearing the clothing against very light grey backgrounds.",
+          "position": "grid"
+        },
+        "items": [
+          {
+            "image": "Model shot",
+            "title": "Product name",
+            "price": "Price value",
+            "badge": "Optional tag (New, Size Inclusive)"
+          }
+        ],
+        "specialElements": "Circular white next-arrow button floating on the right edge"
+      },
+      "notes": "Clean, catalog-style presentation immediately following an emotional hero."
+    },
+    {
+      "name": "featured-campaign-1",
+      "type": "full-width-media",
+      "layout": "Full-width single column, left-aligned overlay content",
+      "design": {
+        "background": "Full-bleed lifestyle photograph",
+        "text": "White text over image",
+        "styling": "Slightly shorter than hero, edge-to-edge"
+      },
+      "content": {
+        "headline": "Medium campaign headline",
+        "body": "Italicized subheading",
+        "cta": "Underlined text links",
+        "media": {
+          "type": "image",
+          "description": "Couple outdoors near a pool/beach umbrella, dark polo and white vest, strong sunlight.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Content is anchored to the middle-left rather than centered."
+    },
+    {
+      "name": "category-grid-1",
+      "type": "categories",
+      "layout": "CSS grid 4 equal columns",
+      "design": {
+        "background": "White background",
+        "text": "Dark text",
+        "styling": "Standard gaps, tall aspect ratio images (approx 3:4)"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Underlined text links for shop categories below each image",
+        "media": {
+          "type": "image",
+          "description": "Lifestyle shots of models in specific clothing categories (knits, polos, shirts, shorts).",
+          "position": "grid"
+        },
+        "items": [
+          {
+            "image": "Category lifestyle shot",
+            "title": "Category Name",
+            "links": [
+              "Shop Women",
+              "Shop Men"
+            ]
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Serves as visual navigation to main product categories."
+    },
+    {
+      "name": "featured-campaign-2",
+      "type": "full-width-media",
+      "layout": "Full-width single column, left-aligned overlay content",
+      "design": {
+        "background": "Full-bleed lifestyle photograph",
+        "text": "White text over image",
+        "styling": "Edge-to-edge layout"
+      },
+      "content": {
+        "headline": "Large campaign headline",
+        "body": "Italicized subheading",
+        "cta": "Underlined text links",
+        "media": {
+          "type": "image",
+          "description": "Group of friends playing cards outdoors, summery, relaxed vibe, wearing striped shirts.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Similar structure to previous campaign blocks."
+    },
+    {
+      "name": "category-grid-2",
+      "type": "categories",
+      "layout": "CSS grid 4 equal columns",
+      "design": {
+        "background": "White background",
+        "text": "Dark text",
+        "styling": "Standard gaps, tall aspect ratio images"
+      },
+      "content": {
+        "headline": null,
+        "body": null,
+        "cta": "Underlined text links",
+        "media": {
+          "type": "image",
+          "description": "More lifestyle category shots (linen, sandals, swimwear, dresses).",
+          "position": "grid"
+        },
+        "items": [
+          {
+            "image": "Category lifestyle shot",
+            "title": "Category Name",
+            "links": [
+              "Shop Women",
+              "Shop Men"
+            ]
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Follows the exact same pattern as category-grid-1."
+    },
+    {
+      "name": "split-feature",
+      "type": "split-content",
+      "layout": "2-column grid, 50/50 split",
+      "design": {
+        "background": "Left side light blue/grey, right side light grey grid",
+        "text": "White text on left side",
+        "styling": "No gaps between the two columns, edge-to-edge"
+      },
+      "content": {
+        "headline": "Signature collection headline",
+        "body": "Italicized season subheading",
+        "cta": "Underlined text links on left side",
+        "media": {
+          "type": "image",
+          "description": "Left: Large studio shot of a classic blue polo shirt. Right: A dense 4x4 grid of small editorial and product shots showing various styles and colors.",
+          "position": "split"
+        },
+        "items": null,
+        "specialElements": "The right column is entirely composed of a masonry-like grid of smaller images."
+      },
+      "notes": "A dense visual section highlighting signature icons. Creates a collage effect on the right."
+    },
+    {
+      "name": "news-stories",
+      "type": "text-block",
+      "layout": "CSS grid 3 equal columns",
+      "design": {
+        "background": "White background",
+        "text": "Dark text",
+        "styling": "Standard gaps between columns, text below images"
+      },
+      "content": {
+        "headline": "Section headlines for each column",
+        "body": "Short descriptive paragraphs about brand news/partnerships",
+        "cta": "Simple 'Explore More' text links",
+        "media": {
+          "type": "image",
+          "description": "Brand partnership imagery (sports teams, racing, lifestyle group shots).",
+          "position": "top of columns"
+        },
+        "items": [
+          {
+            "image": "Story image",
+            "title": "Story headline",
+            "description": "Story summary",
+            "link": "Explore More"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Acts as a blog or brand news reel."
+    },
+    {
+      "name": "seo-text",
+      "type": "text-block",
+      "layout": "Single column, narrow max-width, left-aligned",
+      "design": {
+        "background": "White background",
+        "text": "Dark text, small body size",
+        "styling": "Padding around the text block"
+      },
+      "content": {
+        "headline": "Store/Brand name + Location",
+        "body": "Paragraph describing the brand offerings and aesthetic for SEO purposes.",
+        "cta": "'Read more' link",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Standard bottom-of-page SEO text block."
+    },
+    {
+      "name": "newsletter",
+      "type": "newsletter",
+      "layout": "Single column, centered content",
+      "design": {
+        "background": "White background",
+        "text": "Dark text",
+        "styling": "Generous vertical padding, top border line"
+      },
+      "content": {
+        "headline": "Join today and get more",
+        "body": "Italicized brand tag above headline",
+        "cta": "Single black button with white text, sharp square corners (0rem radius)",
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Very minimal newsletter signup block. Just text and a solid black button."
+    }
+  ]
+}

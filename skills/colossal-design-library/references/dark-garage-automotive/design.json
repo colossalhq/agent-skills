@@ -1,0 +1,353 @@
+{
+  "meta": {
+    "name": "Auto Detail Pros",
+    "reference_url": "https://www.chemicalguys.com",
+    "description": "An energetic, promotional e-commerce store selling automotive detailing products. The design uses bold typography, high-impact imagery, and vibrant red accents to create a sense of urgency and excitement, targeting car enthusiasts and DIY detailers.",
+    "industry": "automotive-care",
+    "aesthetic": "bold-maximalist",
+    "mood": "energetic and bold",
+    "sectionNames": [
+      "announcement-bar",
+      "hero",
+      "promotional-banners",
+      "category-circles",
+      "brand-features-banner",
+      "new-products-carousel",
+      "best-sellers-carousel",
+      "ugc-video-grid",
+      "brand-story-split",
+      "newsletter-signup"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#FFFFFF",
+      "foreground": "#000000",
+      "card": "#FFFFFF",
+      "cardForeground": "#000000",
+      "popover": "#FFFFFF",
+      "popoverForeground": "#000000",
+      "primary": "#E21833",
+      "primaryForeground": "#FFFFFF",
+      "secondary": "#F5F5F5",
+      "secondaryForeground": "#000000",
+      "muted": "#F3F4F6",
+      "mutedForeground": "#6B7280",
+      "accent": "#FACC15",
+      "accentForeground": "#000000",
+      "destructive": "#EF4444",
+      "border": "#E5E7EB",
+      "input": "#FFFFFF",
+      "ring": "#E21833"
+    },
+    "customColors": {
+      "success-green": "#22C55E",
+      "header-bg": "#000000",
+      "footer-bg": "#0A0A0A"
+    },
+    "radius": "0.25rem",
+    "radiusButton": "0.125rem",
+    "fonts": {
+      "sans": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "display": "Impact, 'Oswald', 'Teko', sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+      "serif": "Georgia, Cambria, 'Times New Roman', Times, serif"
+    },
+    "fontPackages": [
+      "@fontsource/oswald",
+      "@fontsource/inter"
+    ]
+  },
+  "header": {
+    "buttonStyle": "icon",
+    "size": "large",
+    "layout": "standard",
+    "floating": false,
+    "colors": {
+      "bg": "#000000",
+      "text": "#FFFFFF",
+      "mutedText": "#D1D5DB",
+      "border": false,
+      "badgeBg": "#E21833",
+      "badgeText": "#FFFFFF"
+    },
+    "notes": "The header in the screenshot is actually positioned strangely in the middle of the page below the UGC section, but acts as a main navigation bar. It features a dark background, logo on left, a wide prominent search bar in center, and icon buttons for login/cart on right. Below this is a secondary navigation row with text links and dropdown indicators."
+  },
+  "footer": {
+    "colorScheme": "inverted",
+    "colors": {
+      "bg": "#0A0A0A",
+      "text": "#FFFFFF",
+      "mutedText": "#9CA3AF",
+      "border": "#1F2937"
+    },
+    "description": null,
+    "notes": "Standard dark footer with 4 columns of text links, social media icons in the bottom right, a scroll-to-top button centered above the copyright, and a prominent legal disclaimer."
+  },
+  "productCard": {
+    "hoverEffect": "shadow",
+    "cartButton": "ghost",
+    "cartButtonIcon": "bag",
+    "carousel": "none",
+    "notes": "Clean white background cards. Bold uppercase titles. Prices shown with prominent green savings badges for discounted items. A distinctive red outlined 'badge' shows reward points or entries. Minimal border, relies on spacing."
+  },
+  "productGrid": {
+    "columns": {
+      "sm": "2",
+      "md": "3",
+      "lg": "4",
+      "xl": "5"
+    },
+    "gap": "6",
+    "notes": "Products are displayed in a horizontal carousel layout with navigation arrows below the grid, followed by a prominent red 'Shop All' button centered beneath the carousel."
+  },
+  "featuredProducts": {
+    "label": "NEW PRODUCTS",
+    "heading": "BEST SELLERS",
+    "notes": "Sections use centered, bold, uppercase display typography for headings. Carousels have a thin gray progress bar and round arrow buttons for navigation."
+  },
+  "sections": [
+    {
+      "name": "announcement-bar",
+      "type": "banner",
+      "layout": "Full width, centered text",
+      "design": {
+        "background": "Solid vibrant red (#E21833)",
+        "text": "White uppercase bold text",
+        "styling": "Very thin, minimal padding (py-2)"
+      },
+      "content": {
+        "headline": "Promotional sale announcement",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "none",
+          "description": "",
+          "position": ""
+        },
+        "items": null,
+        "specialElements": "Sitewide promotional text with discount details."
+      },
+      "notes": "Sticks to very top of page."
+    },
+    {
+      "name": "hero",
+      "type": "hero",
+      "layout": "Full width banner, text content on left, large product/lifestyle image on right.",
+      "design": {
+        "background": "Dark background with a gradient or subtle pattern. Appears to be a full-bleed image with a dark vignette/overlay on the left side.",
+        "text": "White text. Extremely large, bold, uppercase sans-serif headline. Smaller standard sans-serif for subheadline.",
+        "styling": "No borders. Centered vertically. Large promotional feel."
+      },
+      "content": {
+        "headline": "Major sitewide promotional headline",
+        "body": "Subheadline explaining value proposition and secondary promotional offer.",
+        "cta": "Single prominent solid red button with white uppercase text, slightly rounded corners (~2px).",
+        "media": {
+          "type": "image",
+          "description": "High-energy lifestyle shot featuring a luxury sports car, a person celebrating, and a large assortment of car care products, with money flying around.",
+          "position": "right side / full background"
+        },
+        "items": null,
+        "specialElements": "5 gold star rating and text indicating trust from millions of customers below the CTA button."
+      },
+      "notes": "Highly energetic and promotional hero section."
+    },
+    {
+      "name": "promotional-banners",
+      "type": "gallery",
+      "layout": "3-column grid of image banners.",
+      "design": {
+        "background": "White page background, banners have diverse, colorful image backgrounds.",
+        "text": "Varied typography depending on banner graphic, mostly bold and energetic.",
+        "styling": "Equal width banners, square-ish aspect ratio. Slight gaps between images."
+      },
+      "content": {
+        "headline": "Seasonal promotion heading above the grid.",
+        "body": null,
+        "cta": "Each banner has a white or black solid button with contrasting text, uppercase, slightly rounded corners.",
+        "media": {
+          "type": "image",
+          "description": "Three distinct promotional graphics. One for a specific product bundle, one for a mystery kit, one for seasonal polishing products.",
+          "position": "grid of 3"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Acts as secondary navigation to key promotional categories."
+    },
+    {
+      "name": "category-circles",
+      "type": "categories",
+      "layout": "Horizontal row of circular images with text labels below.",
+      "design": {
+        "background": "White",
+        "text": "Dark sans-serif text, centered.",
+        "styling": "Images are perfectly circular. Clean spacing."
+      },
+      "content": {
+        "headline": "Category navigation heading",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "image",
+          "description": "Action shots of car detailing tasks specific to each category (e.g., washing an exterior, cleaning interior, polishing).",
+          "position": "grid"
+        },
+        "items": [
+          {
+            "icon": "none",
+            "title": "Category Label",
+            "image": "Circular action shot"
+          }
+        ],
+        "specialElements": null
+      },
+      "notes": "Classic visual category navigation pattern."
+    },
+    {
+      "name": "brand-features-banner",
+      "type": "features",
+      "layout": "Full-width background image with text overlay. Text is split: bold statement on left, three icon/feature columns on right.",
+      "design": {
+        "background": "Dark, slightly transparent overlay over a background image of products.",
+        "text": "White text. Large bold uppercase statement on left. Smaller text with red accents on right.",
+        "styling": "Padding top and bottom. Dark contrast band."
+      },
+      "content": {
+        "headline": "Bold statement of brand authority and quality.",
+        "body": "Brief supporting text explaining the brand ethos.",
+        "cta": "Solid red button with white text.",
+        "media": {
+          "type": "image",
+          "description": "Background shows rows of neatly organized product bottles on a shelf.",
+          "position": "background"
+        },
+        "items": [
+          {
+            "icon": "Red line-art icon",
+            "title": "Feature Title",
+            "image": "none"
+          }
+        ],
+        "specialElements": "Three column feature list with red icons highlighting value propositions (results, ease of use, convenience)."
+      },
+      "notes": "Builds trust and explains why to choose the brand."
+    },
+    {
+      "name": "new-products-carousel",
+      "type": "product-showcase",
+      "layout": "Centered heading followed by a horizontal row of product cards. Navigation arrows below.",
+      "design": {
+        "background": "White",
+        "text": "Dark text for products, red for CTA.",
+        "styling": "Standard grid spacing."
+      },
+      "content": {
+        "headline": "Heading indicating newly arrived items.",
+        "body": null,
+        "cta": "Solid red 'Shop All' button centered below carousel.",
+        "media": {
+          "type": "product-images",
+          "description": "Clear product shots on white backgrounds.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": "Prominent promotional badges (red outline) indicating reward entries on each product."
+      },
+      "notes": "Standard product carousel with a 'view all' CTA at the bottom."
+    },
+    {
+      "name": "best-sellers-carousel",
+      "type": "product-showcase",
+      "layout": "Centered heading followed by a horizontal row of product cards. Navigation arrows below.",
+      "design": {
+        "background": "White",
+        "text": "Dark text for products, red for CTA.",
+        "styling": "Standard grid spacing."
+      },
+      "content": {
+        "headline": "Heading indicating top selling items.",
+        "body": null,
+        "cta": "Solid red 'Shop All' button centered below carousel.",
+        "media": {
+          "type": "product-images",
+          "description": "Clear product shots on white backgrounds, often showing kits/bundles.",
+          "position": "grid"
+        },
+        "items": null,
+        "specialElements": "Green 'Save %' badges on discounted items."
+      },
+      "notes": "Similar structure to the new products carousel."
+    },
+    {
+      "name": "ugc-video-grid",
+      "type": "gallery",
+      "layout": "Centered heading followed by a row of 5 tall, vertical video thumbnails.",
+      "design": {
+        "background": "Very light gray/off-white background block.",
+        "text": "Dark centered heading.",
+        "styling": "Vertical video format (like TikTok/Reels). Slight gap between videos."
+      },
+      "content": {
+        "headline": "Heading indicating products in use.",
+        "body": null,
+        "cta": null,
+        "media": {
+          "type": "video",
+          "description": "Vertical user-generated style videos showing products being applied to cars.",
+          "position": "grid of 5"
+        },
+        "items": null,
+        "specialElements": "Below each video thumbnail is a small product card showing the item featured in the video, with a tiny chevron pointing up."
+      },
+      "notes": "Shoppable video component."
+    },
+    {
+      "name": "brand-story-split",
+      "type": "split-content",
+      "layout": "50/50 split. Image grid/collage on left, text and CTA on right. Note: The layout here is messy in the screenshot due to the navigation bar being placed over it.",
+      "design": {
+        "background": "Light gray on the text side.",
+        "text": "Dark text. Large bold heading.",
+        "styling": "Full width section."
+      },
+      "content": {
+        "headline": "Brand 'Who We Are' statement.",
+        "body": "Paragraph describing brand origins or philosophy.",
+        "cta": "Solid red button.",
+        "media": {
+          "type": "image",
+          "description": "Collage of lifestyle photos, a retail store, people working, branded items.",
+          "position": "left column"
+        },
+        "items": null,
+        "specialElements": null
+      },
+      "notes": "Standard about us section."
+    },
+    {
+      "name": "newsletter-signup",
+      "type": "newsletter",
+      "layout": "Full width background image with a dark overlay box containing the signup form on the left side.",
+      "design": {
+        "background": "Full width image of a warehouse/store with an employee.",
+        "text": "White text inside the dark overlay box.",
+        "styling": "Dark, slightly transparent box for the form. Inputs are white."
+      },
+      "content": {
+        "headline": "Newsletter signup call to action offering a discount.",
+        "body": "Supporting text mentioning promotional entries or benefits.",
+        "cta": "Solid red button, full width of the form field.",
+        "media": {
+          "type": "image",
+          "description": "Person carrying a box in a product warehouse.",
+          "position": "background"
+        },
+        "items": null,
+        "specialElements": "Input field for email address above the submit button."
+      },
+      "notes": "High contrast signup area to capture leads."
+    }
+  ]
+}
