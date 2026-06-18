@@ -24,13 +24,13 @@ Install all four together for the full workflow, or just `colossal-builder` if y
 Install all skills into the current project:
 
 ```bash
-npx skills add colossal/colossal-skills --all
+npx skills add colossalhq/colossal-skills --all
 ```
 
 Pick specific skills and target agents:
 
 ```bash
-npx skills add colossal/colossal-skills \
+npx skills add colossalhq/colossal-skills \
   --skill colossal-builder \
   --skill colossal-template-builder \
   --skill colossal-design-library \
@@ -42,13 +42,13 @@ npx skills add colossal/colossal-skills \
 Install globally (available across all projects):
 
 ```bash
-npx skills add colossal/colossal-skills -g
+npx skills add colossalhq/colossal-skills -g
 ```
 
 List without installing:
 
 ```bash
-npx skills add colossal/colossal-skills --list
+npx skills add colossalhq/colossal-skills --list
 ```
 
 After install, skills land at `<project>/.claude/skills/<name>/` for Claude Code and `<project>/.agents/skills/<name>/` for most other agents. The CLI auto-detects which agents you have installed.
