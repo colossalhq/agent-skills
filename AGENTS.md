@@ -25,6 +25,7 @@ agent-skills/
 ├── AGENTS.md             ← this file
 ├── CLAUDE.md             ← symlink to AGENTS.md
 ├── README.md             ← user-facing install / update guide
+├── skills.sh.json        ← skills.sh website page config (section grouping)
 ├── .gitignore
 └── skills/
     ├── colossal-builder/
@@ -52,6 +53,8 @@ agent-skills/
 ```
 
 Every directory under `skills/` is one skill. The directory name MUST match the `name:` field in its `SKILL.md` frontmatter.
+
+`skills.sh.json` is optional metadata read only by the [skills.sh](https://skills.sh) website — it groups skills into titled sections on the repo's public page. The `skills` CLI ignores it: install/list/`--skill` selection work purely by walking `skills/*/SKILL.md` and reading the `name` + `description` frontmatter. Each entry in a grouping's `skills` array is a skill `name` (frontmatter `name`, which here equals the directory). Keep the groupings in sync when adding or renaming a skill; a skill omitted from every group still appears (placed per `notGrouped`).
 
 ---
 
@@ -162,6 +165,7 @@ Per the [optimizing-descriptions guide](https://agentskills.io/skill-creation/op
 3. If shipping executables, put them in `skills/<name>/scripts/` and `chmod +x` them.
 4. Update the README's skills table and layout tree.
 5. Update this AGENTS.md "four skills" table if appropriate.
+6. Add the skill's `name` to the right grouping in `skills.sh.json` (or it lands per `notGrouped` on the website page).
 
 ### Add a new design reference (data, not code)
 

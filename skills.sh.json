@@ -1,0 +1,22 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Build storefront",
+      "description": "Build and wire up Colossal storefronts — SDK data layer and the React Vite template.",
+      "skills": [
+        "colossal-builder",
+        "colossal-template-builder"
+      ]
+    },
+    {
+      "title": "Design storefront",
+      "description": "Theme and style storefronts — the design-reference catalog and the create/apply workflow.",
+      "skills": [
+        "colossal-design-library",
+        "colossal-store-design"
+      ]
+    }
+  ]
+}

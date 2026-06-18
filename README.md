@@ -68,6 +68,7 @@ If you installed using the default symlink method, `update` refreshes the canoni
 ## Layout
 
 ```
+skills.sh.json            # skills.sh website page config (section grouping)
 skills/
 ├── colossal-builder/
 │   └── SKILL.md
