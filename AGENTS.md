@@ -11,7 +11,7 @@ This document orients AI coding agents (Claude Code, Cursor, Codex, OpenCode, Ge
 A collection of [Agent Skills](https://agentskills.io) for the Colossal storefront platform. Skills are distributed via the [`skills`](https://github.com/vercel-labs/skills) CLI and installable into ~50 coding agents:
 
 ```bash
-npx skills add colossalhq/colossal-skills --all
+npx skills add colossalhq/agent-skills --all
 ```
 
 There is no build step. The repo IS the published artifact — every file under `skills/<name>/` is what consumers receive verbatim.
@@ -21,7 +21,7 @@ There is no build step. The repo IS the published artifact — every file under 
 ## Repository layout
 
 ```
-colossal-skills/
+agent-skills/
 ├── AGENTS.md             ← this file
 ├── CLAUDE.md             ← symlink to AGENTS.md
 ├── README.md             ← user-facing install / update guide

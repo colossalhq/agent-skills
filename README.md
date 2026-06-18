@@ -1,4 +1,4 @@
-# colossal-skills
+# agent-skills
 
 Agent Skills for the Colossal storefront platform. Distributed via the [Agent Skills format](https://agentskills.io) and installable into ~50 coding agents (Claude Code, Cursor, Codex, GitHub Copilot, Gemini CLI, OpenCode, etc.) using the [`skills`](https://github.com/vercel-labs/skills) CLI.
 
@@ -24,13 +24,13 @@ Install all four together for the full workflow, or just `colossal-builder` if y
 Install all skills into the current project:
 
 ```bash
-npx skills add colossalhq/colossal-skills --all
+npx skills add colossalhq/agent-skills --all
 ```
 
 Pick specific skills and target agents:
 
 ```bash
-npx skills add colossalhq/colossal-skills \
+npx skills add colossalhq/agent-skills \
   --skill colossal-builder \
   --skill colossal-template-builder \
   --skill colossal-design-library \
@@ -42,13 +42,13 @@ npx skills add colossalhq/colossal-skills \
 Install globally (available across all projects):
 
 ```bash
-npx skills add colossalhq/colossal-skills -g
+npx skills add colossalhq/agent-skills -g
 ```
 
 List without installing:
 
 ```bash
-npx skills add colossalhq/colossal-skills --list
+npx skills add colossalhq/agent-skills --list
 ```
 
 After install, skills land at `<project>/.claude/skills/<name>/` for Claude Code and `<project>/.agents/skills/<name>/` for most other agents. The CLI auto-detects which agents you have installed.
@@ -108,7 +108,7 @@ If you install `colossal-store-design` without `colossal-design-library`, set `C
 `skills/colossal-design-library/references/<slug>/` is plain files — `design.json`, `theme.css`, `preview.html` — and is intended to be edited. Either:
 
 - Edit in your installed location (`<project>/.claude/skills/colossal-design-library/references/<slug>/`) for project-local tweaks. **Note:** `npx skills update` will overwrite local edits.
-- Fork this repo, edit, push, and install from your fork (`npx skills add <your-org>/colossal-skills`).
+- Fork this repo, edit, push, and install from your fork (`npx skills add <your-org>/agent-skills`).
 
 ## Working with design references
 
