@@ -17,7 +17,7 @@ For framework-agnostic concepts: still applicable. For the Colossal React Vite t
 // package.json
 {
   "dependencies": {
-    "@colossal-sh/storefront-sdk": "^0.2.1",
+    "@colossal-sh/storefront-sdk": "^1.0.0",
     "@tanstack/react-query": "^5.0.0"
   }
 }
@@ -57,7 +57,7 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <CartProvider storeUid={STORE_UID} currency="USD">
+      <CartProvider storeUid={STORE_UID}>
         {/* app */}
       </CartProvider>
     </QueryClientProvider>
@@ -69,11 +69,10 @@ function App() {
 
 | Prop | Required | Default | Purpose |
 |---|---|---|---|
-| `storeUid` | yes | — | Identifies the store; used as the cart-storage key |
-| `currency` | no | `"USD"` | Used by `toSimpleLineItem` to format prices |
+| `storeUid` | yes | - | Identifies the store; used as the cart-storage key |
 | `storage` | no | `localStorageCartIds` | Pluggable cart-id persistence (`CartIdStorage` interface) |
 
-Default storage uses `localStorage` under key `cart-${storeUid}`; it's SSR-safe (no-ops when `window` is undefined). Provide a custom `CartIdStorage` for cookies, IndexedDB, or in-memory testing.
+Currency is read off the server-resolved cart, not passed as a prop. Default storage uses `localStorage` under key `cart-${storeUid}`; it's SSR-safe (no-ops when `window` is undefined). Provide a custom `CartIdStorage` for cookies, IndexedDB, or in-memory testing.
 
 ### 3. Use hooks anywhere below the providers
 
@@ -123,10 +122,10 @@ The SDK exposes both **raw** query hooks (return TanStack Query results with ful
 
 | Simplified | Raw |
 |---|---|
-| `useProducts(storeUid?, currency?)` | `useStoreProducts(storeUid?, isDebug?, options?)` |
+| `useProducts(storeUid?)` | `useStoreProducts(storeUid?, isDebug?, options?)` |
 | `useProduct(productUid)` | `useStoreProduct(productUid, isPreview?, options?)` |
 
-#### `useProducts(storeUid?, currency = "USD")`
+#### `useProducts(storeUid?)`
 
 ```tsx
 const { products, isLoading, isError } = useProducts(STORE_UID);
@@ -164,9 +163,10 @@ Raw query. `staleTime: 0` (refetches on every mount). `isPreview=true` polls eve
   cart: ReturnType<typeof useCart>["data"];   // raw cart query data
   items: SimpleLineItem[];
   subtotal: number;
-  currency: string;
+  currency: string | null;   // null until the first cart loads
   itemCount: number;
   isLoading: boolean;
+  error: Error | null;
 
   // Drawer
   isOpen: boolean;
@@ -230,19 +230,18 @@ Invalidates `checkoutKeys.all` queries on success.
 
 | Function | Purpose |
 |---|---|
-| `formatPrice(amount, currency = "USD")` | Intl currency formatter |
-| `toSimpleProduct(product, currency)` | Map raw `StoreProduct` → `SimpleProduct` |
-| `toSimpleLineItem(lineItem, currency)` | Map raw line item → `SimpleLineItem` |
+| `formatPrice(amountMinor, currency, locale?)` | Intl currency formatter; converts minor to major and formats. Zero-decimal-currency aware. |
+| `toSimpleProduct(product)` | Map raw `StoreProduct` to `SimpleProduct`. Currency comes off the product. |
+| `toSimpleLineItem(lineItem)` | Map raw line item to `SimpleLineItem`. Currency comes off the line item. |
 | `getProductName(product, fallback?)` | Handles both storefront and admin product shapes |
 | `getProductImage(product)` | First image URL or undefined |
 | `getProductImages(product)` | All image URLs |
 | `getDefaultVariantPrice(variant)` | Resolves LINEAR / VOLUME pricing |
-| `getFormattedProductPrice(product, currency?)` | "$9.99" or "$9.99/month" |
+| `getFormattedProductPrice(product, locale?)` | "$9.99" or "$9.99/month". Reads currency off the product. |
 | `getProductRecurringInterval(product)` | "month" / "year" / undefined |
 | `getTrialDuration(product)` | ISO 8601 duration or undefined |
 | `getInventoryCount(product)` | number or null |
 | `getLineItemName/Price/Image/Subtotal(lineItem)` | Mirrors product helpers for cart lines |
-| `getCartSubtotal(lineItems)` | Sum of all subtotals |
 
 Use these instead of reaching into the GraphQL response shape — they handle both storefront-public and admin-published variants and unwrap nullable chains.
 
@@ -264,13 +263,13 @@ import type {
 {
   uid: string;
   name: string;
-  tagline?: string;
-  description?: string;
-  price: number;
-  formattedPrice: string;     // already includes interval if recurring
+  tagline: string | undefined;
+  description: string | undefined;
+  unitAmount: number | null;          // minor units; null when no default price
   currency: string;
+  recurringInterval: string | null;   // "month" | "year" | null
+  trialDuration: string | null;       // ISO 8601 duration
   images: string[];
-  interval?: string;          // "month" | "year" | undefined
   deliverables: Deliverable[];
 }
 ```
@@ -281,11 +280,11 @@ import type {
   uid: string;
   productUid: string;
   name: string;
-  price: number;
+  unitAmount: number;     // minor units
+  totalAmount: number;    // minor units; server-resolved, tier-aware
   currency: string;
-  imageUrl?: string;
+  imageUrl: string | undefined;
   quantity: number;
-  subtotal: number;
 }
 ```
 
@@ -293,6 +292,27 @@ import type {
 ```ts
 { uid: string; name: string; type: string; config?: unknown }
 ```
+
+---
+
+## Money & currency
+
+Every money value the SDK returns is an integer in the currency's smallest unit, paired with a `currency: string` field on the same object.
+
+### What you read off the wire
+
+- Money is `int` minor units. USD `1999` means `$19.99`. JPY `1500` means `¥1500` (zero-decimal currencies are not multiplied by 100).
+- Every money field is paired with `currency` on the same type. Read currency from the same object as the amount, not from a parent.
+- Use `formatPrice(amountMinor, currency, locale?)` to display. It handles zero-decimal currencies for you.
+- `unitAmount` can be `null` on `SimpleProduct` (no default price configured). It is never `null` on `SimpleLineItem` (line items can't exist without a price).
+- `cart.currency` is `null` until the first cart loads. Guard `formatPrice` calls on the cart subtotal.
+- `SimpleLineItem.unitAmount` and `totalAmount` are server-resolved and tier-aware. Render them; don't compute totals client-side.
+
+### Field naming on GraphQL types
+
+- Money fields paired with a unit name end in `Amount` and are `Int!` (e.g. `taxAmount`, `unitPriceAmount`, `totalAmount`, `subtotalAmount`).
+- A singular money field on a type uses bare `amount` (e.g. `Payment.amount`, `ShippingOption.amount`).
+- `Float!` aliases on older fields (e.g. `Order.tax`, `OrderLineItem.unitPrice`) are marked `@deprecated` in the schema. Select the `*Amount: Int!` field instead.
 
 ---
 
@@ -370,7 +390,7 @@ function ProductGrid() {
         <li key={p.uid}>
           <img src={p.images[0]} alt={p.name} />
           <h3>{p.name}</h3>
-          <p>{p.formattedPrice}</p>
+          {p.unitAmount !== null && <p>{formatPrice(p.unitAmount, p.currency)}</p>}
         </li>
       ))}
     </ul>
@@ -389,7 +409,9 @@ function ProductPage({ uid }: { uid: string }) {
     <article>
       <h1>{product.name}</h1>
       <p>{product.tagline}</p>
-      <p>{product.formattedPrice}</p>
+      {product.unitAmount !== null && (
+        <p>{formatPrice(product.unitAmount, product.currency)}</p>
+      )}
       <button onClick={() => addItem(product.uid)}>Add to bag</button>
     </article>
   );
@@ -415,7 +437,7 @@ function CartDrawer() {
           <button onClick={() => removeItem(item.uid)}>Remove</button>
         </div>
       ))}
-      <p>Subtotal: {formatPrice(subtotal, currency)}</p>
+      {currency && <p>Subtotal: {formatPrice(subtotal, currency)}</p>}
       <button onClick={closeCart}>Close</button>
     </aside>
   );
